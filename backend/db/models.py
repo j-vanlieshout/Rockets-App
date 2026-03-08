@@ -84,6 +84,27 @@ class RaceResult(Base):
     team  = relationship("Team", back_populates="results")
 
 
+class TeamRankingSnapshot(Base):
+    """
+    Stores the full UCI team ranking each time sync is run.
+    This builds up historical data over time since PCS only serves live rankings.
+    """
+    __tablename__ = "team_ranking_snapshots"
+    __table_args__ = (
+        UniqueConstraint("season", "team_slug", name="uq_ranking_snapshot"),
+    )
+
+    id           = Column(Integer, primary_key=True)
+    season       = Column(Integer, nullable=False)   # year the snapshot was taken
+    team_slug    = Column(String, nullable=False)
+    team_name    = Column(String, nullable=False)
+    team_class   = Column(String)                    # WT, PRT, CT
+    rank         = Column(Integer)
+    prev_rank    = Column(Integer)
+    points       = Column(Float, default=0)
+    synced_at    = Column(String)                    # ISO datetime of last sync
+
+
 # ── Create tables ──────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     engine = create_engine(DATABASE_URL, echo=True)

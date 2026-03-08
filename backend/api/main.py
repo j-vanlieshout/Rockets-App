@@ -8,6 +8,7 @@
 #   http://127.0.0.1:8000/docs
 
 from fastapi import FastAPI, HTTPException, Depends
+from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import create_engine, func
 from sqlalchemy.orm import sessionmaker, Session
 from pydantic import BaseModel, ConfigDict
@@ -15,7 +16,7 @@ from typing import Optional
 import sys, os
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-from config import DATABASE_URL, CURRENT_SEASON
+from config import DATABASE_URL, CURRENT_SEASON, TRACKED_TEAMS
 from db.models import Base, Team, Rider, Race, RaceResult
 
 # ── DB setup ───────────────────────────────────────────────────────────────────
@@ -120,6 +121,13 @@ app = FastAPI(
     title="PCS Team Tracker API",
     description="Serves scraped ProCyclingStats data to the Android app.",
     version="0.2.0",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # ── Teams ──────────────────────────────────────────────────────────────────────
@@ -303,4 +311,40 @@ def get_race_results(race_id: int, db: Session = Depends(get_db)):
             rider_nationality = rider.nationality,
         )
         for rr, rider in rows
+    ]
+
+# ── Team Ranking ───────────────────────────────────────────────────────────────
+
+class TeamRankingOut(BaseModel):
+    team_name:      str
+    team_slug:      str
+    team_class:     str
+    current_rank:   Optional[int]
+    prev_rank:      Optional[int]
+    current_points: float
+    is_tracked:     bool
+
+
+@app.get("/ranking/teams", response_model=list[TeamRankingOut])
+def get_team_ranking(
+    season: int = CURRENT_SEASON,
+    db: Session = Depends(get_db),
+):
+    """UCI team ranking scraped live from PCS."""
+    from scraper.uci_ranking import scrape_team_ranking
+
+    tracked_slugs = {t["slug"] for t in TRACKED_TEAMS}
+    entries = scrape_team_ranking(season)
+
+    return [
+        TeamRankingOut(
+            team_name      = e.team_name,
+            team_slug      = e.team_slug,
+            team_class     = e.team_class or "",
+            current_rank   = e.uci_ranking_position,
+            prev_rank      = e.prev_rank,
+            current_points = e.uci_points,
+            is_tracked     = e.team_slug in tracked_slugs,
+        )
+        for e in entries
     ]

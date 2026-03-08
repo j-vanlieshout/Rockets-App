@@ -15,7 +15,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session
 
 from config import TRACKED_TEAMS, CURRENT_SEASON, DATABASE_URL
-from db.models import Base, Team, Rider, Race, RaceResult
+from db.models import Base, Team, Rider, Race, RaceResult, TeamRankingSnapshot
+from scraper.uci_ranking import scrape_team_ranking
 from procyclingstats import Team as PCSTeam, Rider as PCSRider
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
@@ -72,28 +73,51 @@ def upsert_rider(db: Session, team: Team, rider_data: dict, profile: dict) -> Ri
     return rider
 
 
+def extract_class_from_name(stage_name: str, fallback: str = "") -> tuple[str, str]:
+    """
+    PCS often embeds the race class in the name, e.g. "Clasica de Almeria (1.Pro)".
+    Returns (clean_name, race_class).
+    """
+    import re
+    m = re.search(r"\(([^)]+)\)\s*$", stage_name)
+    if m:
+        race_class = m.group(1)
+        clean_name = stage_name[:m.start()].strip()
+        return clean_name, race_class
+    return stage_name, fallback
+
+
 def upsert_race(db: Session, stage_url: str, stage_name: str, race_class: str, season: int) -> Race:
     # Derive a stable race slug from the stage URL
     # e.g. "race/tour-de-france/2026/stage-1" -> "tour-de-france/2026"
     parts = stage_url.split("/")
     race_slug = "/".join(parts[:3]) if len(parts) >= 3 else stage_url
 
-    # Derive clean race name (strip stage prefix like "S1Stage 1 - ...")
-    race_name = stage_name.split(" - ")[0] if " - " in stage_name else stage_name
-    # Strip leading stage label e.g. "S3Stage 3"
-    if race_name.startswith("S") and "Stage" in race_name:
-        race_name = stage_name.split(" - ")[0].split("Stage")[0].strip()
+    # Clean up stage name and extract race class
+    # Handle stage prefixes like "S3Stage 3 - Bessèges › Bessèges"
+    name = stage_name
+    if " - " in name:
+        name = name.split(" - ", 1)[1]  # take the part after the dash
+    if name.startswith("S") and "Stage" in name:
+        name = name.split("Stage", 1)[-1].split(" - ", 1)[-1].strip()
+
+    # Extract class from name if not provided, e.g. "Clasica de Almeria (1.Pro)"
+    name, resolved_class = extract_class_from_name(name, fallback=race_class)
 
     race = db.query(Race).filter_by(pcs_slug=race_slug).first()
     if not race:
         race = Race(
             pcs_slug=race_slug,
-            name=race_name,
+            name=name or stage_name,
             season=season,
-            race_class=race_class,
+            race_class=resolved_class,
         )
         db.add(race)
         db.flush()
+    else:
+        # Update class if it was missing before
+        if not race.race_class and resolved_class:
+            race.race_class = resolved_class
     return race
 
 
@@ -182,11 +206,52 @@ def sync_team(db: Session, team_cfg: dict, season: int):
     logger.info(f"\n✅ {team_cfg['name']}: {riders_done} riders, {results_done} results saved.")
 
 
+def sync_ranking(db: Session, season: int = CURRENT_SEASON):
+    """
+    Fetch the current UCI team ranking and persist it as a snapshot for this season.
+    Re-running updates the snapshot in place (upsert by season + team_slug).
+    """
+    from datetime import datetime
+
+    logger.info(f"Fetching UCI team ranking for {season}...")
+    entries = scrape_team_ranking(season)
+    if not entries:
+        logger.warning("No ranking data returned — skipping.")
+        return
+
+    synced_at = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S")
+    for e in entries:
+        existing = db.query(TeamRankingSnapshot).filter_by(
+            season=season, team_slug=e.team_slug
+        ).first()
+        if existing:
+            existing.rank       = e.uci_ranking_position
+            existing.prev_rank  = e.prev_rank
+            existing.points     = e.uci_points
+            existing.team_class = e.team_class
+            existing.team_name  = e.team_name
+            existing.synced_at  = synced_at
+        else:
+            db.add(TeamRankingSnapshot(
+                season     = season,
+                team_slug  = e.team_slug,
+                team_name  = e.team_name,
+                team_class = e.team_class,
+                rank       = e.uci_ranking_position,
+                prev_rank  = e.prev_rank,
+                points     = e.uci_points,
+                synced_at  = synced_at,
+            ))
+    db.commit()
+    logger.info(f"✅ Ranking snapshot saved: {len(entries)} teams for {season}.")
+
+
 def sync_all(season: int = CURRENT_SEASON):
     db = get_session()
     try:
         for team_cfg in TRACKED_TEAMS:
             sync_team(db, team_cfg, season)
+        sync_ranking(db, season)
     finally:
         db.close()
 

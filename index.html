@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rockets Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0b0d11; --surface: #13161d; --card: #1a1f29; --border: #252c3a;
+    --orange: #ff5f1f; --gold: #f5c842; --green: #3ecf8e;
+    --text: #e8edf5; --muted: #6b7588;
+    --font-head: 'Barlow Condensed', sans-serif;
+    --font-body: 'Barlow', sans-serif;
+  }
+  body { background: var(--bg); color: var(--text); font-family: var(--font-body); font-size: 14px; min-height: 100vh; }
+  .app { max-width: 900px; margin: 0 auto; padding: 0 16px 60px; }
+
+  header { padding: 28px 0 20px; border-bottom: 1px solid var(--border); display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .team-name { font-family: var(--font-head); font-size: 42px; font-weight: 900; line-height: 1; text-transform: uppercase; }
+  .team-name span { color: var(--orange); }
+  .last-sync { font-size: 11px; color: var(--muted); margin-top: 4px; }
+  .btn-sync { display: flex; align-items: center; gap: 8px; background: var(--orange); color: #fff; border: none; border-radius: 6px; padding: 9px 16px; font-family: var(--font-head); font-size: 15px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; cursor: pointer; transition: background 0.15s; }
+  .btn-sync:hover { background: #ff7a45; }
+  .btn-sync.loading { background: var(--muted); cursor: wait; }
+  .spin { display: inline-block; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .tabs { display: flex; border-bottom: 1px solid var(--border); margin-top: 24px; overflow-x: auto; }
+  .tab { font-family: var(--font-head); font-size: 15px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: var(--muted); padding: 12px 20px; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; transition: color 0.15s; }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--orange); border-bottom-color: var(--orange); }
+
+  .panel { display: none; padding-top: 24px; }
+  .panel.active { display: block; }
+
+  .stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; position: relative; overflow: hidden; }
+  .stat-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; }
+  .stat-card.orange::before { background: var(--orange); }
+  .stat-card.gold::before   { background: var(--gold); }
+  .stat-card.green::before  { background: var(--green); }
+  .stat-label { font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .stat-value { font-family: var(--font-head); font-size: 36px; font-weight: 900; line-height: 1; }
+  .stat-value.orange { color: var(--orange); }
+  .stat-value.gold   { color: var(--gold); }
+  .stat-value.green  { color: var(--green); }
+  .stat-sub { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+  .section-head { font-family: var(--font-head); font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+
+  .standings-table { width: 100%; border-collapse: collapse; }
+  .standings-table th { font-family: var(--font-head); font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  .standings-table th.right { text-align: right; }
+  .standings-table td { padding: 10px 10px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+  .standings-table tr { transition: background 0.1s; cursor: pointer; }
+  .standings-table tr:hover td { background: var(--card); }
+  .standings-table tr.no-points td { opacity: 0.4; }
+  .pos { font-family: var(--font-head); font-size: 15px; font-weight: 700; color: var(--muted); }
+  .pos.top { color: var(--orange); }
+  .rider-name { font-weight: 500; font-size: 14px; }
+  .rider-nat  { font-size: 11px; color: var(--muted); }
+  .pts-uci  { font-family: var(--font-head); font-size: 18px; font-weight: 700; color: var(--orange); text-align: right; }
+  .pts-pcs  { font-family: var(--font-head); font-size: 15px; color: var(--gold); text-align: right; }
+  .races-count { font-size: 12px; color: var(--muted); text-align: right; }
+  .bar-cell { width: 100px; }
+  .bar-bg   { background: var(--border); border-radius: 2px; height: 4px; overflow: hidden; }
+  .bar-fill { height: 4px; background: var(--orange); border-radius: 2px; transition: width 0.6s ease; }
+
+  .rider-detail { display: none; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 20px; animation: slideDown 0.2s ease; }
+  .rider-detail.open { display: block; }
+  @keyframes slideDown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+  .detail-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 16px; gap: 12px; }
+  .detail-name  { font-family: var(--font-head); font-size: 26px; font-weight: 900; text-transform: uppercase; }
+  .detail-close { background: none; border: 1px solid var(--border); color: var(--muted); border-radius: 6px; padding: 4px 10px; cursor: pointer; font-size: 13px; white-space: nowrap; }
+  .detail-close:hover { color: var(--text); }
+
+  .result-list { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; max-height: 420px; overflow-y: auto; }
+  .result-item { display: grid; grid-template-columns: 36px 1fr auto; align-items: center; gap: 10px; background: var(--card); border-radius: 7px; padding: 9px 12px; }
+  .result-pos { font-family: var(--font-head); font-size: 14px; font-weight: 700; text-align: center; width: 28px; height: 28px; border-radius: 5px; display: flex; align-items: center; justify-content: center; }
+  .result-pos.p1  { background: rgba(245,200,66,0.2);  color: var(--gold); }
+  .result-pos.p23 { background: rgba(255,95,31,0.15);  color: var(--orange); }
+  .result-pos.pts { background: rgba(62,207,142,0.12); color: var(--green); }
+  .result-pos.nul { background: var(--border);          color: var(--muted); }
+  .result-race { font-size: 13px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .result-meta { font-size: 11px; color: var(--muted); }
+  .result-pts  { font-family: var(--font-head); font-size: 13px; font-weight: 700; color: var(--orange); white-space: nowrap; }
+
+  .notif-list { display: flex; flex-direction: column; gap: 10px; }
+  .notif-item { display: flex; align-items: flex-start; gap: 14px; background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--orange); border-radius: 8px; padding: 14px 16px; }
+  .notif-item.win    { border-left-color: var(--gold); }
+  .notif-item.points { border-left-color: var(--green); }
+  .notif-icon  { font-size: 22px; line-height: 1; }
+  .notif-title { font-family: var(--font-head); font-size: 16px; font-weight: 700; margin-bottom: 2px; }
+  .notif-sub   { font-size: 12px; color: var(--muted); }
+  .notif-empty { color: var(--muted); font-size: 14px; padding: 32px 0; text-align: center; }
+
+  .reveal-btn { background: var(--border); border: none; color: var(--muted); border-radius: 4px; padding: 3px 8px; font-size: 11px; cursor: pointer; margin-top: 4px; }
+  .reveal-btn:hover { background: var(--surface); color: var(--text); }
+  .spoiler { display: none; margin-top: 6px; font-size: 13px; color: var(--text); }
+  .spoiler.revealed { display: block; }
+
+  .race-points-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 600px) { .race-points-grid { grid-template-columns: 1fr; } .bar-cell { display: none; } }
+  .race-class-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .race-class-head { font-family: var(--font-head); font-size: 14px; font-weight: 700; padding: 10px 14px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+  .notif-threshold { font-size: 11px; color: var(--muted); font-family: var(--font-body); font-weight: 400; }
+  .points-row { display: flex; justify-content: space-between; padding: 7px 14px; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .points-row:last-child { border-bottom: none; }
+  .points-row .place { color: var(--muted); }
+  .points-row .val   { font-family: var(--font-head); font-weight: 700; color: var(--gold); }
+
+  .ranking-note { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; font-size: 13px; color: var(--muted); line-height: 1.7; }
+  .ranking-note strong { color: var(--text); }
+
+  .state-msg { padding: 40px; text-align: center; color: var(--muted); font-size: 14px; }
+  .state-msg .icon { font-size: 32px; margin-bottom: 12px; }
+
+  .ranking-table { width: 100%; border-collapse: collapse; }
+  .ranking-table th { font-family: var(--font-head); font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  .ranking-table th.right { text-align: right; }
+  .ranking-table td { padding: 9px 10px; border-bottom: 1px solid var(--border); font-size: 13px; vertical-align: middle; }
+  .ranking-table tr.tracked td { background: rgba(255,95,31,0.06); }
+  .ranking-table tr.tracked td:first-child { border-left: 2px solid var(--orange); }
+  .ranking-table tr:hover td { background: var(--card); }
+  .rank-pos { font-family: var(--font-head); font-size: 16px; font-weight: 700; color: var(--muted); width: 40px; }
+  .rank-pos.top { color: var(--gold); }
+  .rank-trend { font-size: 11px; width: 32px; text-align: center; }
+  .trend-up   { color: var(--green); }
+  .trend-down { color: #e74c3c; }
+  .trend-same { color: var(--muted); }
+  .rank-class { font-size: 11px; padding: 2px 6px; border-radius: 4px; font-weight: 600; }
+  .class-WT  { background: rgba(245,200,66,0.15); color: var(--gold); }
+  .class-PRT { background: rgba(255,95,31,0.15); color: var(--orange); }
+  .class-CT  { background: rgba(107,117,136,0.2); color: var(--muted); }
+  .rank-pts  { font-family: var(--font-head); font-size: 15px; font-weight: 700; text-align: right; color: var(--text); }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <header>
+    <div>
+      <div class="team-name">Unibet <span>Rose</span> Rockets</div>
+      <div class="last-sync" id="lastSync">Never synced</div>
+    </div>
+    <button class="btn-sync" id="syncBtn" onclick="syncAll()">
+      <span id="syncIcon">↻</span> Sync
+    </button>
+  </header>
+
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('standings')">UCI Standings</div>
+    <div class="tab" onclick="switchTab('notifications')">Alerts</div>
+    <div class="tab" onclick="switchTab('points-guide')">Points Guide</div>
+    <div class="tab" onclick="switchTab('ranking')">Team Ranking</div>
+  </div>
+
+  <!-- TAB 1: UCI STANDINGS -->
+  <div class="panel active" id="panel-standings">
+    <div class="stat-row">
+      <div class="stat-card orange">
+        <div class="stat-label">Team UCI Points</div>
+        <div class="stat-value orange" id="totalUci">—</div>
+        <div class="stat-sub">2026 season total</div>
+      </div>
+      <div class="stat-card gold">
+        <div class="stat-label">Riders Scoring</div>
+        <div class="stat-value gold" id="ridersScoring">—</div>
+        <div class="stat-sub">out of <span id="totalRiders">—</span></div>
+      </div>
+      <div class="stat-card green">
+        <div class="stat-label">Races Entered</div>
+        <div class="stat-value green" id="racesEntered">—</div>
+        <div class="stat-sub">results tracked</div>
+      </div>
+    </div>
+    <div class="section-head">Rider Standings</div>
+    <div id="standingsBody">
+      <div class="state-msg"><div class="icon">🚴</div>Press Sync to load data</div>
+    </div>
+    <div class="rider-detail" id="riderDetail">
+      <div class="detail-header">
+        <div>
+          <div class="detail-name" id="detailName">—</div>
+          <div style="font-size:12px;color:var(--muted)" id="detailMeta">—</div>
+        </div>
+        <button class="detail-close" onclick="closeDetail()">✕ Close</button>
+      </div>
+      <div class="stat-row" style="margin-bottom:12px">
+        <div class="stat-card orange" style="padding:12px"><div class="stat-label">UCI Points</div><div class="stat-value orange" style="font-size:28px" id="detailUci">—</div></div>
+        <div class="stat-card gold"   style="padding:12px"><div class="stat-label">PCS Points</div><div class="stat-value gold"   style="font-size:28px" id="detailPcs">—</div></div>
+        <div class="stat-card"        style="padding:12px"><div class="stat-label">Races</div>    <div class="stat-value"         style="font-size:28px" id="detailRaces">—</div></div>
+      </div>
+      <div class="section-head">2026 Results</div>
+      <div class="result-list" id="resultList"><div class="state-msg" style="padding:16px">Loading…</div></div>
+    </div>
+  </div>
+
+  <!-- TAB 2: ALERTS -->
+  <div class="panel" id="panel-notifications">
+    <div class="stat-row">
+      <div class="stat-card orange">
+        <div class="stat-label">New Alerts</div>
+        <div class="stat-value orange" id="alertCount">0</div>
+        <div class="stat-sub">since last sync</div>
+      </div>
+    </div>
+    <div class="section-head">Notable Results</div>
+    <p style="font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.6">
+      Spoiler-free — click "Reveal" on any result to see who and where.
+    </p>
+    <div class="notif-list" id="notifList">
+      <div class="notif-empty">Sync to check for notable results</div>
+    </div>
+  </div>
+
+  <!-- TAB 3: POINTS GUIDE -->
+  <div class="panel" id="panel-points-guide">
+    <p style="color:var(--muted);font-size:13px;margin-bottom:20px;line-height:1.7">
+      UCI points per finishing position by race class, with notification thresholds for Rockets results.
+    </p>
+    <div class="race-points-grid" id="pointsGrid"></div>
+  </div>
+
+  <!-- TAB 4: TEAM RANKING -->
+  <div class="panel" id="panel-ranking">
+    <div class="ranking-note">
+      <strong>Road to WorldTour</strong><br>
+      UCI WorldTour licenses are based on the <strong>UCI Team Ranking</strong>.
+      Teams need to rank in the <strong>top 18 ProTeams</strong> to be eligible for promotion.
+      Rockets are currently a <strong>ProTeam (PRT)</strong> — tracking their climb toward the WorldTour.
+    </div>
+    <div class="stat-row">
+      <div class="stat-card orange">
+        <div class="stat-label">Rockets Position</div>
+        <div class="stat-value orange" id="rocketsRank">—</div>
+        <div class="stat-sub">current UCI ranking</div>
+      </div>
+      <div class="stat-card gold">
+        <div class="stat-label">Rockets Points</div>
+        <div class="stat-value gold" id="rocketsRankPts">—</div>
+        <div class="stat-sub">this season</div>
+      </div>
+      <div class="stat-card green">
+        <div class="stat-label">Trend</div>
+        <div class="stat-value green" id="rocketsTrend">—</div>
+        <div class="stat-sub">vs previous ranking</div>
+      </div>
+    </div>
+    <div class="section-head">Full Team Ranking</div>
+    <div id="rankingBody">
+      <div class="state-msg"><div class="icon">📊</div>Press Sync to load ranking</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const API       = 'http://127.0.0.1:8000';
+const TEAM_SLUG = 'unibet-rose-rockets';
+const SEASON    = 2026;
+
+// Notification thresholds per race class
+const THRESHOLDS = {
+  'GT':    20, '1.UWT': 10, '2.UWT': 10,
+  '1.Pro': 5,  '2.Pro': 5,
+  '1.1':   3,  '2.1':   3,
+  '1.2':   1,  '2.2':   1,
+};
+
+function extractClass(result) {
+  // Try race_class first, fall back to parsing it from race_name e.g. "Clasica de Almeria (1.Pro)"
+  if (result.race_class) return result.race_class;
+  const m = (result.race_name || '').match(/\(([^)]+)\)\s*$/);
+  return m ? m[1] : null;
+}
+
+function getThreshold(raceClass) {
+  if (!raceClass) return null;
+  if (raceClass.includes('GT')) return { pos: 20, label: 'Top 20' };
+  for (const [key, pos] of Object.entries(THRESHOLDS)) {
+    if (raceClass.startsWith(key)) return { pos, label: pos === 1 ? 'Win' : pos === 3 ? 'Podium' : 'Top ' + pos };
+  }
+  return null;
+}
+
+function notifIcon(pos, threshold) {
+  if (pos === 1) return '🏆';
+  if (pos <= 3)  return '🥇';
+  return '⭐';
+}
+
+const POINTS_SCALE = {
+  'Grand Tour (GT)':  { threshold: 'Top 20',   rows: [['1st',200],['2nd',150],['3rd',120],['5th',80],['10th',40],['20th',14]] },
+  '1.UWT':            { threshold: 'Top 10',   rows: [['1st',100],['2nd',70],['3rd',50],['5th',30],['10th',8]] },
+  '2.UWT':            { threshold: 'Top 10',   rows: [['1st',50],['2nd',35],['3rd',25],['5th',15],['10th',4]] },
+  '1.Pro / 2.Pro':    { threshold: 'Top 5',    rows: [['1st',25],['2nd',20],['3rd',16],['4th',14],['5th',12]] },
+  '1.1 / 2.1':        { threshold: 'Podium',   rows: [['1st',15],['2nd',12],['3rd',9],['5th',5]] },
+  '1.2 / 2.2':        { threshold: 'Win only', rows: [['1st',6],['2nd',4],['3rd',2]] },
+};
+
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach((t, i) => {
+    const tabs = ['standings','notifications','points-guide','ranking'];
+    t.classList.toggle('active', tabs[i] === name);
+  });
+  document.querySelectorAll('.panel').forEach(p => {
+    p.classList.toggle('active', p.id === 'panel-' + name);
+  });
+}
+
+async function syncAll() {
+  const btn  = document.getElementById('syncBtn');
+  const icon = document.getElementById('syncIcon');
+  btn.classList.add('loading'); btn.disabled = true;
+  icon.classList.add('spin');
+  try {
+    // Step 1: load standings
+    const data = await fetch(`${API}/teams/${TEAM_SLUG}/uci-standings?season=${SEASON}`)
+      .then(r => { if (!r.ok) throw new Error(r.statusText); return r.json(); });
+    renderStandings(data);
+
+    // Step 2: fetch results for every rider to build proper alerts
+    const allResults = [];
+    for (const rider of data.riders) {
+      if (rider.results_count === 0) continue;
+      try {
+        const results = await fetch(`${API}/riders/${rider.pcs_slug}/results?season=${SEASON}`)
+          .then(r => r.json());
+        for (const result of results) {
+          const raceClass = extractClass(result);
+          const threshold = getThreshold(raceClass);
+          if (raceClass) result.race_class = raceClass; // enrich for display
+          if (threshold && result.position && result.position <= threshold.pos) {
+            allResults.push({
+              rider_name: rider.full_name,
+              position:   result.position,
+              race_name:  result.race_name,
+              race_class: result.race_class,
+              date:       result.date,
+              uci_points: result.uci_points,
+              threshold:  threshold.label,
+            });
+          }
+        }
+      } catch(e) { /* skip rider on error */ }
+    }
+
+    // Sort by date descending (most recent first)
+    allResults.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+    generateAlerts(allResults);
+
+    // Step 3: load team ranking
+    await loadRanking();
+
+    const t = new Date().toLocaleTimeString('nl-NL', {hour:'2-digit', minute:'2-digit'});
+    document.getElementById('lastSync').textContent = 'Last synced: ' + t;
+  } catch(e) {
+    document.getElementById('standingsBody').innerHTML =
+      `<div class="state-msg"><div class="icon">⚠️</div>Could not reach API.<br><small>Make sure the backend is running at ${API}</small></div>`;
+  }
+  btn.classList.remove('loading'); btn.disabled = false;
+  icon.classList.remove('spin');
+}
+
+function renderStandings(data) {
+  const maxPts   = data.riders[0]?.total_uci_points || 1;
+  const scoring  = data.riders.filter(r => r.total_uci_points > 0).length;
+  document.getElementById('totalUci').textContent     = Math.round(data.total_uci_points);
+  document.getElementById('ridersScoring').textContent = scoring;
+  document.getElementById('totalRiders').textContent   = data.riders.length;
+  document.getElementById('racesEntered').textContent  = data.riders.reduce((s,r) => s + r.results_count, 0);
+
+  document.getElementById('standingsBody').innerHTML = `
+    <table class="standings-table">
+      <thead><tr>
+        <th>#</th><th>Rider</th>
+        <th class="right">UCI</th><th class="right">PCS</th><th class="right">Races</th>
+        <th class="bar-cell"></th>
+      </tr></thead>
+      <tbody>
+        ${data.riders.map((r,i) => {
+          const pct = (r.total_uci_points / maxPts * 100).toFixed(1);
+          const has = r.total_uci_points > 0;
+          return `<tr class="${has ? '' : 'no-points'}" onclick="openRider('${r.pcs_slug}','${esc(r.full_name)}',${r.total_uci_points},${r.total_pcs_points},${r.results_count},'${r.nationality||''}',${r.age||0})">
+            <td><span class="pos ${i<3&&has?'top':''}">${i+1}</span></td>
+            <td><div class="rider-name">${flag(r.nationality)} ${esc(r.full_name)}</div>
+                <div class="rider-nat">${r.nationality||''} · Age ${r.age||'—'}</div></td>
+            <td class="pts-uci">${has ? Math.round(r.total_uci_points) : '—'}</td>
+            <td class="pts-pcs">${r.total_pcs_points>0 ? Math.round(r.total_pcs_points) : '—'}</td>
+            <td class="races-count">${r.results_count}</td>
+            <td class="bar-cell"><div class="bar-bg"><div class="bar-fill" style="width:${pct}%"></div></div></td>
+          </tr>`;
+        }).join('')}
+      </tbody>
+    </table>`;
+}
+
+async function openRider(slug, name, uci, pcs, races, nat, age) {
+  const d = document.getElementById('riderDetail');
+  d.classList.add('open');
+  document.getElementById('detailName').textContent  = name;
+  document.getElementById('detailMeta').textContent  = `${nat} · Age ${age||'—'}`;
+  document.getElementById('detailUci').textContent   = Math.round(uci);
+  document.getElementById('detailPcs').textContent   = Math.round(pcs);
+  document.getElementById('detailRaces').textContent = races;
+  document.getElementById('resultList').innerHTML    = '<div class="state-msg" style="padding:16px">Loading…</div>';
+  d.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+  try {
+    const results = await fetch(`${API}/riders/${slug}/results?season=${SEASON}`).then(r => r.json());
+    if (!results.length) {
+      document.getElementById('resultList').innerHTML = '<div class="state-msg" style="padding:16px;color:var(--muted)">No results yet this season</div>';
+      return;
+    }
+    document.getElementById('resultList').innerHTML = results.map(r => {
+      const pos = r.position;
+      const cls = pos===1 ? 'p1' : pos<=3 ? 'p23' : r.uci_points>0 ? 'pts' : 'nul';
+      return `<div class="result-item">
+        <div class="result-pos ${cls}">${pos||'—'}</div>
+        <div>
+          <div class="result-race">${esc(r.race_name)}</div>
+          <div class="result-meta">${r.date||''} · ${r.race_class||''}</div>
+        </div>
+        <div class="result-pts">${r.uci_points>0 ? '+'+Math.round(r.uci_points)+' UCI' : ''}</div>
+      </div>`;
+    }).join('');
+  } catch(e) {
+    document.getElementById('resultList').innerHTML = '<div class="state-msg" style="padding:16px">Could not load results</div>';
+  }
+}
+
+function closeDetail() { document.getElementById('riderDetail').classList.remove('open'); }
+
+function generateAlerts(results) {
+  document.getElementById('alertCount').textContent = results.length;
+  document.getElementById('notifList').innerHTML = results.length === 0
+    ? '<div class="notif-empty">No notable results found — try syncing again</div>'
+    : results.map((r, i) => {
+        const icon = r.position === 1 ? '🏆' : r.position <= 3 ? '🥇' : '⭐';
+        const type = r.position === 1 ? 'win' : r.position <= 3 ? 'podium' : 'points';
+        const uciStr = r.uci_points > 0 ? ` · +${Math.round(r.uci_points)} UCI pts` : '';
+        return `
+          <div class="notif-item ${type}">
+            <div class="notif-icon">${icon}</div>
+            <div class="notif-body">
+              <div class="notif-title">🚀 Rockets had a notable result!</div>
+              <div class="notif-sub">${esc(r.race_name)} · ${r.race_class||''} · ${r.date||''}</div>
+              <button class="reveal-btn" onclick="reveal(${i})">Reveal result</button>
+              <div class="spoiler" id="spoiler-${i}">
+                <strong>${esc(r.rider_name)}</strong> finished P${r.position}
+                at <strong>${esc(r.race_name)}</strong>${uciStr}
+              </div>
+            </div>
+          </div>`;
+      }).join('');
+}
+
+function reveal(i) {
+  document.getElementById('spoiler-' + i).classList.add('revealed');
+  event.target.style.display = 'none';
+}
+
+async function loadRanking() {
+  try {
+    const data = await fetch(`${API}/ranking/teams`).then(r => r.json());
+    renderRanking(data);
+  } catch(e) {
+    document.getElementById('rankingBody').innerHTML =
+      '<div class="state-msg"><div class="icon">⚠️</div>Could not load ranking</div>';
+  }
+}
+
+function renderRanking(teams) {
+  const rockets = teams.find(t => t.team_slug === TEAM_SLUG);
+
+  if (rockets) {
+    document.getElementById('rocketsRank').textContent = '#' + rockets.current_rank;
+    document.getElementById('rocketsRankPts').textContent = Math.round(rockets.current_points).toLocaleString();
+    const diff = rockets.prev_rank && rockets.current_rank ? rockets.prev_rank - rockets.current_rank : null;
+    const trendEl = document.getElementById('rocketsTrend');
+    if (diff === null)  { trendEl.textContent = '—';                    trendEl.style.color = 'var(--muted)'; }
+    else if (diff > 0)  { trendEl.textContent = '▲' + diff;             trendEl.style.color = 'var(--green)'; }
+    else if (diff < 0)  { trendEl.textContent = '▼' + Math.abs(diff);   trendEl.style.color = '#e74c3c'; }
+    else                { trendEl.textContent = '=';                    trendEl.style.color = 'var(--muted)'; }
+  }
+
+  const filtered = teams.filter(t => t.team_class === 'WT' || t.team_class === 'PRT');
+
+  document.getElementById('rankingBody').innerHTML = `
+    <table class="ranking-table">
+      <thead><tr>
+        <th>#</th><th></th><th>Team</th><th>Class</th>
+        <th class="right">Points</th>
+      </tr></thead>
+      <tbody>
+        ${filtered.map(t => {
+          const diff = t.prev_rank && t.current_rank ? t.prev_rank - t.current_rank : null;
+          const trendHtml = diff === null ? '<span class="trend-same">—</span>'
+            : diff > 0 ? `<span class="trend-up">▲${diff}</span>`
+            : diff < 0 ? `<span class="trend-down">▼${Math.abs(diff)}</span>`
+            : '<span class="trend-same">=</span>';
+          const isTracked = t.is_tracked;
+          return `<tr class="${isTracked ? 'tracked' : ''}">
+            <td><span class="rank-pos ${t.current_rank <= 3 ? 'top' : ''}">${t.current_rank}</span></td>
+            <td class="rank-trend">${trendHtml}</td>
+            <td style="font-weight:${isTracked?'600':'400'};color:${isTracked?'var(--orange)':'var(--text)'}">
+              ${esc(t.team_name)}
+            </td>
+            <td><span class="rank-class class-${t.team_class}">${t.team_class}</span></td>
+            <td class="rank-pts">${t.current_points > 0 ? Math.round(t.current_points).toLocaleString() : '<span style="color:var(--muted)">—</span>'}</td>
+          </tr>`;
+        }).join('')}
+      </tbody>
+    </table>
+    <p style="font-size:11px;color:var(--muted);margin-top:12px;text-align:center">
+      WT and ProTeams only · ${teams.length} total teams in ranking
+    </p>`;
+}
+
+function renderPointsGuide() {
+  document.getElementById('pointsGrid').innerHTML = Object.entries(POINTS_SCALE).map(([cls, info]) => `
+    <div class="race-class-card">
+      <div class="race-class-head">
+        <span>${cls}</span>
+        <span class="notif-threshold">🔔 ${info.threshold}</span>
+      </div>
+      ${info.rows.map(([place, pts]) => `
+        <div class="points-row">
+          <span class="place">${place}</span>
+          <span class="val">${pts} pts</span>
+        </div>`).join('')}
+    </div>`).join('');
+}
+
+function flag(code) {
+  if (!code || code.length !== 2) return '';
+  return [...code.toUpperCase()].map(c => String.fromCodePoint(c.charCodeAt(0) + 0x1F1E6 - 65)).join('');
+}
+
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+renderPointsGuide();
+</script>
+</body>
+</html>
