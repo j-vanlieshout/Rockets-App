@@ -1,14 +1,17 @@
 # db/models.py
 # SQLAlchemy ORM models — stored in a local SQLite file.
-# Run `python -m db.models` to create all tables.
+#
+# To recreate all tables from scratch:
+#   python db/models.py
 
 from sqlalchemy import (
     Column, Integer, String, Float,
-    ForeignKey, UniqueConstraint, create_engine
+    ForeignKey, UniqueConstraint, create_engine,
 )
 from sqlalchemy.orm import declarative_base, relationship
 
-import sys, os
+import sys
+import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from config import DATABASE_URL
 
@@ -23,7 +26,7 @@ class Team(Base):
     slug     = Column(String, nullable=False, unique=True)
     uci_code = Column(String(10))
 
-    riders  = relationship("Rider", back_populates="team")
+    riders  = relationship("Rider",      back_populates="team")
     results = relationship("RaceResult", back_populates="team")
 
 
@@ -34,11 +37,12 @@ class Rider(Base):
     pcs_slug         = Column(String, nullable=False, unique=True)
     full_name        = Column(String, nullable=False)
     nationality      = Column(String(3))
-    date_of_birth    = Column(String)    # "YYYY-M-D" string as returned by PCS
+    date_of_birth    = Column(String)   # "YYYY-M-D" as returned by PCS
     age              = Column(Integer)
     weight_kg        = Column(Float)
     height_m         = Column(Float)
-    # Career speciality points from PCS
+
+    # Career speciality scores from PCS (0–100)
     sp_one_day_races = Column(Integer, default=0)
     sp_gc            = Column(Integer, default=0)
     sp_time_trial    = Column(Integer, default=0)
@@ -47,7 +51,7 @@ class Rider(Base):
     sp_hills         = Column(Integer, default=0)
 
     team_id = Column(Integer, ForeignKey("teams.id"))
-    team    = relationship("Team", back_populates="riders")
+    team    = relationship("Team",       back_populates="riders")
     results = relationship("RaceResult", back_populates="rider")
 
 
@@ -58,7 +62,7 @@ class Race(Base):
     pcs_slug   = Column(String, nullable=False, unique=True)
     name       = Column(String, nullable=False)
     season     = Column(Integer)
-    race_class = Column(String)    # e.g. "2.UWT", "1.Pro"
+    race_class = Column(String)  # e.g. "2.UWT", "1.Pro", "2.2"
 
     results = relationship("RaceResult", back_populates="race")
 
@@ -70,39 +74,18 @@ class RaceResult(Base):
     )
 
     id         = Column(Integer, primary_key=True)
-    race_id    = Column(Integer, ForeignKey("races.id"), nullable=False)
-    rider_id   = Column(Integer, ForeignKey("riders.id"), nullable=False)
-    team_id    = Column(Integer, ForeignKey("teams.id"), nullable=False)
-    stage      = Column(String)        # stage URL slug, used as unique identifier
-    date       = Column(String)        # "YYYY-MM-DD"
-    position   = Column(Integer)       # finishing position (1 = win)
+    race_id    = Column(Integer, ForeignKey("races.id"),   nullable=False)
+    rider_id   = Column(Integer, ForeignKey("riders.id"),  nullable=False)
+    team_id    = Column(Integer, ForeignKey("teams.id"),   nullable=False)
+    stage      = Column(String)         # PCS stage URL used as unique key
+    date       = Column(String)         # "YYYY-MM-DD"
+    position   = Column(Integer)        # finishing position (1 = win)
     pcs_points = Column(Float, default=0)
     uci_points = Column(Float, default=0)
 
-    race  = relationship("Race", back_populates="results")
+    race  = relationship("Race",  back_populates="results")
     rider = relationship("Rider", back_populates="results")
-    team  = relationship("Team", back_populates="results")
-
-
-class TeamRankingSnapshot(Base):
-    """
-    Stores the full UCI team ranking each time sync is run.
-    This builds up historical data over time since PCS only serves live rankings.
-    """
-    __tablename__ = "team_ranking_snapshots"
-    __table_args__ = (
-        UniqueConstraint("season", "team_slug", name="uq_ranking_snapshot"),
-    )
-
-    id           = Column(Integer, primary_key=True)
-    season       = Column(Integer, nullable=False)   # year the snapshot was taken
-    team_slug    = Column(String, nullable=False)
-    team_name    = Column(String, nullable=False)
-    team_class   = Column(String)                    # WT, PRT, CT
-    rank         = Column(Integer)
-    prev_rank    = Column(Integer)
-    points       = Column(Float, default=0)
-    synced_at    = Column(String)                    # ISO datetime of last sync
+    team  = relationship("Team",  back_populates="results")
 
 
 # ── Create tables ──────────────────────────────────────────────────────────────

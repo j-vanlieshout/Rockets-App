@@ -1,5 +1,6 @@
 procyclingstats
-cloudscraper
+cloudscraper==1.2.71
 fastapi==0.111.0
 uvicorn[standard]==0.29.0
 sqlalchemy==2.0.30
+pydantic==2.7.1

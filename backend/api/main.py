@@ -1,10 +1,10 @@
 # api/main.py
-# FastAPI REST layer — the Android app talks to these endpoints.
+# FastAPI REST layer — serves scraped PCS data to the web app.
 #
-# Start with:
-#   uvicorn api.main:app --reload
+# Start with (from backend/):
+#   python -m uvicorn api.main:app
 #
-# Interactive docs at:
+# Interactive docs:
 #   http://127.0.0.1:8000/docs
 
 from fastapi import FastAPI, HTTPException, Depends
@@ -13,7 +13,8 @@ from sqlalchemy import create_engine, func
 from sqlalchemy.orm import sessionmaker, Session
 from pydantic import BaseModel, ConfigDict
 from typing import Optional
-import sys, os
+import sys
+import os
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from config import DATABASE_URL, CURRENT_SEASON, TRACKED_TEAMS
@@ -25,6 +26,7 @@ engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 Base.metadata.create_all(engine)
 SessionLocal = sessionmaker(bind=engine)
 
+
 def get_db():
     db = SessionLocal()
     try:
@@ -32,8 +34,24 @@ def get_db():
     finally:
         db.close()
 
-# ── Pydantic response schemas ──────────────────────────────────────────────────
-# These define exactly what JSON shape the Android app receives.
+
+# ── App ────────────────────────────────────────────────────────────────────────
+
+app = FastAPI(
+    title="Rockets Tracker API",
+    description="Serves scraped ProCyclingStats data to the Rockets Tracker web app.",
+    version="1.0.0",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+# ── Pydantic schemas ───────────────────────────────────────────────────────────
 
 class TeamOut(BaseModel):
     model_config = ConfigDict(from_attributes=True)
@@ -45,21 +63,21 @@ class TeamOut(BaseModel):
 
 class RiderOut(BaseModel):
     model_config = ConfigDict(from_attributes=True)
-    id:              int
-    pcs_slug:        str
-    full_name:       str
-    nationality:     Optional[str]
-    date_of_birth:   Optional[str]
-    age:             Optional[int]
-    weight_kg:       Optional[float]
-    height_m:        Optional[float]
+    id:               int
+    pcs_slug:         str
+    full_name:        str
+    nationality:      Optional[str]
+    date_of_birth:    Optional[str]
+    age:              Optional[int]
+    weight_kg:        Optional[float]
+    height_m:         Optional[float]
     sp_one_day_races: int
-    sp_gc:           int
-    sp_time_trial:   int
-    sp_sprint:       int
-    sp_climber:      int
-    sp_hills:        int
-    team_id:         Optional[int]
+    sp_gc:            int
+    sp_time_trial:    int
+    sp_sprint:        int
+    sp_climber:       int
+    sp_hills:         int
+    team_id:          Optional[int]
 
 
 class RaceOut(BaseModel):
@@ -85,27 +103,27 @@ class ResultOut(BaseModel):
 
 
 class RiderResultOut(ResultOut):
-    """Result enriched with race info — used in rider detail view."""
+    """Result enriched with race metadata — used in rider detail view."""
     race_name:  str
     race_class: Optional[str]
 
 
 class RaceResultOut(ResultOut):
-    """Result enriched with rider info — used in race detail view."""
+    """Result enriched with rider metadata — used in race detail view."""
     rider_name:        str
     rider_nationality: Optional[str]
 
 
 class UCIStandingEntry(BaseModel):
     """One row in the team UCI standings table."""
-    rider_id:          int
-    pcs_slug:          str
-    full_name:         str
-    nationality:       Optional[str]
-    age:               Optional[int]
-    total_uci_points:  float
-    total_pcs_points:  float
-    results_count:     int
+    rider_id:         int
+    pcs_slug:         str
+    full_name:        str
+    nationality:      Optional[str]
+    age:              Optional[int]
+    total_uci_points: float
+    total_pcs_points: float
+    results_count:    int
 
 
 class TeamUCIStandings(BaseModel):
@@ -115,20 +133,15 @@ class TeamUCIStandings(BaseModel):
     riders:           list[UCIStandingEntry]
 
 
-# ── App ────────────────────────────────────────────────────────────────────────
+class TeamRankingOut(BaseModel):
+    team_name:      str
+    team_slug:      str
+    team_class:     str
+    current_rank:   Optional[int]
+    prev_rank:      Optional[int]
+    current_points: float
+    is_tracked:     bool
 
-app = FastAPI(
-    title="PCS Team Tracker API",
-    description="Serves scraped ProCyclingStats data to the Android app.",
-    version="0.2.0",
-)
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 # ── Teams ──────────────────────────────────────────────────────────────────────
 
@@ -163,14 +176,14 @@ def get_team_uci_standings(
     db: Session = Depends(get_db),
 ):
     """
-    UCI points leaderboard for a team — the most important endpoint.
+    UCI points leaderboard for a team.
     Returns every rider's UCI point total for the season, sorted highest first.
+    Riders with zero points are included at the bottom.
     """
     team = db.query(Team).filter(Team.slug == slug).first()
     if not team:
         raise HTTPException(status_code=404, detail="Team not found")
 
-    # Aggregate UCI + PCS points per rider for this season
     rows = (
         db.query(
             Rider,
@@ -180,8 +193,7 @@ def get_team_uci_standings(
         )
         .join(RaceResult, RaceResult.rider_id == Rider.id)
         .join(Race, Race.id == RaceResult.race_id)
-        .filter(RaceResult.team_id == team.id)
-        .filter(Race.season == season)
+        .filter(RaceResult.team_id == team.id, Race.season == season)
         .group_by(Rider.id)
         .all()
     )
@@ -201,19 +213,14 @@ def get_team_uci_standings(
     ]
     entries.sort(key=lambda e: e.total_uci_points, reverse=True)
 
-    # Also include riders with 0 points (not yet raced)
+    # Append riders who haven't raced yet
     raced_ids = {e.rider_id for e in entries}
     for rider in team.riders:
         if rider.id not in raced_ids:
             entries.append(UCIStandingEntry(
-                rider_id         = rider.id,
-                pcs_slug         = rider.pcs_slug,
-                full_name        = rider.full_name,
-                nationality      = rider.nationality,
-                age              = rider.age,
-                total_uci_points = 0,
-                total_pcs_points = 0,
-                results_count    = 0,
+                rider_id=rider.id, pcs_slug=rider.pcs_slug,
+                full_name=rider.full_name, nationality=rider.nationality,
+                age=rider.age, total_uci_points=0, total_pcs_points=0, results_count=0,
             ))
 
     return TeamUCIStandings(
@@ -249,25 +256,17 @@ def get_rider_results(
     rows = (
         db.query(RaceResult, Race)
         .join(Race, Race.id == RaceResult.race_id)
-        .filter(RaceResult.rider_id == rider.id)
-        .filter(Race.season == season)
+        .filter(RaceResult.rider_id == rider.id, Race.season == season)
         .order_by(RaceResult.date.desc())
         .all()
     )
 
     return [
         RiderResultOut(
-            id         = rr.id,
-            stage      = rr.stage,
-            date       = rr.date,
-            position   = rr.position,
-            pcs_points = rr.pcs_points,
-            uci_points = rr.uci_points,
-            rider_id   = rr.rider_id,
-            race_id    = rr.race_id,
-            team_id    = rr.team_id,
-            race_name  = race.name,
-            race_class = race.race_class,
+            id=rr.id, stage=rr.stage, date=rr.date, position=rr.position,
+            pcs_points=rr.pcs_points, uci_points=rr.uci_points,
+            rider_id=rr.rider_id, race_id=rr.race_id, team_id=rr.team_id,
+            race_name=race.name, race_class=race.race_class,
         )
         for rr, race in rows
     ]
@@ -283,7 +282,7 @@ def list_races(season: int = CURRENT_SEASON, db: Session = Depends(get_db)):
 
 @app.get("/races/{race_id}/results", response_model=list[RaceResultOut])
 def get_race_results(race_id: int, db: Session = Depends(get_db)):
-    """All tracked rider results for a specific race, sorted by position."""
+    """All tracked rider results for a specific race, sorted by UCI points."""
     race = db.query(Race).filter(Race.id == race_id).first()
     if not race:
         raise HTTPException(status_code=404, detail="Race not found")
@@ -298,44 +297,34 @@ def get_race_results(race_id: int, db: Session = Depends(get_db)):
 
     return [
         RaceResultOut(
-            id                = rr.id,
-            stage             = rr.stage,
-            date              = rr.date,
-            position          = rr.position,
-            pcs_points        = rr.pcs_points,
-            uci_points        = rr.uci_points,
-            rider_id          = rr.rider_id,
-            race_id           = rr.race_id,
-            team_id           = rr.team_id,
-            rider_name        = rider.full_name,
-            rider_nationality = rider.nationality,
+            id=rr.id, stage=rr.stage, date=rr.date, position=rr.position,
+            pcs_points=rr.pcs_points, uci_points=rr.uci_points,
+            rider_id=rr.rider_id, race_id=rr.race_id, team_id=rr.team_id,
+            rider_name=rider.full_name, rider_nationality=rider.nationality,
         )
         for rr, rider in rows
     ]
 
+
 # ── Team Ranking ───────────────────────────────────────────────────────────────
-
-class TeamRankingOut(BaseModel):
-    team_name:      str
-    team_slug:      str
-    team_class:     str
-    current_rank:   Optional[int]
-    prev_rank:      Optional[int]
-    current_points: float
-    is_tracked:     bool
-
 
 @app.get("/ranking/teams", response_model=list[TeamRankingOut])
 def get_team_ranking(
     season: int = CURRENT_SEASON,
     db: Session = Depends(get_db),
 ):
-    """UCI team ranking scraped live from PCS."""
+    """
+    Live UCI team ranking scraped from PCS.
+    Returns all teams sorted by rank, with tracked teams flagged.
+    """
     from scraper.uci_ranking import scrape_team_ranking
 
-    tracked_slugs = {t["slug"] for t in TRACKED_TEAMS}
-    entries = scrape_team_ranking(season)
+    try:
+        entries = scrape_team_ranking(season)
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Failed to fetch ranking from PCS: {exc}")
 
+    tracked_slugs = {t["slug"] for t in TRACKED_TEAMS}
     return [
         TeamRankingOut(
             team_name      = e.team_name,
