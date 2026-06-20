@@ -1,8 +1,10 @@
 # API Reference
 
-Base URL: `http://127.0.0.1:8000`  
-Interactive docs: `http://127.0.0.1:8000/docs`  
-All endpoints defined in `backend/api/main.py:40`.
+> **Retired (ADR 0001).** The FastAPI server has been removed. The frontend now
+> reads static JSON from `docs/data/` produced by `backend/build/export.py`:
+> `standings.json`, `ranking.json`, `results.json` (keyed by rider slug), and
+> `meta.json`. The shapes below are preserved by the exporter and kept here for
+> reference to that data contract.
 
 ## Endpoints
 
