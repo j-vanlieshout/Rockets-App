@@ -2,7 +2,7 @@
 
 A personal cycling tracker for **Unibet Rose Rockets** — a Dutch ProTeam chasing WorldTour promotion. Tracks UCI points, race results, and team ranking in a dark-themed web app backed by a local Python API.
 
-![Python](https://img.shields.io/badge/Python-3.11+-blue) ![FastAPI](https://img.shields.io/badge/FastAPI-0.111-green) ![SQLite](https://img.shields.io/badge/SQLite-local-lightgrey)
+![Python](https://img.shields.io/badge/Python-3.11+-blue) ![SQLite](https://img.shields.io/badge/SQLite-local-lightgrey) ![GitHub Pages](https://img.shields.io/badge/hosting-GitHub%20Pages-green)
 
 ---
 
@@ -23,10 +23,11 @@ A personal cycling tracker for **Unibet Rose Rockets** — a Dutch ProTeam chasi
 Rockets-App/
 ├── backend/
 │   ├── config.py              # Team slugs, season, DB path
-│   ├── app.py                 # Uvicorn entry point
 │   ├── requirements.txt
-│   ├── api/
-│   │   └── main.py            # FastAPI endpoints
+│   ├── build/
+│   │   ├── export.py          # DB → docs/data/*.json
+│   │   ├── alerts.py          # Ping ladder, dedup, ntfy edge
+│   │   └── run.py             # Build orchestrator
 │   ├── db/
 │   │   ├── models.py          # SQLAlchemy ORM models
 │   │   └── sync.py            # Scrape → SQLite orchestrator
@@ -36,10 +37,11 @@ Rockets-App/
 │   └── tests/
 │       ├── test_sync.py       # Unit tests for sync helpers
 │       ├── test_uci_ranking.py
-│       └── test_api.py        # API integration tests
+│       ├── test_export.py     # JSON export tests
+│       └── test_alerts.py     # Ping ladder + dedup tests
 ├── docs/
-│   └── data_model.md
-└── index.html                 # Web app — open directly in browser
+│   ├── index.html             # Web app — static, reads ./data/*.json
+│   └── data/                  # Exported JSON (published by the scheduled scrape)
 ```
 
 ---
@@ -76,34 +78,76 @@ python db/sync.py --season 2025
 
 This scrapes the Rockets roster, rider profiles, race results, and UCI points from PCS and saves everything to a local `pcs_tracker.db` SQLite file. Re-run anytime to pick up new results.
 
-### 2. Start the API
+### 2. Export the static JSON
 
 ```bash
 cd backend
-python -m uvicorn api.main:app
+python -m build.run
 ```
 
-API runs at `http://127.0.0.1:8000`. Interactive docs at `/docs`.
-
-> **Note:** Run without `--reload` on Windows due to a multiprocessing limitation.
+This reads `pcs_tracker.db`, writes `docs/data/*.json` (standings, ranking,
+results, meta), and — if `NTFY_TOPIC` is set — sends spoiler-free pings for any
+newly notable results. There is **no server**.
 
 ### 3. Open the web app
 
-Open `index.html` directly in your browser. No web server needed.
+Open `docs/index.html` in your browser. It reads `./data/*.json` from the same
+folder. In production a scheduled GitHub Action runs steps 1–2 and commits the
+JSON, and GitHub Pages serves `docs/`.
 
 ---
 
-## API endpoints
+## Data files
 
-| Method | Path | Description |
-|---|---|---|
-| GET | `/teams` | List all tracked teams |
-| GET | `/teams/{slug}/riders` | Full roster |
-| GET | `/teams/{slug}/uci-standings?season=` | UCI leaderboard |
-| GET | `/riders/{slug}/results?season=` | Rider season results |
-| GET | `/races?season=` | All races with results |
-| GET | `/races/{id}/results` | Results for one race |
-| GET | `/ranking/teams?season=` | Live UCI team ranking |
+The frontend reads these static files from `docs/data/` (no API):
+
+| File | Contents |
+|---|---|
+| `standings.json` | Per-team UCI/PCS leaderboard for the season |
+| `ranking.json` | WT/PRT team ranking, tracked teams flagged |
+| `results.json` | All rider results, keyed by rider slug |
+| `meta.json` | `generated_at` timestamp (powers "Last updated") |
+| `alert_state.json` | Per-race dedup memory for notifications |
+
+---
+
+## Notifications (ntfy)
+
+Pings are spoiler-free — each names only the race ("🚀 Worth watching today: …").
+
+**Subscribe (phone):**
+1. Install the **ntfy** app (Android/iOS) or open <https://ntfy.sh>.
+2. Subscribe to your topic (a private, hard-to-guess string).
+
+**Wire it up:** add the topic as a GitHub Actions secret named `NTFY_TOPIC`
+(Settings → Secrets and variables → Actions). It is never committed. Locally,
+`export NTFY_TOPIC=your-topic` before `python -m build.run`. Override the server
+with `NTFY_URL` if self-hosting ntfy.
+
+When does it ping (the "worth watching" ladder)?
+
+| Race tier | Pings when a Rockets rider finishes… |
+|---|---|
+| WorldTour (UWT / Monument / Grand Tour / Worlds / Olympics) | Top 10 |
+| ProSeries & Class 1 (1.Pro/2.Pro, 1.1/2.1) | Podium (top 3) |
+| Class 2 & U23 (1.2/2.2, 1.2U/2.2U) | Win only |
+
+Plus: **any win in any class always pings.**
+
+---
+
+## Hosting (always-on)
+
+A scheduled GitHub Action (`.github/workflows/scrape.yml`) runs hourly across
+16:00–20:00 CEST (and on manual `workflow_dispatch`): it scrapes PCS, exports
+the JSON, sends pings, and commits `docs/data/` back to the repo.
+
+Serve the site with **GitHub Pages**: Settings → Pages → Source =
+"Deploy from a branch", branch `main`, folder `/docs`. The tracker is then
+reachable at `https://<user>.github.io/<repo>/`.
+
+> Scheduled workflows auto-disable after 60 days of repo inactivity (off-season).
+> Wake it with a manual `workflow_dispatch` run.
 
 ---
 

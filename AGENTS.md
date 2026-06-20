@@ -3,7 +3,8 @@
 Be extremely concise. Sacrifice grammar for concision.
 At the end of each plan, list unresolved questions.
 
-**What:** FastAPI + SQLAlchemy + SQLite backend; single-file vanilla-JS frontend (`docs/index.html`).
+**What:** SQLAlchemy + SQLite build-time toolchain; single-file vanilla-JS frontend (`docs/index.html`)
+served as static files. Data is exported to JSON (`docs/data/`) — no running server.
 Data scraped from ProCyclingStats via `procyclingstats` + `cloudscraper`. Python 3.11.
 
 **Why:** Local tracker for Unibet Rose Rockets (Dutch ProTeam chasing WorldTour). UCI standings,
@@ -15,12 +16,17 @@ race results, spoiler-free alerts, WT/PRT ranking. No auth, no cloud.
 2. `pip install -r backend/requirements.txt`
 3. `pip install -r backend/requirements-dev.txt` (dev only)
 
-## Sync + run
+## Build + run
+
+No server. Data is static JSON under `docs/data/`, produced at build time.
 
 1. `cd backend`
 2. `python db/sync.py` — scrapes PCS for teams in `config.py:9` → `pcs_tracker.db`
-3. `python -m uvicorn api.main:app` (omit `--reload` on Windows — multiprocessing bug)
-4. Open `docs/index.html` in browser (`file://`) — API must be on `localhost:8000`
+3. `python -m build.run` — export DB → `docs/data/*.json` + detect/send pings
+4. Open `docs/index.html` in browser — reads `./data/*.json` (same-origin)
+
+In production the GitHub Action does steps 2–3 on a cron and commits the JSON;
+GitHub Pages serves `docs/`.
 
 ## Test
 
@@ -33,7 +39,9 @@ race results, spoiler-free alerts, WT/PRT ranking. No auth, no cloud.
 |------|------|
 | `backend/config.py:9` | Tracked teams, season, DB URL — edit to add a team |
 | `backend/db/sync.py:205` | Sync entry point (`sync_all` → `sync_team`) |
-| `backend/api/main.py:40` | FastAPI app + all 7 endpoints |
+| `backend/build/export.py` | DB → `docs/data/*.json` (standings, ranking, results, meta) |
+| `backend/build/alerts.py` | Ping ladder, per-race dedup, ntfy edge |
+| `backend/build/run.py` | Build orchestrator (scrape → export → detect → ping) |
 | `backend/db/models.py:21` | ORM: Team, Rider, Race, RaceResult |
 | `docs/index.html` | Entire frontend (CSS + JS inline) |
 
@@ -47,6 +55,7 @@ race results, spoiler-free alerts, WT/PRT ranking. No auth, no cloud.
 
 - [sync-pcs-data](.agents/skills/sync-pcs-data/SKILL.md) — Full sync workflow + troubleshooting (IndexError, 403s, missing race class, idempotency)
 - [create-agents-md](.agents/skills/create-agents-md/SKILL.md) — How to write or refactor AGENTS.md for a project
+- [delegate-to-ollama](.agents/skills/delegate-to-ollama/SKILL.md) — Offload a coding task to local Ollama `qwen2.5:7b`; integrates with `/tdd` GREEN phase
 
 ## Agent skills
 

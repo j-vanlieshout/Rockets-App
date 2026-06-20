@@ -1,0 +1,307 @@
+{
+  "team_name": "Unibet Rose Rockets",
+  "season": 2026,
+  "total_uci_points": 1879.0,
+  "riders": [
+    {
+      "rider_id": 1,
+      "pcs_slug": "dylan-groenewegen",
+      "full_name": "Dylan Groenewegen",
+      "nationality": "NL",
+      "age": 32,
+      "total_uci_points": 1080.0,
+      "total_pcs_points": 592.0,
+      "results_count": 13
+    },
+    {
+      "rider_id": 6,
+      "pcs_slug": "lukas-kubis",
+      "full_name": "Lukáš Kubiš",
+      "nationality": "SK",
+      "age": 26,
+      "total_uci_points": 300.0,
+      "total_pcs_points": 213.0,
+      "results_count": 15
+    },
+    {
+      "rider_id": 12,
+      "pcs_slug": "lander-loockx",
+      "full_name": "Lander Loockx",
+      "nationality": "BE",
+      "age": 28,
+      "total_uci_points": 168.0,
+      "total_pcs_points": 89.0,
+      "results_count": 7
+    },
+    {
+      "rider_id": 9,
+      "pcs_slug": "elmar-reinders",
+      "full_name": "Elmar Reinders",
+      "nationality": "NL",
+      "age": 34,
+      "total_uci_points": 90.0,
+      "total_pcs_points": 56.0,
+      "results_count": 16
+    },
+    {
+      "rider_id": 3,
+      "pcs_slug": "clement-venturini",
+      "full_name": "Clément Venturini",
+      "nationality": "FR",
+      "age": 32,
+      "total_uci_points": 65.0,
+      "total_pcs_points": 40.0,
+      "results_count": 8
+    },
+    {
+      "rider_id": 8,
+      "pcs_slug": "niklas-larsen",
+      "full_name": "Niklas Larsen",
+      "nationality": "DK",
+      "age": 29,
+      "total_uci_points": 55.0,
+      "total_pcs_points": 50.0,
+      "results_count": 14
+    },
+    {
+      "rider_id": 2,
+      "pcs_slug": "wout-poels",
+      "full_name": "Wout Poels",
+      "nationality": "NL",
+      "age": 38,
+      "total_uci_points": 50.0,
+      "total_pcs_points": 47.0,
+      "results_count": 11
+    },
+    {
+      "rider_id": 16,
+      "pcs_slug": "cedrik-bakke-christophersen",
+      "full_name": "Cedrik Bakke Christophersen",
+      "nationality": "NO",
+      "age": 24,
+      "total_uci_points": 23.0,
+      "total_pcs_points": 32.0,
+      "results_count": 13
+    },
+    {
+      "rider_id": 18,
+      "pcs_slug": "tomas-kopecky",
+      "full_name": "Tomáš Kopecký",
+      "nationality": "CZ",
+      "age": 25,
+      "total_uci_points": 13.0,
+      "total_pcs_points": 23.0,
+      "results_count": 14
+    },
+    {
+      "rider_id": 19,
+      "pcs_slug": "jannis-peter",
+      "full_name": "Jannis Peter",
+      "nationality": "DE",
+      "age": 25,
+      "total_uci_points": 9.0,
+      "total_pcs_points": 2.0,
+      "results_count": 12
+    },
+    {
+      "rider_id": 13,
+      "pcs_slug": "hartthijs-de-vries",
+      "full_name": "Hartthijs de Vries",
+      "nationality": "NL",
+      "age": 29,
+      "total_uci_points": 8.0,
+      "total_pcs_points": 12.0,
+      "results_count": 10
+    },
+    {
+      "rider_id": 24,
+      "pcs_slug": "killian-verschuren",
+      "full_name": "Killian Verschuren",
+      "nationality": "FR",
+      "age": 23,
+      "total_uci_points": 6.0,
+      "total_pcs_points": 0.0,
+      "results_count": 6
+    },
+    {
+      "rider_id": 7,
+      "pcs_slug": "rory-townsend",
+      "full_name": "Rory Townsend",
+      "nationality": "IE",
+      "age": 30,
+      "total_uci_points": 5.0,
+      "total_pcs_points": 6.0,
+      "results_count": 3
+    },
+    {
+      "rider_id": 26,
+      "pcs_slug": "tobias-muller1",
+      "full_name": "Tobias Müller",
+      "nationality": "DE",
+      "age": 21,
+      "total_uci_points": 4.0,
+      "total_pcs_points": 5.0,
+      "results_count": 10
+    },
+    {
+      "rider_id": 4,
+      "pcs_slug": "odd-christian-eiking",
+      "full_name": "Odd Christian Eiking",
+      "nationality": "NO",
+      "age": 31,
+      "total_uci_points": 3.0,
+      "total_pcs_points": 2.0,
+      "results_count": 9
+    },
+    {
+      "rider_id": 10,
+      "pcs_slug": "adam-toupalik",
+      "full_name": "Adam Ťoupalík",
+      "nationality": "CZ",
+      "age": 29,
+      "total_uci_points": 0.0,
+      "total_pcs_points": 0.0,
+      "results_count": 7
+    },
+    {
+      "rider_id": 20,
+      "pcs_slug": "abram-stockman",
+      "full_name": "Abram Stockman",
+      "nationality": "BE",
+      "age": 29,
+      "total_uci_points": 0.0,
+      "total_pcs_points": 0.0,
+      "results_count": 6
+    },
+    {
+      "rider_id": 21,
+      "pcs_slug": "martijn-rasenberg",
+      "full_name": "Martijn Rasenberg",
+      "nationality": "NL",
+      "age": 24,
+      "total_uci_points": 0.0,
+      "total_pcs_points": 5.0,
+      "results_count": 9
+    },
+    {
+      "rider_id": 29,
+      "pcs_slug": "ronan-auge",
+      "full_name": "Ronan Augé",
+      "nationality": "FR",
+      "age": 21,
+      "total_uci_points": 0.0,
+      "total_pcs_points": 0.0,
+      "results_count": 11
+    },
+    {
+      "rider_id": 30,
+      "pcs_slug": "colin-savioz",
+      "full_name": "Colin Savioz",
+      "nationality": "FR",
+      "age": 21,
+      "total_uci_points": 0.0,
+      "total_pcs_points": 0.0,
+      "results_count": 9
+    },
+    {
+      "rider_id": 5,
+      "pcs_slug": "victor-lafay",
+      "full_name": "Victor Lafay",
+      "nationality": "FR",
+      "age": 30,
+      "total_uci_points": 0,
+      "total_pcs_points": 0,
+      "results_count": 0
+    },
+    {
+      "rider_id": 11,
+      "pcs_slug": "matyas-kopecky",
+      "full_name": "KOPECKÝ Matyáš",
+      "nationality": "CZ",
+      "age": 23,
+      "total_uci_points": 0,
+      "total_pcs_points": 0,
+      "results_count": 0
+    },
+    {
+      "rider_id": 14,
+      "pcs_slug": "adrien-maire",
+      "full_name": "MAIRE Adrien",
+      "nationality": "FR",
+      "age": 25,
+      "total_uci_points": 0,
+      "total_pcs_points": 0,
+      "results_count": 0
+    },
+    {
+      "rider_id": 15,
+      "pcs_slug": "joren-bloem2",
+      "full_name": "BLOEM Joren",
+      "nationality": "NL",
+      "age": 26,
+      "total_uci_points": 0,
+      "total_pcs_points": 0,
+      "results_count": 0
+    },
+    {
+      "rider_id": 17,
+      "pcs_slug": "jelle-johannink",
+      "full_name": "JOHANNINK Jelle",
+      "nationality": "NL",
+      "age": 29,
+      "total_uci_points": 0,
+      "total_pcs_points": 0,
+      "results_count": 0
+    },
+    {
+      "rider_id": 22,
+      "pcs_slug": "wessel-mouris",
+      "full_name": "MOURIS Wessel",
+      "nationality": "NL",
+      "age": 23,
+      "total_uci_points": 0,
+      "total_pcs_points": 0,
+      "results_count": 0
+    },
+    {
+      "rider_id": 23,
+      "pcs_slug": "sergio-meris",
+      "full_name": "MERIS Sergio",
+      "nationality": "IT",
+      "age": 25,
+      "total_uci_points": 0,
+      "total_pcs_points": 0,
+      "results_count": 0
+    },
+    {
+      "rider_id": 25,
+      "pcs_slug": "karsten-larsen-feldmann",
+      "full_name": "FELDMANN Karsten Larsen",
+      "nationality": "NO",
+      "age": 22,
+      "total_uci_points": 0,
+      "total_pcs_points": 0,
+      "results_count": 0
+    },
+    {
+      "rider_id": 27,
+      "pcs_slug": "owen-geleijn",
+      "full_name": "GELEIJN Owen",
+      "nationality": "NL",
+      "age": 25,
+      "total_uci_points": 0,
+      "total_pcs_points": 0,
+      "results_count": 0
+    },
+    {
+      "rider_id": 28,
+      "pcs_slug": "eivind-broholt-fougner",
+      "full_name": "FOUGNER Eivind Broholt",
+      "nationality": "NO",
+      "age": 23,
+      "total_uci_points": 0,
+      "total_pcs_points": 0,
+      "results_count": 0
+    }
+  ]
+}
