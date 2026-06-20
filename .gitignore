@@ -1,5 +1,6 @@
 
 /.venv
+/.venv-linux
 # Local database
 backend/pcs_tracker.db
 backend/*.db

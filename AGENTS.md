@@ -47,6 +47,7 @@ race results, spoiler-free alerts, WT/PRT ranking. No auth, no cloud.
 
 - [sync-pcs-data](.agents/skills/sync-pcs-data/SKILL.md) — Full sync workflow + troubleshooting (IndexError, 403s, missing race class, idempotency)
 - [create-agents-md](.agents/skills/create-agents-md/SKILL.md) — How to write or refactor AGENTS.md for a project
+- [delegate-to-ollama](.agents/skills/delegate-to-ollama/SKILL.md) — Offload a coding task to local Ollama `qwen2.5:7b`; integrates with `/tdd` GREEN phase
 
 ## Agent skills
 
