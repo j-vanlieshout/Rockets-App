@@ -1,6 +1,8 @@
 
 /.venv
 /.venv-linux
+__pycache__/
+*.pyc
 # Local database
 backend/pcs_tracker.db
 backend/*.db
