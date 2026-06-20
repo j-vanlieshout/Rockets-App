@@ -97,17 +97,57 @@ JSON, and GitHub Pages serves `docs/`.
 
 ---
 
-## API endpoints
+## Data files
 
-| Method | Path | Description |
-|---|---|---|
-| GET | `/teams` | List all tracked teams |
-| GET | `/teams/{slug}/riders` | Full roster |
-| GET | `/teams/{slug}/uci-standings?season=` | UCI leaderboard |
-| GET | `/riders/{slug}/results?season=` | Rider season results |
-| GET | `/races?season=` | All races with results |
-| GET | `/races/{id}/results` | Results for one race |
-| GET | `/ranking/teams?season=` | Live UCI team ranking |
+The frontend reads these static files from `docs/data/` (no API):
+
+| File | Contents |
+|---|---|
+| `standings.json` | Per-team UCI/PCS leaderboard for the season |
+| `ranking.json` | WT/PRT team ranking, tracked teams flagged |
+| `results.json` | All rider results, keyed by rider slug |
+| `meta.json` | `generated_at` timestamp (powers "Last updated") |
+| `alert_state.json` | Per-race dedup memory for notifications |
+
+---
+
+## Notifications (ntfy)
+
+Pings are spoiler-free — each names only the race ("🚀 Worth watching today: …").
+
+**Subscribe (phone):**
+1. Install the **ntfy** app (Android/iOS) or open <https://ntfy.sh>.
+2. Subscribe to your topic (a private, hard-to-guess string).
+
+**Wire it up:** add the topic as a GitHub Actions secret named `NTFY_TOPIC`
+(Settings → Secrets and variables → Actions). It is never committed. Locally,
+`export NTFY_TOPIC=your-topic` before `python -m build.run`. Override the server
+with `NTFY_URL` if self-hosting ntfy.
+
+When does it ping (the "worth watching" ladder)?
+
+| Race tier | Pings when a Rockets rider finishes… |
+|---|---|
+| WorldTour (UWT / Monument / Grand Tour / Worlds / Olympics) | Top 10 |
+| ProSeries & Class 1 (1.Pro/2.Pro, 1.1/2.1) | Podium (top 3) |
+| Class 2 & U23 (1.2/2.2, 1.2U/2.2U) | Win only |
+
+Plus: **any win in any class always pings.**
+
+---
+
+## Hosting (always-on)
+
+A scheduled GitHub Action (`.github/workflows/scrape.yml`) runs hourly across
+16:00–20:00 CEST (and on manual `workflow_dispatch`): it scrapes PCS, exports
+the JSON, sends pings, and commits `docs/data/` back to the repo.
+
+Serve the site with **GitHub Pages**: Settings → Pages → Source =
+"Deploy from a branch", branch `main`, folder `/docs`. The tracker is then
+reachable at `https://<user>.github.io/<repo>/`.
+
+> Scheduled workflows auto-disable after 60 days of repo inactivity (off-season).
+> Wake it with a manual `workflow_dispatch` run.
 
 ---
 

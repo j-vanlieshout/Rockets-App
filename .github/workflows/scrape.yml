@@ -1,0 +1,56 @@
+name: Scheduled scrape
+
+# Scrape PCS, export static JSON, send spoiler-free ntfy pings, and commit the
+# data back to the repo (the commit doubles as the per-race dedup memory).
+#
+# Cron covers the afternoon/evening racing window 16:00-20:00 CEST, expressed
+# in UTC (CEST = UTC+2). Race season is Mar-Oct; the winter DST shift is ignored
+# because there is no racing then. GitHub crons are best-effort and may run late;
+# that is fine — freshness, not snappiness, is the goal.
+on:
+  schedule:
+    - cron: "0 14-18 * * *"   # 16:00-20:00 CEST, hourly
+  workflow_dispatch: {}        # manual wake-up / forced refresh (off-season)
+
+# Allow the job to commit the refreshed JSON back to the branch.
+permissions:
+  contents: write
+
+# Never run two scrapes at once (state file is shared).
+concurrency:
+  group: scheduled-scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r backend/requirements.txt
+
+      - name: Scrape, export JSON, send pings
+        working-directory: backend
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}   # kept out of the repo
+          # NTFY_URL: optional override; defaults to https://ntfy.sh
+        run: python -m build.run
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "data: scheduled scrape $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
