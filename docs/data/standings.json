@@ -1,14 +1,14 @@
 {
   "team_name": "Unibet Rose Rockets",
   "season": 2026,
-  "total_uci_points": 4023.0,
+  "total_uci_points": 4093.0,
   "riders": [
     {
       "rider_id": 1,
       "pcs_slug": "dylan-groenewegen",
       "full_name": "Dylan Groenewegen",
       "nationality": "NL",
-      "age": 32,
+      "age": 33,
       "total_uci_points": 1308.0,
       "total_pcs_points": 692.0,
       "results_count": 39
@@ -24,6 +24,16 @@
       "results_count": 33
     },
     {
+      "rider_id": 6,
+      "pcs_slug": "lukas-kubis",
+      "full_name": "Lukáš Kubiš",
+      "nationality": "SK",
+      "age": 26,
+      "total_uci_points": 511.0,
+      "total_pcs_points": 375.0,
+      "results_count": 48
+    },
+    {
       "rider_id": 12,
       "pcs_slug": "lander-loockx",
       "full_name": "Lander Loockx",
@@ -32,16 +42,6 @@
       "total_uci_points": 445.0,
       "total_pcs_points": 271.0,
       "results_count": 26
-    },
-    {
-      "rider_id": 6,
-      "pcs_slug": "lukas-kubis",
-      "full_name": "Lukáš Kubiš",
-      "nationality": "SK",
-      "age": 26,
-      "total_uci_points": 441.0,
-      "total_pcs_points": 320.0,
-      "results_count": 47
     },
     {
       "rider_id": 26,
@@ -81,7 +81,7 @@
       "age": 31,
       "total_uci_points": 105.0,
       "total_pcs_points": 87.0,
-      "results_count": 35
+      "results_count": 36
     },
     {
       "rider_id": 9,
@@ -111,7 +111,7 @@
       "age": 23,
       "total_uci_points": 38.0,
       "total_pcs_points": 15.0,
-      "results_count": 21
+      "results_count": 22
     },
     {
       "rider_id": 13,
@@ -141,7 +141,7 @@
       "age": 25,
       "total_uci_points": 18.0,
       "total_pcs_points": 18.0,
-      "results_count": 28
+      "results_count": 29
     },
     {
       "rider_id": 18,
@@ -161,7 +161,7 @@
       "age": 30,
       "total_uci_points": 10.0,
       "total_pcs_points": 5.0,
-      "results_count": 25
+      "results_count": 26
     },
     {
       "rider_id": 21,
@@ -181,7 +181,7 @@
       "age": 30,
       "total_uci_points": 5.0,
       "total_pcs_points": 6.0,
-      "results_count": 16
+      "results_count": 17
     },
     {
       "rider_id": 20,
@@ -201,7 +201,7 @@
       "age": 22,
       "total_uci_points": 0.0,
       "total_pcs_points": 0.0,
-      "results_count": 32
+      "results_count": 33
     },
     {
       "rider_id": 5,
