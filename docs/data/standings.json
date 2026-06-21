@@ -1,7 +1,7 @@
 {
   "team_name": "Unibet Rose Rockets",
   "season": 2026,
-  "total_uci_points": 4093.0,
+  "total_uci_points": 4096.0,
   "riders": [
     {
       "rider_id": 1,
@@ -31,7 +31,7 @@
       "age": 26,
       "total_uci_points": 511.0,
       "total_pcs_points": 375.0,
-      "results_count": 48
+      "results_count": 50
     },
     {
       "rider_id": 12,
@@ -149,9 +149,9 @@
       "full_name": "Tomáš Kopecký",
       "nationality": "CZ",
       "age": 26,
-      "total_uci_points": 13.0,
+      "total_uci_points": 16.0,
       "total_pcs_points": 63.0,
-      "results_count": 45
+      "results_count": 47
     },
     {
       "rider_id": 10,

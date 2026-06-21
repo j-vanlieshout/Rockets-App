@@ -469,1670 +469,22 @@
       "race_class": ""
     }
   ],
-  "rory-townsend": [
+  "lukas-kubis": [
     {
-      "id": 339,
+      "id": 308,
       "stage": "race/tour-of-belgium/2026/stage-5",
       "date": "2026-06-21",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 59,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 340,
-      "stage": "race/tour-of-belgium/2026/stage-4",
-      "date": "2026-06-20",
-      "position": 128,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 59,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 341,
-      "stage": "race/tour-of-belgium/2026/stage-3",
-      "date": "2026-06-19",
-      "position": 93,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 59,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 342,
-      "stage": "race/tour-of-belgium/2026/stage-2",
-      "date": "2026-06-18",
-      "position": 147,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 59,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 343,
-      "stage": "race/tour-of-belgium/2026/stage-1",
-      "date": "2026-06-17",
-      "position": 117,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 59,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 344,
-      "stage": "race/muur-classic-geraardsbergen/2026/result",
-      "date": "2026-06-14",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 60,
-      "team_id": 1,
-      "race_name": "Muur Classic Geraardsbergen",
-      "race_class": "1.1"
-    },
-    {
-      "id": 345,
-      "stage": "race/circuit-franco-belge/2026/result",
-      "date": "2026-06-10",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 39,
-      "team_id": 1,
-      "race_name": "Circuit Franco-Belge",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 346,
-      "stage": "race/brussels-cycling-classic/2026/result",
-      "date": "2026-06-07",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 65,
-      "team_id": 1,
-      "race_name": "Brussels Cycling Classic",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 347,
-      "stage": "race/heist-op-den-berg/2026/result",
-      "date": "2026-06-06",
-      "position": 136,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 66,
-      "team_id": 1,
-      "race_name": "Heylen Vastgoed Heistse Pijl",
-      "race_class": "1.1"
-    },
-    {
-      "id": 349,
-      "stage": "race/boucles-de-la-mayenne/2026/stage-3",
-      "date": "2026-05-31",
-      "position": 108,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 40,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": "Espace Mayenne"
-    },
-    {
-      "id": 350,
-      "stage": "race/boucles-de-la-mayenne/2026/stage-2",
-      "date": "2026-05-30",
-      "position": 120,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 40,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": "Espace Mayenne"
-    },
-    {
-      "id": 351,
-      "stage": "race/boucles-de-la-mayenne/2026/stage-1",
-      "date": "2026-05-29",
-      "position": 62,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 40,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": "Espace Mayenne"
-    },
-    {
-      "id": 352,
-      "stage": "race/boucles-de-la-mayenne/2026/prologue",
-      "date": "2026-05-28",
-      "position": 118,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 40,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": "Espace Mayenne"
-    },
-    {
-      "id": 48,
-      "stage": "race/kuurne-brussel-kuurne/2026/result",
-      "date": "2026-03-01",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 2,
-      "team_id": 1,
-      "race_name": "Kuurne",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 49,
-      "stage": "race/clasica-de-almeria/2026/result",
-      "date": "2026-02-15",
-      "position": 51,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 3,
-      "team_id": 1,
-      "race_name": "Clasica de Almeria (1.Pro)",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 50,
-      "stage": "race/gp-de-valence/2026/result",
-      "date": "2026-01-25",
-      "position": 15,
-      "pcs_points": 6.0,
-      "uci_points": 5.0,
-      "rider_id": 7,
-      "race_id": 6,
-      "team_id": 1,
-      "race_name": "Clàssica Comunitat Valenciana",
-      "race_class": "1.1"
-    },
-    {
-      "id": 348,
-      "stage": "race/boucles-de-la-mayenne/2026/gc",
-      "date": null,
-      "position": 120,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 7,
-      "race_id": 40,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": "Espace Mayenne"
-    }
-  ],
-  "adam-toupalik": [
-    {
-      "id": 428,
-      "stage": "race/andorra-morabanc-classica/2026/result",
-      "date": "2026-06-21",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 52,
-      "team_id": 1,
-      "race_name": "Andorra MoraBanc Clàssica",
-      "race_class": "1.1"
-    },
-    {
-      "id": 430,
-      "stage": "race/la-route-d-occitanie/2026/stage-3",
-      "date": "2026-06-20",
-      "position": 84,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 53,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 431,
-      "stage": "race/la-route-d-occitanie/2026/stage-2",
-      "date": "2026-06-19",
-      "position": 108,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 53,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 432,
-      "stage": "race/la-route-d-occitanie/2026/stage-1",
-      "date": "2026-06-18",
-      "position": 113,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 53,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 433,
-      "stage": "race/muur-classic-geraardsbergen/2026/result",
-      "date": "2026-06-14",
-      "position": 87,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 60,
-      "team_id": 1,
-      "race_name": "Muur Classic Geraardsbergen",
-      "race_class": "1.1"
-    },
-    {
-      "id": 434,
-      "stage": "race/circuit-franco-belge/2026/result",
-      "date": "2026-06-10",
-      "position": 102,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 39,
-      "team_id": 1,
-      "race_name": "Circuit Franco-Belge",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 435,
-      "stage": "race/4-jours-de-dunkerque/2026/stage-1",
-      "date": "2026-05-20",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 69,
-      "team_id": 1,
-      "race_name": "Lagny-le-Sec › Laon",
-      "race_class": ""
-    },
-    {
-      "id": 436,
-      "stage": "race/classique-dunkerque/2026/result",
-      "date": "2026-05-19",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 70,
-      "team_id": 1,
-      "race_name": "Classique Dunkerque / Grand prix des Hauts de France",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 437,
-      "stage": "race/rund-um-koln/2026/result",
-      "date": "2026-05-17",
-      "position": 80,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 71,
-      "team_id": 1,
-      "race_name": "Rund um Köln",
-      "race_class": "1.1"
-    },
-    {
-      "id": 438,
-      "stage": "race/circuit-de-wallonie/2026/result",
-      "date": "2026-05-14",
-      "position": 41,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 72,
-      "team_id": 1,
-      "race_name": "Lotto Circuit de Wallonie",
-      "race_class": "1.1"
-    },
-    {
-      "id": 439,
-      "stage": "race/famenne-ardenne-classic/2026/result",
-      "date": "2026-05-03",
-      "position": 57,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 73,
-      "team_id": 1,
-      "race_name": "Lotto Famenne Ardenne Classic",
-      "race_class": "1.1"
-    },
-    {
-      "id": 440,
-      "stage": "race/la-fleche-wallonne/2026/result",
-      "date": "2026-04-22",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 46,
-      "team_id": 1,
-      "race_name": "La Flèche Wallonne",
-      "race_class": "1.UWT"
-    },
-    {
-      "id": 441,
-      "stage": "race/amstel-gold-race/2026/result",
-      "date": "2026-04-19",
-      "position": 48,
-      "pcs_points": 5.0,
-      "uci_points": 10.0,
-      "rider_id": 10,
-      "race_id": 47,
-      "team_id": 1,
-      "race_name": "Amstel Gold Race",
-      "race_class": "1.UWT"
-    },
-    {
-      "id": 442,
-      "stage": "race/brabantse-pijl/2026/result",
-      "date": "2026-04-17",
-      "position": 51,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 48,
-      "team_id": 1,
-      "race_name": "La Flèche Brabançonne ME",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 443,
-      "stage": "race/ronde-van-limburg/2026/result",
-      "date": "2026-04-15",
-      "position": 50,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 67,
-      "team_id": 1,
-      "race_name": "Ronde van Limburg",
-      "race_class": "1.1"
-    },
-    {
-      "id": 444,
-      "stage": "race/route-adelie-de-vitre/2026/result",
-      "date": "2026-04-03",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 50,
-      "team_id": 1,
-      "race_name": "Classic Velox Adélie de Vitré",
-      "race_class": "1.1"
-    },
-    {
-      "id": 445,
-      "stage": "race/paris-camembert/2026/result",
-      "date": "2026-03-31",
-      "position": 78,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 51,
-      "team_id": 1,
-      "race_name": "Camembert",
-      "race_class": "1.1"
-    },
-    {
-      "id": 446,
-      "stage": "race/e3-harelbeke/2026/result",
-      "date": "2026-03-27",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 68,
-      "team_id": 1,
-      "race_name": "E3 Saxo Classic ME",
-      "race_class": "1.UWT"
-    },
-    {
-      "id": 168,
-      "stage": "race/gp-de-denain/2026/result",
-      "date": "2026-03-19",
-      "position": 77,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 33,
-      "team_id": 1,
-      "race_name": "Porte du Hainaut",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 169,
-      "stage": "race/nokere-koerse/2026/result",
-      "date": "2026-03-18",
-      "position": 119,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 32,
-      "team_id": 1,
-      "race_name": "Danilith Nokere Koerse",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 76,
-      "stage": "race/region-on-dodecanese-gp/2026/result",
-      "date": "2026-03-01",
-      "position": 95,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 17,
-      "team_id": 1,
-      "race_name": "Region on Dodecanese GP (1.1)",
-      "race_class": "1.1"
-    },
-    {
-      "id": 170,
-      "stage": "race/independent-dodecanese-circuit/2026/result",
-      "date": "2026-03-01",
-      "position": 95,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 31,
-      "team_id": 1,
-      "race_name": "Region on Dodecanese GP",
-      "race_class": "1.1"
-    },
-    {
-      "id": 77,
-      "stage": "race/visit-south-aegean-gp/2026/result",
-      "date": "2026-02-28",
-      "position": 103,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 18,
-      "team_id": 1,
-      "race_name": "Visit South Aegean GP (1.1)",
-      "race_class": "1.1"
-    },
-    {
-      "id": 78,
-      "stage": "race/clasica-jaen-paraiso-interior/2026/result",
-      "date": "2026-02-16",
-      "position": 38,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 13,
-      "team_id": 1,
-      "race_name": "Clásica Jaén (1.1)",
-      "race_class": "1.1"
-    },
-    {
-      "id": 79,
-      "stage": "race/vuelta-ciclista-a-la-region-de-murcia/2026/stage-1",
-      "date": "2026-02-13",
-      "position": 24,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 14,
-      "team_id": 1,
-      "race_name": "S1",
-      "race_class": ""
-    },
-    {
-      "id": 429,
-      "stage": "race/la-route-d-occitanie/2026/gc",
-      "date": null,
-      "position": 95,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 10,
-      "race_id": 53,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    }
-  ],
-  "jannis-peter": [
-    {
-      "id": 527,
-      "stage": "race/andorra-morabanc-classica/2026/result",
-      "date": "2026-06-21",
-      "position": 54,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 52,
-      "team_id": 1,
-      "race_name": "Andorra MoraBanc Clàssica",
-      "race_class": "1.1"
-    },
-    {
-      "id": 529,
-      "stage": "race/la-route-d-occitanie/2026/stage-3",
-      "date": "2026-06-20",
-      "position": 55,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 53,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 530,
-      "stage": "race/la-route-d-occitanie/2026/stage-2",
-      "date": "2026-06-19",
-      "position": 87,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 53,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 531,
-      "stage": "race/la-route-d-occitanie/2026/stage-1",
-      "date": "2026-06-18",
-      "position": 97,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 53,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 534,
-      "stage": "race/tour-of-turkey/2026/stage-8",
-      "date": "2026-05-03",
-      "position": 68,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 535,
-      "stage": "race/tour-of-turkey/2026/stage-7",
-      "date": "2026-05-02",
-      "position": 124,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 536,
-      "stage": "race/tour-of-turkey/2026/stage-6",
-      "date": "2026-05-01",
-      "position": 14,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 537,
-      "stage": "race/tour-of-turkey/2026/stage-5",
-      "date": "2026-04-30",
-      "position": 54,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 538,
-      "stage": "race/tour-of-turkey/2026/stage-4",
-      "date": "2026-04-29",
-      "position": 51,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 539,
-      "stage": "race/tour-of-turkey/2026/stage-3",
-      "date": "2026-04-28",
       "position": 16,
       "pcs_points": 0.0,
       "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 56,
+      "rider_id": 6,
+      "race_id": 59,
       "team_id": 1,
       "race_name": "Points classificationPoints classification",
       "race_class": ""
     },
     {
-      "id": 540,
-      "stage": "race/tour-of-turkey/2026/stage-2",
-      "date": "2026-04-27",
-      "position": 46,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 541,
-      "stage": "race/tour-of-turkey/2026/stage-1",
-      "date": "2026-04-26",
-      "position": 79,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 542,
-      "stage": "race/tour-du-jura-cycliste/2026/result",
-      "date": "2026-04-18",
-      "position": 42,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 57,
-      "team_id": 1,
-      "race_name": "Tour du Jura Cycliste",
-      "race_class": "1.1"
-    },
-    {
-      "id": 543,
-      "stage": "race/classic-grand-besancon-doubs/2026/result",
-      "date": "2026-04-17",
-      "position": 19,
-      "pcs_points": 2.0,
-      "uci_points": 3.0,
-      "rider_id": 19,
-      "race_id": 58,
-      "team_id": 1,
-      "race_name": "Classic Grand Besançon Doubs",
-      "race_class": "1.1"
-    },
-    {
-      "id": 190,
-      "stage": "race/milano-torino/2026/result",
-      "date": "2026-03-18",
-      "position": 25,
-      "pcs_points": 1.0,
-      "uci_points": 6.0,
-      "rider_id": 19,
-      "race_id": 30,
-      "team_id": 1,
-      "race_name": "Torino",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 105,
-      "stage": "race/trofeo-laigueglia/2026/result",
-      "date": "2026-03-04",
-      "position": 41,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 8,
-      "team_id": 1,
-      "race_name": "Trofeo Laigueglia (1.Pro)",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 106,
-      "stage": "race/la-drome-classic/2026/result",
-      "date": "2026-03-01",
-      "position": 65,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 9,
-      "team_id": 1,
-      "race_name": "Faun Drome Classic (1.Pro)",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 107,
-      "stage": "race/faun-ardeche-classic/2026/result",
-      "date": "2026-02-28",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 10,
-      "team_id": 1,
-      "race_name": "Faun-Ardèche Classic (1.Pro)",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 111,
-      "stage": "race/tour-cycliste-international-la-provence/2026/stage-3",
-      "date": "2026-02-15",
-      "position": 8,
-      "pcs_points": 1.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 11,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 112,
-      "stage": "race/tour-cycliste-international-la-provence/2026/stage-2",
-      "date": "2026-02-14",
-      "position": 27,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 11,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 113,
-      "stage": "race/tour-cycliste-international-la-provence/2026/stage-1",
-      "date": "2026-02-13",
-      "position": 55,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 11,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 114,
-      "stage": "race/ruta-de-la-ceramica-gran-premio-castellon/2026/result",
-      "date": "2026-01-24",
-      "position": 118,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 23,
-      "team_id": 1,
-      "race_name": "Gran Premio Castellón",
-      "race_class": "1.1"
-    },
-    {
-      "id": 115,
-      "stage": "race/classica-camp-de-morvedre/2026/result",
-      "date": "2026-01-23",
-      "position": 36,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 12,
-      "team_id": 1,
-      "race_name": "Classica Camp de Morvedre  (1.1)",
-      "race_class": "1.1"
-    },
-    {
-      "id": 108,
-      "stage": "race/tour-cycliste-international-la-provence/2026/kom",
-      "date": null,
-      "position": 6,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 11,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 109,
-      "stage": "race/tour-cycliste-international-la-provence/2026/points",
-      "date": null,
-      "position": 13,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 11,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 110,
-      "stage": "race/tour-cycliste-international-la-provence/2026/gc",
-      "date": null,
-      "position": 24,
-      "pcs_points": 0.0,
-      "uci_points": 3.0,
-      "rider_id": 19,
-      "race_id": 11,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 528,
-      "stage": "race/la-route-d-occitanie/2026/gc",
-      "date": null,
-      "position": 57,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 53,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 532,
-      "stage": "race/tour-of-turkey/2026/points",
-      "date": null,
-      "position": 66,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 19,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 533,
-      "stage": "race/tour-of-turkey/2026/gc",
-      "date": null,
-      "position": 17,
-      "pcs_points": 14.0,
-      "uci_points": 6.0,
-      "rider_id": 19,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    }
-  ],
-  "killian-verschuren": [
-    {
-      "id": 571,
-      "stage": "race/andorra-morabanc-classica/2026/result",
-      "date": "2026-06-21",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 52,
-      "team_id": 1,
-      "race_name": "Andorra MoraBanc Clàssica",
-      "race_class": "1.1"
-    },
-    {
-      "id": 572,
-      "stage": "race/tro-bro-leon/2026/result",
-      "date": "2026-05-10",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 43,
-      "team_id": 1,
-      "race_name": "Tro-Bro Léon",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 573,
-      "stage": "race/gp-de-plumelec/2026/result",
-      "date": "2026-05-09",
-      "position": 25,
-      "pcs_points": 1.0,
-      "uci_points": 6.0,
-      "rider_id": 24,
-      "race_id": 44,
-      "team_id": 1,
-      "race_name": "Grand Prix du Morbihan",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 574,
-      "stage": "race/tour-of-turkey/2026/stage-6",
-      "date": "2026-05-01",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 575,
-      "stage": "race/tour-of-turkey/2026/stage-5",
-      "date": "2026-04-30",
-      "position": 97,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 576,
-      "stage": "race/tour-of-turkey/2026/stage-4",
-      "date": "2026-04-29",
-      "position": 53,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 577,
-      "stage": "race/tour-of-turkey/2026/stage-3",
-      "date": "2026-04-28",
-      "position": 34,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 578,
-      "stage": "race/tour-of-turkey/2026/stage-2",
-      "date": "2026-04-27",
-      "position": 105,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 579,
-      "stage": "race/tour-of-turkey/2026/stage-1",
-      "date": "2026-04-26",
-      "position": 69,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 580,
-      "stage": "race/la-fleche-wallonne/2026/result",
-      "date": "2026-04-22",
-      "position": 29,
-      "pcs_points": 6.0,
-      "uci_points": 20.0,
-      "rider_id": 24,
-      "race_id": 46,
-      "team_id": 1,
-      "race_name": "La Flèche Wallonne",
-      "race_class": "1.UWT"
-    },
-    {
-      "id": 583,
-      "stage": "race/region-pays-de-la-loire/2026/stage-4",
-      "date": "2026-04-10",
-      "position": 14,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 49,
-      "team_id": 1,
-      "race_name": "Mountains classificationMountains classification",
-      "race_class": ""
-    },
-    {
-      "id": 584,
-      "stage": "race/region-pays-de-la-loire/2026/stage-3",
-      "date": "2026-04-09",
-      "position": 34,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 49,
-      "team_id": 1,
-      "race_name": "Mountains classificationMountains classification",
-      "race_class": ""
-    },
-    {
-      "id": 585,
-      "stage": "race/region-pays-de-la-loire/2026/stage-2",
-      "date": "2026-04-08",
-      "position": 56,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 49,
-      "team_id": 1,
-      "race_name": "Mountains classificationMountains classification",
-      "race_class": ""
-    },
-    {
-      "id": 586,
-      "stage": "race/region-pays-de-la-loire/2026/stage-1",
-      "date": "2026-04-07",
-      "position": 56,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 49,
-      "team_id": 1,
-      "race_name": "Mountains classificationMountains classification",
-      "race_class": ""
-    },
-    {
-      "id": 124,
-      "stage": "race/trofeo-laigueglia/2026/result",
-      "date": "2026-03-04",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 8,
-      "team_id": 1,
-      "race_name": "Trofeo Laigueglia (1.Pro)",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 125,
-      "stage": "race/la-drome-classic/2026/result",
-      "date": "2026-03-01",
-      "position": 32,
-      "pcs_points": 0.0,
-      "uci_points": 3.0,
-      "rider_id": 24,
-      "race_id": 9,
-      "team_id": 1,
-      "race_name": "Faun Drome Classic (1.Pro)",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 126,
-      "stage": "race/faun-ardeche-classic/2026/result",
-      "date": "2026-02-28",
-      "position": 37,
-      "pcs_points": 0.0,
-      "uci_points": 3.0,
-      "rider_id": 24,
-      "race_id": 10,
-      "team_id": 1,
-      "race_name": "Faun-Ardèche Classic (1.Pro)",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 127,
-      "stage": "race/clasica-jaen-paraiso-interior/2026/result",
-      "date": "2026-02-16",
-      "position": 33,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 13,
-      "team_id": 1,
-      "race_name": "Clásica Jaén (1.1)",
-      "race_class": "1.1"
-    },
-    {
-      "id": 128,
-      "stage": "race/vuelta-ciclista-a-la-region-de-murcia/2026/stage-1",
-      "date": "2026-02-13",
-      "position": 52,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 14,
-      "team_id": 1,
-      "race_name": "S1",
-      "race_class": ""
-    },
-    {
-      "id": 129,
-      "stage": "race/classica-camp-de-morvedre/2026/result",
-      "date": "2026-01-23",
-      "position": 43,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 12,
-      "team_id": 1,
-      "race_name": "Classica Camp de Morvedre  (1.1)",
-      "race_class": "1.1"
-    },
-    {
-      "id": 581,
-      "stage": "race/region-pays-de-la-loire/2026/points",
-      "date": null,
-      "position": 39,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 24,
-      "race_id": 49,
-      "team_id": 1,
-      "race_name": "Mountains classificationMountains classification",
-      "race_class": ""
-    },
-    {
-      "id": 582,
-      "stage": "race/region-pays-de-la-loire/2026/gc",
-      "date": null,
-      "position": 20,
-      "pcs_points": 8.0,
-      "uci_points": 6.0,
-      "rider_id": 24,
-      "race_id": 49,
-      "team_id": 1,
-      "race_name": "Mountains classificationMountains classification",
-      "race_class": ""
-    }
-  ],
-  "colin-savioz": [
-    {
-      "id": 613,
-      "stage": "race/andorra-morabanc-classica/2026/result",
-      "date": "2026-06-21",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 52,
-      "team_id": 1,
-      "race_name": "Andorra MoraBanc Clàssica",
-      "race_class": "1.1"
-    },
-    {
-      "id": 616,
-      "stage": "race/la-route-d-occitanie/2026/stage-3",
-      "date": "2026-06-20",
-      "position": 95,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 53,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 617,
-      "stage": "race/la-route-d-occitanie/2026/stage-2",
-      "date": "2026-06-19",
-      "position": 95,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 53,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 618,
-      "stage": "race/la-route-d-occitanie/2026/stage-1",
-      "date": "2026-06-18",
-      "position": 104,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 53,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 619,
-      "stage": "race/mercan-tour-classic-alpes-maritimes/2026/result",
-      "date": "2026-06-03",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 54,
-      "team_id": 1,
-      "race_name": "Mercan'Tour Classic Alpes-Maritimes",
-      "race_class": "1.1"
-    },
-    {
-      "id": 620,
-      "stage": "race/boucles-de-l-aulne/2026/result",
-      "date": "2026-05-17",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 41,
-      "team_id": 1,
-      "race_name": "Châteaulin",
-      "race_class": "1.1"
-    },
-    {
-      "id": 621,
-      "stage": "race/tour-du-finistere/2026/result",
-      "date": "2026-05-16",
-      "position": 56,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 42,
-      "team_id": 1,
-      "race_name": "Tour du Finistère Pays de Quimper",
-      "race_class": "1.1"
-    },
-    {
-      "id": 623,
-      "stage": "race/tour-of-turkey/2026/stage-8",
-      "date": "2026-05-03",
-      "position": 43,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 624,
-      "stage": "race/tour-of-turkey/2026/stage-7",
-      "date": "2026-05-02",
-      "position": 81,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 625,
-      "stage": "race/tour-of-turkey/2026/stage-6",
-      "date": "2026-05-01",
-      "position": 37,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 626,
-      "stage": "race/tour-of-turkey/2026/stage-5",
-      "date": "2026-04-30",
-      "position": 38,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 627,
-      "stage": "race/tour-of-turkey/2026/stage-4",
-      "date": "2026-04-29",
-      "position": 60,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 628,
-      "stage": "race/tour-of-turkey/2026/stage-3",
-      "date": "2026-04-28",
-      "position": 61,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 629,
-      "stage": "race/tour-of-turkey/2026/stage-2",
-      "date": "2026-04-27",
-      "position": 61,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 630,
-      "stage": "race/tour-of-turkey/2026/stage-1",
-      "date": "2026-04-26",
-      "position": 103,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    },
-    {
-      "id": 631,
-      "stage": "race/tour-du-jura-cycliste/2026/result",
-      "date": "2026-04-18",
-      "position": 29,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 57,
-      "team_id": 1,
-      "race_name": "Tour du Jura Cycliste",
-      "race_class": "1.1"
-    },
-    {
-      "id": 632,
-      "stage": "race/classic-grand-besancon-doubs/2026/result",
-      "date": "2026-04-17",
-      "position": 50,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 58,
-      "team_id": 1,
-      "race_name": "Classic Grand Besançon Doubs",
-      "race_class": "1.1"
-    },
-    {
-      "id": 633,
-      "stage": "race/region-pays-de-la-loire/2026/stage-3",
-      "date": "2026-04-09",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 49,
-      "team_id": 1,
-      "race_name": "Mountains classificationMountains classification",
-      "race_class": ""
-    },
-    {
-      "id": 634,
-      "stage": "race/region-pays-de-la-loire/2026/stage-2",
-      "date": "2026-04-08",
-      "position": 77,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 49,
-      "team_id": 1,
-      "race_name": "Mountains classificationMountains classification",
-      "race_class": ""
-    },
-    {
-      "id": 635,
-      "stage": "race/region-pays-de-la-loire/2026/stage-1",
-      "date": "2026-04-07",
-      "position": 78,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 49,
-      "team_id": 1,
-      "race_name": "Mountains classificationMountains classification",
-      "race_class": ""
-    },
-    {
-      "id": 636,
-      "stage": "race/route-adelie-de-vitre/2026/result",
-      "date": "2026-04-03",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 50,
-      "team_id": 1,
-      "race_name": "Classic Velox Adélie de Vitré",
-      "race_class": "1.1"
-    },
-    {
-      "id": 203,
-      "stage": "race/milano-torino/2026/result",
-      "date": "2026-03-18",
-      "position": 54,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 30,
-      "team_id": 1,
-      "race_name": "Torino",
-      "race_class": "1.Pro"
-    },
-    {
-      "id": 146,
-      "stage": "race/tour-des-alpes-maritimes/2026/result",
-      "date": "2026-02-22",
-      "position": 87,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 24,
-      "team_id": 1,
-      "race_name": "Tour des Alpes-Maritimes (1.1)",
-      "race_class": "1.1"
-    },
-    {
-      "id": 147,
-      "stage": "race/classic-var/2026/result",
-      "date": "2026-02-21",
-      "position": 48,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 25,
-      "team_id": 1,
-      "race_name": "Classic Var (1.1)",
-      "race_class": "1.1"
-    },
-    {
-      "id": 150,
-      "stage": "race/tour-cycliste-international-la-provence/2026/stage-3",
-      "date": "2026-02-15",
-      "position": 45,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 11,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 151,
-      "stage": "race/tour-cycliste-international-la-provence/2026/stage-2",
-      "date": "2026-02-14",
-      "position": 40,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 11,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 152,
-      "stage": "race/tour-cycliste-international-la-provence/2026/stage-1",
-      "date": "2026-02-13",
-      "position": 91,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 11,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 153,
-      "stage": "race/classica-camp-de-morvedre/2026/result",
-      "date": "2026-01-23",
-      "position": null,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 12,
-      "team_id": 1,
-      "race_name": "Classica Camp de Morvedre  (1.1)",
-      "race_class": "1.1"
-    },
-    {
-      "id": 148,
-      "stage": "race/tour-cycliste-international-la-provence/2026/youth",
-      "date": null,
-      "position": 12,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 11,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 149,
-      "stage": "race/tour-cycliste-international-la-provence/2026/gc",
-      "date": null,
-      "position": 57,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 11,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 614,
-      "stage": "race/la-route-d-occitanie/2026/youth",
-      "date": null,
-      "position": 47,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 53,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 615,
-      "stage": "race/la-route-d-occitanie/2026/gc",
-      "date": null,
-      "position": 93,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 53,
-      "team_id": 1,
-      "race_name": "General classificationGeneral classification",
-      "race_class": ""
-    },
-    {
-      "id": 622,
-      "stage": "race/tour-of-turkey/2026/gc",
-      "date": null,
-      "position": 41,
-      "pcs_points": 0.0,
-      "uci_points": 0.0,
-      "rider_id": 30,
-      "race_id": 56,
-      "team_id": 1,
-      "race_name": "Points classificationPoints classification",
-      "race_class": ""
-    }
-  ],
-  "lukas-kubis": [
-    {
-      "id": 307,
+      "id": 309,
       "stage": "race/tour-of-belgium/2026/stage-4",
       "date": "2026-06-20",
       "position": 9,
@@ -2141,11 +493,11 @@
       "rider_id": 6,
       "race_id": 59,
       "team_id": 1,
-      "race_name": "General classificationGeneral classification",
+      "race_name": "Points classificationPoints classification",
       "race_class": ""
     },
     {
-      "id": 308,
+      "id": 310,
       "stage": "race/tour-of-belgium/2026/stage-3",
       "date": "2026-06-19",
       "position": 16,
@@ -2154,11 +506,11 @@
       "rider_id": 6,
       "race_id": 59,
       "team_id": 1,
-      "race_name": "General classificationGeneral classification",
+      "race_name": "Points classificationPoints classification",
       "race_class": ""
     },
     {
-      "id": 309,
+      "id": 311,
       "stage": "race/tour-of-belgium/2026/stage-2",
       "date": "2026-06-18",
       "position": 38,
@@ -2167,11 +519,11 @@
       "rider_id": 6,
       "race_id": 59,
       "team_id": 1,
-      "race_name": "General classificationGeneral classification",
+      "race_name": "Points classificationPoints classification",
       "race_class": ""
     },
     {
-      "id": 310,
+      "id": 312,
       "stage": "race/tour-of-belgium/2026/stage-1",
       "date": "2026-06-17",
       "position": 11,
@@ -2180,11 +532,11 @@
       "rider_id": 6,
       "race_id": 59,
       "team_id": 1,
-      "race_name": "General classificationGeneral classification",
+      "race_name": "Points classificationPoints classification",
       "race_class": ""
     },
     {
-      "id": 311,
+      "id": 313,
       "stage": "race/muur-classic-geraardsbergen/2026/result",
       "date": "2026-06-14",
       "position": 5,
@@ -2197,7 +549,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 314,
+      "id": 316,
       "stage": "race/giro-d-italia/2026/stage-21",
       "date": "2026-05-31",
       "position": 142,
@@ -2210,7 +562,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 315,
+      "id": 317,
       "stage": "race/giro-d-italia/2026/stage-20",
       "date": "2026-05-30",
       "position": 139,
@@ -2223,7 +575,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 316,
+      "id": 318,
       "stage": "race/giro-d-italia/2026/stage-19",
       "date": "2026-05-29",
       "position": 145,
@@ -2236,7 +588,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 317,
+      "id": 319,
       "stage": "race/giro-d-italia/2026/stage-18",
       "date": "2026-05-28",
       "position": 10,
@@ -2249,7 +601,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 318,
+      "id": 320,
       "stage": "race/giro-d-italia/2026/stage-17",
       "date": "2026-05-27",
       "position": 116,
@@ -2262,7 +614,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 319,
+      "id": 321,
       "stage": "race/giro-d-italia/2026/stage-16",
       "date": "2026-05-26",
       "position": 151,
@@ -2275,7 +627,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 320,
+      "id": 322,
       "stage": "race/giro-d-italia/2026/stage-15",
       "date": "2026-05-24",
       "position": 90,
@@ -2288,7 +640,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 321,
+      "id": 323,
       "stage": "race/giro-d-italia/2026/stage-14",
       "date": "2026-05-23",
       "position": 157,
@@ -2301,7 +653,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 322,
+      "id": 324,
       "stage": "race/giro-d-italia/2026/stage-13",
       "date": "2026-05-22",
       "position": 130,
@@ -2314,7 +666,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 323,
+      "id": 325,
       "stage": "race/giro-d-italia/2026/stage-12",
       "date": "2026-05-21",
       "position": 139,
@@ -2327,7 +679,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 324,
+      "id": 326,
       "stage": "race/giro-d-italia/2026/stage-11",
       "date": "2026-05-20",
       "position": 139,
@@ -2340,7 +692,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 325,
+      "id": 327,
       "stage": "race/giro-d-italia/2026/stage-10",
       "date": "2026-05-19",
       "position": 139,
@@ -2353,7 +705,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 326,
+      "id": 328,
       "stage": "race/giro-d-italia/2026/stage-9",
       "date": "2026-05-17",
       "position": 157,
@@ -2366,7 +718,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 327,
+      "id": 329,
       "stage": "race/giro-d-italia/2026/stage-8",
       "date": "2026-05-16",
       "position": 147,
@@ -2379,7 +731,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 328,
+      "id": 330,
       "stage": "race/giro-d-italia/2026/stage-7",
       "date": "2026-05-15",
       "position": 160,
@@ -2392,7 +744,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 329,
+      "id": 331,
       "stage": "race/giro-d-italia/2026/stage-6",
       "date": "2026-05-14",
       "position": 119,
@@ -2405,7 +757,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 330,
+      "id": 332,
       "stage": "race/giro-d-italia/2026/stage-5",
       "date": "2026-05-13",
       "position": 160,
@@ -2418,7 +770,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 331,
+      "id": 333,
       "stage": "race/giro-d-italia/2026/stage-4",
       "date": "2026-05-12",
       "position": 99,
@@ -2431,7 +783,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 332,
+      "id": 334,
       "stage": "race/giro-d-italia/2026/stage-3",
       "date": "2026-05-10",
       "position": 70,
@@ -2444,7 +796,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 333,
+      "id": 335,
       "stage": "race/giro-d-italia/2026/stage-2",
       "date": "2026-05-09",
       "position": 62,
@@ -2457,7 +809,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 334,
+      "id": 336,
       "stage": "race/giro-d-italia/2026/stage-1",
       "date": "2026-05-08",
       "position": 68,
@@ -2470,7 +822,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 335,
+      "id": 337,
       "stage": "race/paris-roubaix/2026/result",
       "date": "2026-04-12",
       "position": 86,
@@ -2483,7 +835,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 336,
+      "id": 338,
       "stage": "race/ronde-van-vlaanderen/2026/result",
       "date": "2026-04-05",
       "position": 53,
@@ -2496,7 +848,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 337,
+      "id": 339,
       "stage": "race/dwars-door-vlaanderen/2026/result",
       "date": "2026-04-01",
       "position": 11,
@@ -2509,7 +861,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 338,
+      "id": 340,
       "stage": "race/gent-wevelgem/2026/result",
       "date": "2026-03-29",
       "position": 72,
@@ -2718,6 +1070,19 @@
     },
     {
       "id": 306,
+      "stage": "race/tour-of-belgium/2026/points",
+      "date": null,
+      "position": 23,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 6,
+      "race_id": 59,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 307,
       "stage": "race/tour-of-belgium/2026/gc",
       "date": null,
       "position": 7,
@@ -2726,11 +1091,11 @@
       "rider_id": 6,
       "race_id": 59,
       "team_id": 1,
-      "race_name": "General classificationGeneral classification",
+      "race_name": "Points classificationPoints classification",
       "race_class": ""
     },
     {
-      "id": 312,
+      "id": 314,
       "stage": "race/giro-d-italia/2026/points",
       "date": null,
       "position": 74,
@@ -2743,7 +1108,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 313,
+      "id": 315,
       "stage": "race/giro-d-italia/2026/gc",
       "date": null,
       "position": 138,
@@ -2756,9 +1121,585 @@
       "race_class": "Piani di Pezzè"
     }
   ],
+  "rory-townsend": [
+    {
+      "id": 341,
+      "stage": "race/tour-of-belgium/2026/stage-5",
+      "date": "2026-06-21",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 59,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 342,
+      "stage": "race/tour-of-belgium/2026/stage-4",
+      "date": "2026-06-20",
+      "position": 128,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 59,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 343,
+      "stage": "race/tour-of-belgium/2026/stage-3",
+      "date": "2026-06-19",
+      "position": 93,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 59,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 344,
+      "stage": "race/tour-of-belgium/2026/stage-2",
+      "date": "2026-06-18",
+      "position": 147,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 59,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 345,
+      "stage": "race/tour-of-belgium/2026/stage-1",
+      "date": "2026-06-17",
+      "position": 117,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 59,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 346,
+      "stage": "race/muur-classic-geraardsbergen/2026/result",
+      "date": "2026-06-14",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 60,
+      "team_id": 1,
+      "race_name": "Muur Classic Geraardsbergen",
+      "race_class": "1.1"
+    },
+    {
+      "id": 347,
+      "stage": "race/circuit-franco-belge/2026/result",
+      "date": "2026-06-10",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 39,
+      "team_id": 1,
+      "race_name": "Circuit Franco-Belge",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 348,
+      "stage": "race/brussels-cycling-classic/2026/result",
+      "date": "2026-06-07",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 65,
+      "team_id": 1,
+      "race_name": "Brussels Cycling Classic",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 349,
+      "stage": "race/heist-op-den-berg/2026/result",
+      "date": "2026-06-06",
+      "position": 136,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 66,
+      "team_id": 1,
+      "race_name": "Heylen Vastgoed Heistse Pijl",
+      "race_class": "1.1"
+    },
+    {
+      "id": 351,
+      "stage": "race/boucles-de-la-mayenne/2026/stage-3",
+      "date": "2026-05-31",
+      "position": 108,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 40,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": "Espace Mayenne"
+    },
+    {
+      "id": 352,
+      "stage": "race/boucles-de-la-mayenne/2026/stage-2",
+      "date": "2026-05-30",
+      "position": 120,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 40,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": "Espace Mayenne"
+    },
+    {
+      "id": 353,
+      "stage": "race/boucles-de-la-mayenne/2026/stage-1",
+      "date": "2026-05-29",
+      "position": 62,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 40,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": "Espace Mayenne"
+    },
+    {
+      "id": 354,
+      "stage": "race/boucles-de-la-mayenne/2026/prologue",
+      "date": "2026-05-28",
+      "position": 118,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 40,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": "Espace Mayenne"
+    },
+    {
+      "id": 48,
+      "stage": "race/kuurne-brussel-kuurne/2026/result",
+      "date": "2026-03-01",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 2,
+      "team_id": 1,
+      "race_name": "Kuurne",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 49,
+      "stage": "race/clasica-de-almeria/2026/result",
+      "date": "2026-02-15",
+      "position": 51,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 3,
+      "team_id": 1,
+      "race_name": "Clasica de Almeria (1.Pro)",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 50,
+      "stage": "race/gp-de-valence/2026/result",
+      "date": "2026-01-25",
+      "position": 15,
+      "pcs_points": 6.0,
+      "uci_points": 5.0,
+      "rider_id": 7,
+      "race_id": 6,
+      "team_id": 1,
+      "race_name": "Clàssica Comunitat Valenciana",
+      "race_class": "1.1"
+    },
+    {
+      "id": 350,
+      "stage": "race/boucles-de-la-mayenne/2026/gc",
+      "date": null,
+      "position": 120,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 7,
+      "race_id": 40,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": "Espace Mayenne"
+    }
+  ],
+  "adam-toupalik": [
+    {
+      "id": 430,
+      "stage": "race/andorra-morabanc-classica/2026/result",
+      "date": "2026-06-21",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 52,
+      "team_id": 1,
+      "race_name": "Andorra MoraBanc Clàssica",
+      "race_class": "1.1"
+    },
+    {
+      "id": 432,
+      "stage": "race/la-route-d-occitanie/2026/stage-3",
+      "date": "2026-06-20",
+      "position": 84,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 53,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 433,
+      "stage": "race/la-route-d-occitanie/2026/stage-2",
+      "date": "2026-06-19",
+      "position": 108,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 53,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 434,
+      "stage": "race/la-route-d-occitanie/2026/stage-1",
+      "date": "2026-06-18",
+      "position": 113,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 53,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 435,
+      "stage": "race/muur-classic-geraardsbergen/2026/result",
+      "date": "2026-06-14",
+      "position": 87,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 60,
+      "team_id": 1,
+      "race_name": "Muur Classic Geraardsbergen",
+      "race_class": "1.1"
+    },
+    {
+      "id": 436,
+      "stage": "race/circuit-franco-belge/2026/result",
+      "date": "2026-06-10",
+      "position": 102,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 39,
+      "team_id": 1,
+      "race_name": "Circuit Franco-Belge",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 437,
+      "stage": "race/4-jours-de-dunkerque/2026/stage-1",
+      "date": "2026-05-20",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 69,
+      "team_id": 1,
+      "race_name": "Lagny-le-Sec › Laon",
+      "race_class": ""
+    },
+    {
+      "id": 438,
+      "stage": "race/classique-dunkerque/2026/result",
+      "date": "2026-05-19",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 70,
+      "team_id": 1,
+      "race_name": "Classique Dunkerque / Grand prix des Hauts de France",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 439,
+      "stage": "race/rund-um-koln/2026/result",
+      "date": "2026-05-17",
+      "position": 80,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 71,
+      "team_id": 1,
+      "race_name": "Rund um Köln",
+      "race_class": "1.1"
+    },
+    {
+      "id": 440,
+      "stage": "race/circuit-de-wallonie/2026/result",
+      "date": "2026-05-14",
+      "position": 41,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 72,
+      "team_id": 1,
+      "race_name": "Lotto Circuit de Wallonie",
+      "race_class": "1.1"
+    },
+    {
+      "id": 441,
+      "stage": "race/famenne-ardenne-classic/2026/result",
+      "date": "2026-05-03",
+      "position": 57,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 73,
+      "team_id": 1,
+      "race_name": "Lotto Famenne Ardenne Classic",
+      "race_class": "1.1"
+    },
+    {
+      "id": 442,
+      "stage": "race/la-fleche-wallonne/2026/result",
+      "date": "2026-04-22",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 46,
+      "team_id": 1,
+      "race_name": "La Flèche Wallonne",
+      "race_class": "1.UWT"
+    },
+    {
+      "id": 443,
+      "stage": "race/amstel-gold-race/2026/result",
+      "date": "2026-04-19",
+      "position": 48,
+      "pcs_points": 5.0,
+      "uci_points": 10.0,
+      "rider_id": 10,
+      "race_id": 47,
+      "team_id": 1,
+      "race_name": "Amstel Gold Race",
+      "race_class": "1.UWT"
+    },
+    {
+      "id": 444,
+      "stage": "race/brabantse-pijl/2026/result",
+      "date": "2026-04-17",
+      "position": 51,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 48,
+      "team_id": 1,
+      "race_name": "La Flèche Brabançonne ME",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 445,
+      "stage": "race/ronde-van-limburg/2026/result",
+      "date": "2026-04-15",
+      "position": 50,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 67,
+      "team_id": 1,
+      "race_name": "Ronde van Limburg",
+      "race_class": "1.1"
+    },
+    {
+      "id": 446,
+      "stage": "race/route-adelie-de-vitre/2026/result",
+      "date": "2026-04-03",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 50,
+      "team_id": 1,
+      "race_name": "Classic Velox Adélie de Vitré",
+      "race_class": "1.1"
+    },
+    {
+      "id": 447,
+      "stage": "race/paris-camembert/2026/result",
+      "date": "2026-03-31",
+      "position": 78,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 51,
+      "team_id": 1,
+      "race_name": "Camembert",
+      "race_class": "1.1"
+    },
+    {
+      "id": 448,
+      "stage": "race/e3-harelbeke/2026/result",
+      "date": "2026-03-27",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 68,
+      "team_id": 1,
+      "race_name": "E3 Saxo Classic ME",
+      "race_class": "1.UWT"
+    },
+    {
+      "id": 168,
+      "stage": "race/gp-de-denain/2026/result",
+      "date": "2026-03-19",
+      "position": 77,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 33,
+      "team_id": 1,
+      "race_name": "Porte du Hainaut",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 169,
+      "stage": "race/nokere-koerse/2026/result",
+      "date": "2026-03-18",
+      "position": 119,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 32,
+      "team_id": 1,
+      "race_name": "Danilith Nokere Koerse",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 76,
+      "stage": "race/region-on-dodecanese-gp/2026/result",
+      "date": "2026-03-01",
+      "position": 95,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 17,
+      "team_id": 1,
+      "race_name": "Region on Dodecanese GP (1.1)",
+      "race_class": "1.1"
+    },
+    {
+      "id": 170,
+      "stage": "race/independent-dodecanese-circuit/2026/result",
+      "date": "2026-03-01",
+      "position": 95,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 31,
+      "team_id": 1,
+      "race_name": "Region on Dodecanese GP",
+      "race_class": "1.1"
+    },
+    {
+      "id": 77,
+      "stage": "race/visit-south-aegean-gp/2026/result",
+      "date": "2026-02-28",
+      "position": 103,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 18,
+      "team_id": 1,
+      "race_name": "Visit South Aegean GP (1.1)",
+      "race_class": "1.1"
+    },
+    {
+      "id": 78,
+      "stage": "race/clasica-jaen-paraiso-interior/2026/result",
+      "date": "2026-02-16",
+      "position": 38,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 13,
+      "team_id": 1,
+      "race_name": "Clásica Jaén (1.1)",
+      "race_class": "1.1"
+    },
+    {
+      "id": 79,
+      "stage": "race/vuelta-ciclista-a-la-region-de-murcia/2026/stage-1",
+      "date": "2026-02-13",
+      "position": 24,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 14,
+      "team_id": 1,
+      "race_name": "S1",
+      "race_class": ""
+    },
+    {
+      "id": 431,
+      "stage": "race/la-route-d-occitanie/2026/gc",
+      "date": null,
+      "position": 95,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 10,
+      "race_id": 53,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    }
+  ],
   "tomas-kopecky": [
     {
-      "id": 474,
+      "id": 477,
+      "stage": "race/tour-of-belgium/2026/stage-5",
+      "date": "2026-06-21",
+      "position": 77,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 18,
+      "race_id": 59,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 478,
       "stage": "race/tour-of-belgium/2026/stage-4",
       "date": "2026-06-20",
       "position": 86,
@@ -2767,11 +1708,11 @@
       "rider_id": 18,
       "race_id": 59,
       "team_id": 1,
-      "race_name": "General classificationGeneral classification",
+      "race_name": "Points classificationPoints classification",
       "race_class": ""
     },
     {
-      "id": 475,
+      "id": 479,
       "stage": "race/tour-of-belgium/2026/stage-3",
       "date": "2026-06-19",
       "position": 33,
@@ -2780,11 +1721,11 @@
       "rider_id": 18,
       "race_id": 59,
       "team_id": 1,
-      "race_name": "General classificationGeneral classification",
+      "race_name": "Points classificationPoints classification",
       "race_class": ""
     },
     {
-      "id": 476,
+      "id": 480,
       "stage": "race/tour-of-belgium/2026/stage-2",
       "date": "2026-06-18",
       "position": 63,
@@ -2793,11 +1734,11 @@
       "rider_id": 18,
       "race_id": 59,
       "team_id": 1,
-      "race_name": "General classificationGeneral classification",
+      "race_name": "Points classificationPoints classification",
       "race_class": ""
     },
     {
-      "id": 477,
+      "id": 481,
       "stage": "race/tour-of-belgium/2026/stage-1",
       "date": "2026-06-17",
       "position": 91,
@@ -2806,11 +1747,11 @@
       "rider_id": 18,
       "race_id": 59,
       "team_id": 1,
-      "race_name": "General classificationGeneral classification",
+      "race_name": "Points classificationPoints classification",
       "race_class": ""
     },
     {
-      "id": 478,
+      "id": 482,
       "stage": "race/copenhagen-sprint/2026/result",
       "date": "2026-06-14",
       "position": 64,
@@ -2823,7 +1764,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 480,
+      "id": 484,
       "stage": "race/giro-d-italia/2026/stage-21",
       "date": "2026-05-31",
       "position": 149,
@@ -2836,7 +1777,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 481,
+      "id": 485,
       "stage": "race/giro-d-italia/2026/stage-20",
       "date": "2026-05-30",
       "position": 142,
@@ -2849,7 +1790,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 482,
+      "id": 486,
       "stage": "race/giro-d-italia/2026/stage-19",
       "date": "2026-05-29",
       "position": 140,
@@ -2862,7 +1803,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 483,
+      "id": 487,
       "stage": "race/giro-d-italia/2026/stage-18",
       "date": "2026-05-28",
       "position": 89,
@@ -2875,7 +1816,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 484,
+      "id": 488,
       "stage": "race/giro-d-italia/2026/stage-17",
       "date": "2026-05-27",
       "position": 143,
@@ -2888,7 +1829,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 485,
+      "id": 489,
       "stage": "race/giro-d-italia/2026/stage-16",
       "date": "2026-05-26",
       "position": 117,
@@ -2901,7 +1842,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 486,
+      "id": 490,
       "stage": "race/giro-d-italia/2026/stage-15",
       "date": "2026-05-24",
       "position": 144,
@@ -2914,7 +1855,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 487,
+      "id": 491,
       "stage": "race/giro-d-italia/2026/stage-14",
       "date": "2026-05-23",
       "position": 144,
@@ -2927,7 +1868,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 488,
+      "id": 492,
       "stage": "race/giro-d-italia/2026/stage-13",
       "date": "2026-05-22",
       "position": 157,
@@ -2940,7 +1881,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 489,
+      "id": 493,
       "stage": "race/giro-d-italia/2026/stage-12",
       "date": "2026-05-21",
       "position": 137,
@@ -2953,7 +1894,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 490,
+      "id": 494,
       "stage": "race/giro-d-italia/2026/stage-11",
       "date": "2026-05-20",
       "position": 163,
@@ -2966,7 +1907,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 491,
+      "id": 495,
       "stage": "race/giro-d-italia/2026/stage-10",
       "date": "2026-05-19",
       "position": 129,
@@ -2979,7 +1920,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 492,
+      "id": 496,
       "stage": "race/giro-d-italia/2026/stage-9",
       "date": "2026-05-17",
       "position": 124,
@@ -2992,7 +1933,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 493,
+      "id": 497,
       "stage": "race/giro-d-italia/2026/stage-8",
       "date": "2026-05-16",
       "position": 146,
@@ -3005,7 +1946,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 494,
+      "id": 498,
       "stage": "race/giro-d-italia/2026/stage-7",
       "date": "2026-05-15",
       "position": 149,
@@ -3018,7 +1959,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 495,
+      "id": 499,
       "stage": "race/giro-d-italia/2026/stage-6",
       "date": "2026-05-14",
       "position": 140,
@@ -3031,7 +1972,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 496,
+      "id": 500,
       "stage": "race/giro-d-italia/2026/stage-5",
       "date": "2026-05-13",
       "position": 148,
@@ -3044,7 +1985,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 497,
+      "id": 501,
       "stage": "race/giro-d-italia/2026/stage-4",
       "date": "2026-05-12",
       "position": 151,
@@ -3057,7 +1998,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 498,
+      "id": 502,
       "stage": "race/giro-d-italia/2026/stage-3",
       "date": "2026-05-10",
       "position": 91,
@@ -3070,7 +2011,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 499,
+      "id": 503,
       "stage": "race/giro-d-italia/2026/stage-2",
       "date": "2026-05-09",
       "position": 112,
@@ -3083,7 +2024,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 500,
+      "id": 504,
       "stage": "race/giro-d-italia/2026/stage-1",
       "date": "2026-05-08",
       "position": 162,
@@ -3096,7 +2037,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 501,
+      "id": 505,
       "stage": "race/paris-roubaix/2026/result",
       "date": "2026-04-12",
       "position": 61,
@@ -3109,7 +2050,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 502,
+      "id": 506,
       "stage": "race/ronde-van-vlaanderen/2026/result",
       "date": "2026-04-05",
       "position": null,
@@ -3122,7 +2063,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 503,
+      "id": 507,
       "stage": "race/dwars-door-vlaanderen/2026/result",
       "date": "2026-04-01",
       "position": 64,
@@ -3135,7 +2076,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 504,
+      "id": 508,
       "stage": "race/gent-wevelgem/2026/result",
       "date": "2026-03-29",
       "position": 116,
@@ -3330,7 +2271,20 @@
       "race_class": ""
     },
     {
-      "id": 479,
+      "id": 476,
+      "stage": "race/tour-of-belgium/2026/gc",
+      "date": null,
+      "position": 39,
+      "pcs_points": 0.0,
+      "uci_points": 3.0,
+      "rider_id": 18,
+      "race_id": 59,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 483,
       "stage": "race/giro-d-italia/2026/gc",
       "date": null,
       "position": 143,
@@ -3343,9 +2297,1107 @@
       "race_class": "Piani di Pezzè"
     }
   ],
-  "ronan-auge": [
+  "jannis-peter": [
+    {
+      "id": 531,
+      "stage": "race/andorra-morabanc-classica/2026/result",
+      "date": "2026-06-21",
+      "position": 54,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 52,
+      "team_id": 1,
+      "race_name": "Andorra MoraBanc Clàssica",
+      "race_class": "1.1"
+    },
+    {
+      "id": 533,
+      "stage": "race/la-route-d-occitanie/2026/stage-3",
+      "date": "2026-06-20",
+      "position": 55,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 53,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 534,
+      "stage": "race/la-route-d-occitanie/2026/stage-2",
+      "date": "2026-06-19",
+      "position": 87,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 53,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 535,
+      "stage": "race/la-route-d-occitanie/2026/stage-1",
+      "date": "2026-06-18",
+      "position": 97,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 53,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 538,
+      "stage": "race/tour-of-turkey/2026/stage-8",
+      "date": "2026-05-03",
+      "position": 68,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 539,
+      "stage": "race/tour-of-turkey/2026/stage-7",
+      "date": "2026-05-02",
+      "position": 124,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 540,
+      "stage": "race/tour-of-turkey/2026/stage-6",
+      "date": "2026-05-01",
+      "position": 14,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 541,
+      "stage": "race/tour-of-turkey/2026/stage-5",
+      "date": "2026-04-30",
+      "position": 54,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 542,
+      "stage": "race/tour-of-turkey/2026/stage-4",
+      "date": "2026-04-29",
+      "position": 51,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 543,
+      "stage": "race/tour-of-turkey/2026/stage-3",
+      "date": "2026-04-28",
+      "position": 16,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 544,
+      "stage": "race/tour-of-turkey/2026/stage-2",
+      "date": "2026-04-27",
+      "position": 46,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 545,
+      "stage": "race/tour-of-turkey/2026/stage-1",
+      "date": "2026-04-26",
+      "position": 79,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 546,
+      "stage": "race/tour-du-jura-cycliste/2026/result",
+      "date": "2026-04-18",
+      "position": 42,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 57,
+      "team_id": 1,
+      "race_name": "Tour du Jura Cycliste",
+      "race_class": "1.1"
+    },
+    {
+      "id": 547,
+      "stage": "race/classic-grand-besancon-doubs/2026/result",
+      "date": "2026-04-17",
+      "position": 19,
+      "pcs_points": 2.0,
+      "uci_points": 3.0,
+      "rider_id": 19,
+      "race_id": 58,
+      "team_id": 1,
+      "race_name": "Classic Grand Besançon Doubs",
+      "race_class": "1.1"
+    },
+    {
+      "id": 190,
+      "stage": "race/milano-torino/2026/result",
+      "date": "2026-03-18",
+      "position": 25,
+      "pcs_points": 1.0,
+      "uci_points": 6.0,
+      "rider_id": 19,
+      "race_id": 30,
+      "team_id": 1,
+      "race_name": "Torino",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 105,
+      "stage": "race/trofeo-laigueglia/2026/result",
+      "date": "2026-03-04",
+      "position": 41,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 8,
+      "team_id": 1,
+      "race_name": "Trofeo Laigueglia (1.Pro)",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 106,
+      "stage": "race/la-drome-classic/2026/result",
+      "date": "2026-03-01",
+      "position": 65,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 9,
+      "team_id": 1,
+      "race_name": "Faun Drome Classic (1.Pro)",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 107,
+      "stage": "race/faun-ardeche-classic/2026/result",
+      "date": "2026-02-28",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 10,
+      "team_id": 1,
+      "race_name": "Faun-Ardèche Classic (1.Pro)",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 111,
+      "stage": "race/tour-cycliste-international-la-provence/2026/stage-3",
+      "date": "2026-02-15",
+      "position": 8,
+      "pcs_points": 1.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 11,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 112,
+      "stage": "race/tour-cycliste-international-la-provence/2026/stage-2",
+      "date": "2026-02-14",
+      "position": 27,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 11,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 113,
+      "stage": "race/tour-cycliste-international-la-provence/2026/stage-1",
+      "date": "2026-02-13",
+      "position": 55,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 11,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 114,
+      "stage": "race/ruta-de-la-ceramica-gran-premio-castellon/2026/result",
+      "date": "2026-01-24",
+      "position": 118,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 23,
+      "team_id": 1,
+      "race_name": "Gran Premio Castellón",
+      "race_class": "1.1"
+    },
+    {
+      "id": 115,
+      "stage": "race/classica-camp-de-morvedre/2026/result",
+      "date": "2026-01-23",
+      "position": 36,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 12,
+      "team_id": 1,
+      "race_name": "Classica Camp de Morvedre  (1.1)",
+      "race_class": "1.1"
+    },
+    {
+      "id": 108,
+      "stage": "race/tour-cycliste-international-la-provence/2026/kom",
+      "date": null,
+      "position": 6,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 11,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 109,
+      "stage": "race/tour-cycliste-international-la-provence/2026/points",
+      "date": null,
+      "position": 13,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 11,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 110,
+      "stage": "race/tour-cycliste-international-la-provence/2026/gc",
+      "date": null,
+      "position": 24,
+      "pcs_points": 0.0,
+      "uci_points": 3.0,
+      "rider_id": 19,
+      "race_id": 11,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 532,
+      "stage": "race/la-route-d-occitanie/2026/gc",
+      "date": null,
+      "position": 57,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 53,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 536,
+      "stage": "race/tour-of-turkey/2026/points",
+      "date": null,
+      "position": 66,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 19,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 537,
+      "stage": "race/tour-of-turkey/2026/gc",
+      "date": null,
+      "position": 17,
+      "pcs_points": 14.0,
+      "uci_points": 6.0,
+      "rider_id": 19,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    }
+  ],
+  "killian-verschuren": [
+    {
+      "id": 575,
+      "stage": "race/andorra-morabanc-classica/2026/result",
+      "date": "2026-06-21",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 52,
+      "team_id": 1,
+      "race_name": "Andorra MoraBanc Clàssica",
+      "race_class": "1.1"
+    },
+    {
+      "id": 576,
+      "stage": "race/tro-bro-leon/2026/result",
+      "date": "2026-05-10",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 43,
+      "team_id": 1,
+      "race_name": "Tro-Bro Léon",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 577,
+      "stage": "race/gp-de-plumelec/2026/result",
+      "date": "2026-05-09",
+      "position": 25,
+      "pcs_points": 1.0,
+      "uci_points": 6.0,
+      "rider_id": 24,
+      "race_id": 44,
+      "team_id": 1,
+      "race_name": "Grand Prix du Morbihan",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 578,
+      "stage": "race/tour-of-turkey/2026/stage-6",
+      "date": "2026-05-01",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 579,
+      "stage": "race/tour-of-turkey/2026/stage-5",
+      "date": "2026-04-30",
+      "position": 97,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 580,
+      "stage": "race/tour-of-turkey/2026/stage-4",
+      "date": "2026-04-29",
+      "position": 53,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 581,
+      "stage": "race/tour-of-turkey/2026/stage-3",
+      "date": "2026-04-28",
+      "position": 34,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 582,
+      "stage": "race/tour-of-turkey/2026/stage-2",
+      "date": "2026-04-27",
+      "position": 105,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 583,
+      "stage": "race/tour-of-turkey/2026/stage-1",
+      "date": "2026-04-26",
+      "position": 69,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 584,
+      "stage": "race/la-fleche-wallonne/2026/result",
+      "date": "2026-04-22",
+      "position": 29,
+      "pcs_points": 6.0,
+      "uci_points": 20.0,
+      "rider_id": 24,
+      "race_id": 46,
+      "team_id": 1,
+      "race_name": "La Flèche Wallonne",
+      "race_class": "1.UWT"
+    },
+    {
+      "id": 587,
+      "stage": "race/region-pays-de-la-loire/2026/stage-4",
+      "date": "2026-04-10",
+      "position": 14,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 49,
+      "team_id": 1,
+      "race_name": "Mountains classificationMountains classification",
+      "race_class": ""
+    },
+    {
+      "id": 588,
+      "stage": "race/region-pays-de-la-loire/2026/stage-3",
+      "date": "2026-04-09",
+      "position": 34,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 49,
+      "team_id": 1,
+      "race_name": "Mountains classificationMountains classification",
+      "race_class": ""
+    },
+    {
+      "id": 589,
+      "stage": "race/region-pays-de-la-loire/2026/stage-2",
+      "date": "2026-04-08",
+      "position": 56,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 49,
+      "team_id": 1,
+      "race_name": "Mountains classificationMountains classification",
+      "race_class": ""
+    },
     {
       "id": 590,
+      "stage": "race/region-pays-de-la-loire/2026/stage-1",
+      "date": "2026-04-07",
+      "position": 56,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 49,
+      "team_id": 1,
+      "race_name": "Mountains classificationMountains classification",
+      "race_class": ""
+    },
+    {
+      "id": 124,
+      "stage": "race/trofeo-laigueglia/2026/result",
+      "date": "2026-03-04",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 8,
+      "team_id": 1,
+      "race_name": "Trofeo Laigueglia (1.Pro)",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 125,
+      "stage": "race/la-drome-classic/2026/result",
+      "date": "2026-03-01",
+      "position": 32,
+      "pcs_points": 0.0,
+      "uci_points": 3.0,
+      "rider_id": 24,
+      "race_id": 9,
+      "team_id": 1,
+      "race_name": "Faun Drome Classic (1.Pro)",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 126,
+      "stage": "race/faun-ardeche-classic/2026/result",
+      "date": "2026-02-28",
+      "position": 37,
+      "pcs_points": 0.0,
+      "uci_points": 3.0,
+      "rider_id": 24,
+      "race_id": 10,
+      "team_id": 1,
+      "race_name": "Faun-Ardèche Classic (1.Pro)",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 127,
+      "stage": "race/clasica-jaen-paraiso-interior/2026/result",
+      "date": "2026-02-16",
+      "position": 33,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 13,
+      "team_id": 1,
+      "race_name": "Clásica Jaén (1.1)",
+      "race_class": "1.1"
+    },
+    {
+      "id": 128,
+      "stage": "race/vuelta-ciclista-a-la-region-de-murcia/2026/stage-1",
+      "date": "2026-02-13",
+      "position": 52,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 14,
+      "team_id": 1,
+      "race_name": "S1",
+      "race_class": ""
+    },
+    {
+      "id": 129,
+      "stage": "race/classica-camp-de-morvedre/2026/result",
+      "date": "2026-01-23",
+      "position": 43,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 12,
+      "team_id": 1,
+      "race_name": "Classica Camp de Morvedre  (1.1)",
+      "race_class": "1.1"
+    },
+    {
+      "id": 585,
+      "stage": "race/region-pays-de-la-loire/2026/points",
+      "date": null,
+      "position": 39,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 24,
+      "race_id": 49,
+      "team_id": 1,
+      "race_name": "Mountains classificationMountains classification",
+      "race_class": ""
+    },
+    {
+      "id": 586,
+      "stage": "race/region-pays-de-la-loire/2026/gc",
+      "date": null,
+      "position": 20,
+      "pcs_points": 8.0,
+      "uci_points": 6.0,
+      "rider_id": 24,
+      "race_id": 49,
+      "team_id": 1,
+      "race_name": "Mountains classificationMountains classification",
+      "race_class": ""
+    }
+  ],
+  "colin-savioz": [
+    {
+      "id": 617,
+      "stage": "race/andorra-morabanc-classica/2026/result",
+      "date": "2026-06-21",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 52,
+      "team_id": 1,
+      "race_name": "Andorra MoraBanc Clàssica",
+      "race_class": "1.1"
+    },
+    {
+      "id": 620,
+      "stage": "race/la-route-d-occitanie/2026/stage-3",
+      "date": "2026-06-20",
+      "position": 95,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 53,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 621,
+      "stage": "race/la-route-d-occitanie/2026/stage-2",
+      "date": "2026-06-19",
+      "position": 95,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 53,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 622,
+      "stage": "race/la-route-d-occitanie/2026/stage-1",
+      "date": "2026-06-18",
+      "position": 104,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 53,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 623,
+      "stage": "race/mercan-tour-classic-alpes-maritimes/2026/result",
+      "date": "2026-06-03",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 54,
+      "team_id": 1,
+      "race_name": "Mercan'Tour Classic Alpes-Maritimes",
+      "race_class": "1.1"
+    },
+    {
+      "id": 624,
+      "stage": "race/boucles-de-l-aulne/2026/result",
+      "date": "2026-05-17",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 41,
+      "team_id": 1,
+      "race_name": "Châteaulin",
+      "race_class": "1.1"
+    },
+    {
+      "id": 625,
+      "stage": "race/tour-du-finistere/2026/result",
+      "date": "2026-05-16",
+      "position": 56,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 42,
+      "team_id": 1,
+      "race_name": "Tour du Finistère Pays de Quimper",
+      "race_class": "1.1"
+    },
+    {
+      "id": 627,
+      "stage": "race/tour-of-turkey/2026/stage-8",
+      "date": "2026-05-03",
+      "position": 43,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 628,
+      "stage": "race/tour-of-turkey/2026/stage-7",
+      "date": "2026-05-02",
+      "position": 81,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 629,
+      "stage": "race/tour-of-turkey/2026/stage-6",
+      "date": "2026-05-01",
+      "position": 37,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 630,
+      "stage": "race/tour-of-turkey/2026/stage-5",
+      "date": "2026-04-30",
+      "position": 38,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 631,
+      "stage": "race/tour-of-turkey/2026/stage-4",
+      "date": "2026-04-29",
+      "position": 60,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 632,
+      "stage": "race/tour-of-turkey/2026/stage-3",
+      "date": "2026-04-28",
+      "position": 61,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 633,
+      "stage": "race/tour-of-turkey/2026/stage-2",
+      "date": "2026-04-27",
+      "position": 61,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 634,
+      "stage": "race/tour-of-turkey/2026/stage-1",
+      "date": "2026-04-26",
+      "position": 103,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    },
+    {
+      "id": 635,
+      "stage": "race/tour-du-jura-cycliste/2026/result",
+      "date": "2026-04-18",
+      "position": 29,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 57,
+      "team_id": 1,
+      "race_name": "Tour du Jura Cycliste",
+      "race_class": "1.1"
+    },
+    {
+      "id": 636,
+      "stage": "race/classic-grand-besancon-doubs/2026/result",
+      "date": "2026-04-17",
+      "position": 50,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 58,
+      "team_id": 1,
+      "race_name": "Classic Grand Besançon Doubs",
+      "race_class": "1.1"
+    },
+    {
+      "id": 637,
+      "stage": "race/region-pays-de-la-loire/2026/stage-3",
+      "date": "2026-04-09",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 49,
+      "team_id": 1,
+      "race_name": "Mountains classificationMountains classification",
+      "race_class": ""
+    },
+    {
+      "id": 638,
+      "stage": "race/region-pays-de-la-loire/2026/stage-2",
+      "date": "2026-04-08",
+      "position": 77,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 49,
+      "team_id": 1,
+      "race_name": "Mountains classificationMountains classification",
+      "race_class": ""
+    },
+    {
+      "id": 639,
+      "stage": "race/region-pays-de-la-loire/2026/stage-1",
+      "date": "2026-04-07",
+      "position": 78,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 49,
+      "team_id": 1,
+      "race_name": "Mountains classificationMountains classification",
+      "race_class": ""
+    },
+    {
+      "id": 640,
+      "stage": "race/route-adelie-de-vitre/2026/result",
+      "date": "2026-04-03",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 50,
+      "team_id": 1,
+      "race_name": "Classic Velox Adélie de Vitré",
+      "race_class": "1.1"
+    },
+    {
+      "id": 203,
+      "stage": "race/milano-torino/2026/result",
+      "date": "2026-03-18",
+      "position": 54,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 30,
+      "team_id": 1,
+      "race_name": "Torino",
+      "race_class": "1.Pro"
+    },
+    {
+      "id": 146,
+      "stage": "race/tour-des-alpes-maritimes/2026/result",
+      "date": "2026-02-22",
+      "position": 87,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 24,
+      "team_id": 1,
+      "race_name": "Tour des Alpes-Maritimes (1.1)",
+      "race_class": "1.1"
+    },
+    {
+      "id": 147,
+      "stage": "race/classic-var/2026/result",
+      "date": "2026-02-21",
+      "position": 48,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 25,
+      "team_id": 1,
+      "race_name": "Classic Var (1.1)",
+      "race_class": "1.1"
+    },
+    {
+      "id": 150,
+      "stage": "race/tour-cycliste-international-la-provence/2026/stage-3",
+      "date": "2026-02-15",
+      "position": 45,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 11,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 151,
+      "stage": "race/tour-cycliste-international-la-provence/2026/stage-2",
+      "date": "2026-02-14",
+      "position": 40,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 11,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 152,
+      "stage": "race/tour-cycliste-international-la-provence/2026/stage-1",
+      "date": "2026-02-13",
+      "position": 91,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 11,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 153,
+      "stage": "race/classica-camp-de-morvedre/2026/result",
+      "date": "2026-01-23",
+      "position": null,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 12,
+      "team_id": 1,
+      "race_name": "Classica Camp de Morvedre  (1.1)",
+      "race_class": "1.1"
+    },
+    {
+      "id": 148,
+      "stage": "race/tour-cycliste-international-la-provence/2026/youth",
+      "date": null,
+      "position": 12,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 11,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 149,
+      "stage": "race/tour-cycliste-international-la-provence/2026/gc",
+      "date": null,
+      "position": 57,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 11,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 618,
+      "stage": "race/la-route-d-occitanie/2026/youth",
+      "date": null,
+      "position": 47,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 53,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 619,
+      "stage": "race/la-route-d-occitanie/2026/gc",
+      "date": null,
+      "position": 93,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 53,
+      "team_id": 1,
+      "race_name": "General classificationGeneral classification",
+      "race_class": ""
+    },
+    {
+      "id": 626,
+      "stage": "race/tour-of-turkey/2026/gc",
+      "date": null,
+      "position": 41,
+      "pcs_points": 0.0,
+      "uci_points": 0.0,
+      "rider_id": 30,
+      "race_id": 56,
+      "team_id": 1,
+      "race_name": "Points classificationPoints classification",
+      "race_class": ""
+    }
+  ],
+  "ronan-auge": [
+    {
+      "id": 594,
       "stage": "race/la-route-d-occitanie/2026/stage-3",
       "date": "2026-06-20",
       "position": 100,
@@ -3358,7 +3410,7 @@
       "race_class": ""
     },
     {
-      "id": 591,
+      "id": 595,
       "stage": "race/la-route-d-occitanie/2026/stage-2",
       "date": "2026-06-19",
       "position": 1,
@@ -3371,7 +3423,7 @@
       "race_class": ""
     },
     {
-      "id": 592,
+      "id": 596,
       "stage": "race/la-route-d-occitanie/2026/stage-1",
       "date": "2026-06-18",
       "position": 6,
@@ -3384,7 +3436,7 @@
       "race_class": ""
     },
     {
-      "id": 593,
+      "id": 597,
       "stage": "race/brussels-cycling-classic/2026/result",
       "date": "2026-06-07",
       "position": 44,
@@ -3397,7 +3449,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 594,
+      "id": 598,
       "stage": "race/heist-op-den-berg/2026/result",
       "date": "2026-06-06",
       "position": 5,
@@ -3410,7 +3462,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 598,
+      "id": 602,
       "stage": "race/boucles-de-la-mayenne/2026/stage-3",
       "date": "2026-05-31",
       "position": 24,
@@ -3423,7 +3475,7 @@
       "race_class": "Espace Mayenne"
     },
     {
-      "id": 599,
+      "id": 603,
       "stage": "race/boucles-de-la-mayenne/2026/stage-2",
       "date": "2026-05-30",
       "position": 101,
@@ -3436,7 +3488,7 @@
       "race_class": "Espace Mayenne"
     },
     {
-      "id": 600,
+      "id": 604,
       "stage": "race/boucles-de-la-mayenne/2026/stage-1",
       "date": "2026-05-29",
       "position": 9,
@@ -3449,7 +3501,7 @@
       "race_class": "Espace Mayenne"
     },
     {
-      "id": 601,
+      "id": 605,
       "stage": "race/boucles-de-la-mayenne/2026/prologue",
       "date": "2026-05-28",
       "position": 127,
@@ -3462,7 +3514,7 @@
       "race_class": "Espace Mayenne"
     },
     {
-      "id": 602,
+      "id": 606,
       "stage": "race/boucles-de-l-aulne/2026/result",
       "date": "2026-05-17",
       "position": 63,
@@ -3475,7 +3527,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 603,
+      "id": 607,
       "stage": "race/tour-du-finistere/2026/result",
       "date": "2026-05-16",
       "position": 43,
@@ -3488,7 +3540,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 604,
+      "id": 608,
       "stage": "race/tro-bro-leon/2026/result",
       "date": "2026-05-10",
       "position": null,
@@ -3501,7 +3553,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 605,
+      "id": 609,
       "stage": "race/gp-de-plumelec/2026/result",
       "date": "2026-05-09",
       "position": null,
@@ -3514,7 +3566,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 606,
+      "id": 610,
       "stage": "race/famenne-ardenne-classic/2026/result",
       "date": "2026-05-03",
       "position": 74,
@@ -3527,7 +3579,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 607,
+      "id": 611,
       "stage": "race/eschborn-frankfurt/2026/result",
       "date": "2026-05-01",
       "position": null,
@@ -3540,7 +3592,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 608,
+      "id": 612,
       "stage": "race/ronde-van-limburg/2026/result",
       "date": "2026-04-15",
       "position": null,
@@ -3553,7 +3605,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 609,
+      "id": 613,
       "stage": "race/paris-roubaix/2026/result",
       "date": "2026-04-12",
       "position": 132,
@@ -3566,7 +3618,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 610,
+      "id": 614,
       "stage": "race/volta-nxt-classic/2026/result",
       "date": "2026-04-04",
       "position": 67,
@@ -3579,7 +3631,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 611,
+      "id": 615,
       "stage": "race/gent-wevelgem/2026/result",
       "date": "2026-03-29",
       "position": null,
@@ -3592,7 +3644,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 612,
+      "id": 616,
       "stage": "race/e3-harelbeke/2026/result",
       "date": "2026-03-27",
       "position": null,
@@ -3748,7 +3800,7 @@
       "race_class": ""
     },
     {
-      "id": 587,
+      "id": 591,
       "stage": "race/la-route-d-occitanie/2026/youth",
       "date": null,
       "position": 40,
@@ -3761,7 +3813,7 @@
       "race_class": ""
     },
     {
-      "id": 588,
+      "id": 592,
       "stage": "race/la-route-d-occitanie/2026/points",
       "date": null,
       "position": 2,
@@ -3774,7 +3826,7 @@
       "race_class": ""
     },
     {
-      "id": 589,
+      "id": 593,
       "stage": "race/la-route-d-occitanie/2026/gc",
       "date": null,
       "position": 82,
@@ -3787,7 +3839,7 @@
       "race_class": ""
     },
     {
-      "id": 595,
+      "id": 599,
       "stage": "race/boucles-de-la-mayenne/2026/youth",
       "date": null,
       "position": 25,
@@ -3800,7 +3852,7 @@
       "race_class": "Espace Mayenne"
     },
     {
-      "id": 596,
+      "id": 600,
       "stage": "race/boucles-de-la-mayenne/2026/points",
       "date": null,
       "position": 39,
@@ -3813,7 +3865,7 @@
       "race_class": "Espace Mayenne"
     },
     {
-      "id": 597,
+      "id": 601,
       "stage": "race/boucles-de-la-mayenne/2026/gc",
       "date": null,
       "position": 105,
@@ -4337,7 +4389,7 @@
   ],
   "niklas-larsen": [
     {
-      "id": 353,
+      "id": 355,
       "stage": "race/copenhagen-sprint/2026/result",
       "date": "2026-06-14",
       "position": null,
@@ -4350,7 +4402,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 357,
+      "id": 359,
       "stage": "race/giro-d-italia/2026/stage-21",
       "date": "2026-05-31",
       "position": 151,
@@ -4363,7 +4415,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 358,
+      "id": 360,
       "stage": "race/giro-d-italia/2026/stage-20",
       "date": "2026-05-30",
       "position": 143,
@@ -4376,7 +4428,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 359,
+      "id": 361,
       "stage": "race/giro-d-italia/2026/stage-19",
       "date": "2026-05-29",
       "position": 148,
@@ -4389,7 +4441,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 360,
+      "id": 362,
       "stage": "race/giro-d-italia/2026/stage-18",
       "date": "2026-05-28",
       "position": 148,
@@ -4402,7 +4454,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 361,
+      "id": 363,
       "stage": "race/giro-d-italia/2026/stage-17",
       "date": "2026-05-27",
       "position": 85,
@@ -4415,7 +4467,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 362,
+      "id": 364,
       "stage": "race/giro-d-italia/2026/stage-16",
       "date": "2026-05-26",
       "position": 146,
@@ -4428,7 +4480,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 363,
+      "id": 365,
       "stage": "race/giro-d-italia/2026/stage-15",
       "date": "2026-05-24",
       "position": 157,
@@ -4441,7 +4493,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 364,
+      "id": 366,
       "stage": "race/giro-d-italia/2026/stage-14",
       "date": "2026-05-23",
       "position": 149,
@@ -4454,7 +4506,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 365,
+      "id": 367,
       "stage": "race/giro-d-italia/2026/stage-13",
       "date": "2026-05-22",
       "position": 148,
@@ -4467,7 +4519,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 366,
+      "id": 368,
       "stage": "race/giro-d-italia/2026/stage-12",
       "date": "2026-05-21",
       "position": 125,
@@ -4480,7 +4532,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 367,
+      "id": 369,
       "stage": "race/giro-d-italia/2026/stage-11",
       "date": "2026-05-20",
       "position": 155,
@@ -4493,7 +4545,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 368,
+      "id": 370,
       "stage": "race/giro-d-italia/2026/stage-10",
       "date": "2026-05-19",
       "position": 10,
@@ -4506,7 +4558,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 369,
+      "id": 371,
       "stage": "race/giro-d-italia/2026/stage-9",
       "date": "2026-05-17",
       "position": 155,
@@ -4519,7 +4571,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 370,
+      "id": 372,
       "stage": "race/giro-d-italia/2026/stage-8",
       "date": "2026-05-16",
       "position": 76,
@@ -4532,7 +4584,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 371,
+      "id": 373,
       "stage": "race/giro-d-italia/2026/stage-7",
       "date": "2026-05-15",
       "position": 164,
@@ -4545,7 +4597,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 372,
+      "id": 374,
       "stage": "race/giro-d-italia/2026/stage-6",
       "date": "2026-05-14",
       "position": 149,
@@ -4558,7 +4610,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 373,
+      "id": 375,
       "stage": "race/giro-d-italia/2026/stage-5",
       "date": "2026-05-13",
       "position": 130,
@@ -4571,7 +4623,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 374,
+      "id": 376,
       "stage": "race/giro-d-italia/2026/stage-4",
       "date": "2026-05-12",
       "position": 48,
@@ -4584,7 +4636,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 375,
+      "id": 377,
       "stage": "race/giro-d-italia/2026/stage-3",
       "date": "2026-05-10",
       "position": 163,
@@ -4597,7 +4649,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 376,
+      "id": 378,
       "stage": "race/giro-d-italia/2026/stage-2",
       "date": "2026-05-09",
       "position": 83,
@@ -4610,7 +4662,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 377,
+      "id": 379,
       "stage": "race/giro-d-italia/2026/stage-1",
       "date": "2026-05-08",
       "position": 163,
@@ -4623,7 +4675,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 378,
+      "id": 380,
       "stage": "race/paris-roubaix/2026/result",
       "date": "2026-04-12",
       "position": 125,
@@ -4636,7 +4688,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 379,
+      "id": 381,
       "stage": "race/scheldeprijs/2026/result",
       "date": "2026-04-08",
       "position": 54,
@@ -4649,7 +4701,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 380,
+      "id": 382,
       "stage": "race/ronde-van-vlaanderen/2026/result",
       "date": "2026-04-05",
       "position": 25,
@@ -4662,7 +4714,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 381,
+      "id": 383,
       "stage": "race/dwars-door-vlaanderen/2026/result",
       "date": "2026-04-01",
       "position": 59,
@@ -4675,7 +4727,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 382,
+      "id": 384,
       "stage": "race/la-roue-tourangelle/2026/result",
       "date": "2026-03-29",
       "position": 93,
@@ -4870,7 +4922,7 @@
       "race_class": ""
     },
     {
-      "id": 354,
+      "id": 356,
       "stage": "race/giro-d-italia/2026/kom",
       "date": null,
       "position": 71,
@@ -4883,7 +4935,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 355,
+      "id": 357,
       "stage": "race/giro-d-italia/2026/points",
       "date": null,
       "position": 66,
@@ -4896,7 +4948,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 356,
+      "id": 358,
       "stage": "race/giro-d-italia/2026/gc",
       "date": null,
       "position": 129,
@@ -4911,7 +4963,7 @@
   ],
   "elmar-reinders": [
     {
-      "id": 383,
+      "id": 385,
       "stage": "race/copenhagen-sprint/2026/result",
       "date": "2026-06-14",
       "position": 49,
@@ -4924,7 +4976,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 385,
+      "id": 387,
       "stage": "race/giro-d-italia/2026/stage-21",
       "date": "2026-05-31",
       "position": 73,
@@ -4937,7 +4989,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 386,
+      "id": 388,
       "stage": "race/giro-d-italia/2026/stage-20",
       "date": "2026-05-30",
       "position": 130,
@@ -4950,7 +5002,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 387,
+      "id": 389,
       "stage": "race/giro-d-italia/2026/stage-19",
       "date": "2026-05-29",
       "position": 141,
@@ -4963,7 +5015,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 388,
+      "id": 390,
       "stage": "race/giro-d-italia/2026/stage-18",
       "date": "2026-05-28",
       "position": 145,
@@ -4976,7 +5028,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 389,
+      "id": 391,
       "stage": "race/giro-d-italia/2026/stage-17",
       "date": "2026-05-27",
       "position": 117,
@@ -4989,7 +5041,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 390,
+      "id": 392,
       "stage": "race/giro-d-italia/2026/stage-16",
       "date": "2026-05-26",
       "position": 152,
@@ -5002,7 +5054,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 391,
+      "id": 393,
       "stage": "race/giro-d-italia/2026/stage-15",
       "date": "2026-05-24",
       "position": 29,
@@ -5015,7 +5067,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 392,
+      "id": 394,
       "stage": "race/giro-d-italia/2026/stage-14",
       "date": "2026-05-23",
       "position": 156,
@@ -5028,7 +5080,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 393,
+      "id": 395,
       "stage": "race/giro-d-italia/2026/stage-13",
       "date": "2026-05-22",
       "position": 138,
@@ -5041,7 +5093,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 394,
+      "id": 396,
       "stage": "race/giro-d-italia/2026/stage-12",
       "date": "2026-05-21",
       "position": 127,
@@ -5054,7 +5106,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 395,
+      "id": 397,
       "stage": "race/giro-d-italia/2026/stage-11",
       "date": "2026-05-20",
       "position": 146,
@@ -5067,7 +5119,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 396,
+      "id": 398,
       "stage": "race/giro-d-italia/2026/stage-10",
       "date": "2026-05-19",
       "position": 57,
@@ -5080,7 +5132,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 397,
+      "id": 399,
       "stage": "race/giro-d-italia/2026/stage-9",
       "date": "2026-05-17",
       "position": 103,
@@ -5093,7 +5145,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 398,
+      "id": 400,
       "stage": "race/giro-d-italia/2026/stage-8",
       "date": "2026-05-16",
       "position": 159,
@@ -5106,7 +5158,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 399,
+      "id": 401,
       "stage": "race/giro-d-italia/2026/stage-7",
       "date": "2026-05-15",
       "position": 161,
@@ -5119,7 +5171,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 400,
+      "id": 402,
       "stage": "race/giro-d-italia/2026/stage-6",
       "date": "2026-05-14",
       "position": 164,
@@ -5132,7 +5184,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 401,
+      "id": 403,
       "stage": "race/giro-d-italia/2026/stage-5",
       "date": "2026-05-13",
       "position": 158,
@@ -5145,7 +5197,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 402,
+      "id": 404,
       "stage": "race/giro-d-italia/2026/stage-4",
       "date": "2026-05-12",
       "position": 163,
@@ -5158,7 +5210,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 403,
+      "id": 405,
       "stage": "race/giro-d-italia/2026/stage-3",
       "date": "2026-05-10",
       "position": 32,
@@ -5171,7 +5223,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 404,
+      "id": 406,
       "stage": "race/giro-d-italia/2026/stage-2",
       "date": "2026-05-09",
       "position": 151,
@@ -5184,7 +5236,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 405,
+      "id": 407,
       "stage": "race/giro-d-italia/2026/stage-1",
       "date": "2026-05-08",
       "position": 69,
@@ -5197,7 +5249,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 406,
+      "id": 408,
       "stage": "race/ronde-van-limburg/2026/result",
       "date": "2026-04-15",
       "position": 27,
@@ -5210,7 +5262,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 407,
+      "id": 409,
       "stage": "race/scheldeprijs/2026/result",
       "date": "2026-04-08",
       "position": 16,
@@ -5223,7 +5275,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 408,
+      "id": 410,
       "stage": "race/la-roue-tourangelle/2026/result",
       "date": "2026-03-29",
       "position": 55,
@@ -5444,7 +5496,7 @@
       "race_class": ""
     },
     {
-      "id": 384,
+      "id": 386,
       "stage": "race/giro-d-italia/2026/gc",
       "date": null,
       "position": 144,
@@ -5459,7 +5511,7 @@
   ],
   "lander-loockx": [
     {
-      "id": 409,
+      "id": 411,
       "stage": "race/muur-classic-geraardsbergen/2026/result",
       "date": "2026-06-14",
       "position": 18,
@@ -5472,7 +5524,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 410,
+      "id": 412,
       "stage": "race/circuit-franco-belge/2026/result",
       "date": "2026-06-10",
       "position": 21,
@@ -5485,7 +5537,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 411,
+      "id": 413,
       "stage": "race/boucles-de-l-aulne/2026/result",
       "date": "2026-05-17",
       "position": 4,
@@ -5498,7 +5550,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 412,
+      "id": 414,
       "stage": "race/tour-du-finistere/2026/result",
       "date": "2026-05-16",
       "position": 4,
@@ -5511,7 +5563,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 413,
+      "id": 415,
       "stage": "race/tro-bro-leon/2026/result",
       "date": "2026-05-10",
       "position": 31,
@@ -5524,7 +5576,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 414,
+      "id": 416,
       "stage": "race/gp-de-plumelec/2026/result",
       "date": "2026-05-09",
       "position": 12,
@@ -5537,7 +5589,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 415,
+      "id": 417,
       "stage": "race/eschborn-frankfurt/2026/result",
       "date": "2026-05-01",
       "position": 33,
@@ -5550,7 +5602,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 416,
+      "id": 418,
       "stage": "race/amstel-gold-race/2026/result",
       "date": "2026-04-19",
       "position": 35,
@@ -5563,7 +5615,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 417,
+      "id": 419,
       "stage": "race/brabantse-pijl/2026/result",
       "date": "2026-04-17",
       "position": 18,
@@ -5576,7 +5628,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 421,
+      "id": 423,
       "stage": "race/region-pays-de-la-loire/2026/stage-4",
       "date": "2026-04-10",
       "position": 16,
@@ -5589,7 +5641,7 @@
       "race_class": ""
     },
     {
-      "id": 422,
+      "id": 424,
       "stage": "race/region-pays-de-la-loire/2026/stage-3",
       "date": "2026-04-09",
       "position": 11,
@@ -5602,7 +5654,7 @@
       "race_class": ""
     },
     {
-      "id": 423,
+      "id": 425,
       "stage": "race/region-pays-de-la-loire/2026/stage-2",
       "date": "2026-04-08",
       "position": 25,
@@ -5615,7 +5667,7 @@
       "race_class": ""
     },
     {
-      "id": 424,
+      "id": 426,
       "stage": "race/region-pays-de-la-loire/2026/stage-1",
       "date": "2026-04-07",
       "position": 41,
@@ -5628,7 +5680,7 @@
       "race_class": ""
     },
     {
-      "id": 425,
+      "id": 427,
       "stage": "race/route-adelie-de-vitre/2026/result",
       "date": "2026-04-03",
       "position": 100,
@@ -5641,7 +5693,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 426,
+      "id": 428,
       "stage": "race/paris-camembert/2026/result",
       "date": "2026-03-31",
       "position": 11,
@@ -5654,7 +5706,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 427,
+      "id": 429,
       "stage": "race/e3-harelbeke/2026/result",
       "date": "2026-03-27",
       "position": 28,
@@ -5758,7 +5810,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 418,
+      "id": 420,
       "stage": "race/region-pays-de-la-loire/2026/kom",
       "date": null,
       "position": 9,
@@ -5771,7 +5823,7 @@
       "race_class": ""
     },
     {
-      "id": 419,
+      "id": 421,
       "stage": "race/region-pays-de-la-loire/2026/points",
       "date": null,
       "position": 14,
@@ -5784,7 +5836,7 @@
       "race_class": ""
     },
     {
-      "id": 420,
+      "id": 422,
       "stage": "race/region-pays-de-la-loire/2026/gc",
       "date": null,
       "position": 7,
@@ -5799,7 +5851,7 @@
   ],
   "martijn-rasenberg": [
     {
-      "id": 544,
+      "id": 548,
       "stage": "race/copenhagen-sprint/2026/result",
       "date": "2026-06-14",
       "position": 83,
@@ -5812,7 +5864,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 545,
+      "id": 549,
       "stage": "race/brussels-cycling-classic/2026/result",
       "date": "2026-06-07",
       "position": 53,
@@ -5825,7 +5877,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 546,
+      "id": 550,
       "stage": "race/heist-op-den-berg/2026/result",
       "date": "2026-06-06",
       "position": 81,
@@ -5838,7 +5890,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 547,
+      "id": 551,
       "stage": "race/circuit-de-wallonie/2026/result",
       "date": "2026-05-14",
       "position": null,
@@ -5851,7 +5903,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 548,
+      "id": 552,
       "stage": "race/famenne-ardenne-classic/2026/result",
       "date": "2026-05-03",
       "position": null,
@@ -5864,7 +5916,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 549,
+      "id": 553,
       "stage": "race/paris-roubaix/2026/result",
       "date": "2026-04-12",
       "position": 71,
@@ -5877,7 +5929,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 550,
+      "id": 554,
       "stage": "race/scheldeprijs/2026/result",
       "date": "2026-04-08",
       "position": 24,
@@ -5890,7 +5942,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 551,
+      "id": 555,
       "stage": "race/ronde-van-vlaanderen/2026/result",
       "date": "2026-04-05",
       "position": null,
@@ -5903,7 +5955,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 552,
+      "id": 556,
       "stage": "race/la-roue-tourangelle/2026/result",
       "date": "2026-03-29",
       "position": 108,
@@ -6035,7 +6087,7 @@
   ],
   "abram-stockman": [
     {
-      "id": 553,
+      "id": 557,
       "stage": "race/copenhagen-sprint/2026/result",
       "date": "2026-06-14",
       "position": null,
@@ -6048,7 +6100,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 554,
+      "id": 558,
       "stage": "race/circuit-franco-belge/2026/result",
       "date": "2026-06-10",
       "position": 100,
@@ -6061,7 +6113,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 555,
+      "id": 559,
       "stage": "race/brussels-cycling-classic/2026/result",
       "date": "2026-06-07",
       "position": 94,
@@ -6074,7 +6126,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 556,
+      "id": 560,
       "stage": "race/heist-op-den-berg/2026/result",
       "date": "2026-06-06",
       "position": 90,
@@ -6087,7 +6139,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 558,
+      "id": 562,
       "stage": "race/4-jours-de-dunkerque/2026/stage-5",
       "date": "2026-05-24",
       "position": 49,
@@ -6100,7 +6152,7 @@
       "race_class": ""
     },
     {
-      "id": 559,
+      "id": 563,
       "stage": "race/4-jours-de-dunkerque/2026/stage-4",
       "date": "2026-05-23",
       "position": 35,
@@ -6113,7 +6165,7 @@
       "race_class": ""
     },
     {
-      "id": 560,
+      "id": 564,
       "stage": "race/4-jours-de-dunkerque/2026/stage-3",
       "date": "2026-05-22",
       "position": 51,
@@ -6126,7 +6178,7 @@
       "race_class": ""
     },
     {
-      "id": 561,
+      "id": 565,
       "stage": "race/4-jours-de-dunkerque/2026/stage-2",
       "date": "2026-05-21",
       "position": 63,
@@ -6139,7 +6191,7 @@
       "race_class": ""
     },
     {
-      "id": 562,
+      "id": 566,
       "stage": "race/4-jours-de-dunkerque/2026/stage-1",
       "date": "2026-05-20",
       "position": 74,
@@ -6152,7 +6204,7 @@
       "race_class": ""
     },
     {
-      "id": 563,
+      "id": 567,
       "stage": "race/classique-dunkerque/2026/result",
       "date": "2026-05-19",
       "position": 56,
@@ -6165,7 +6217,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 564,
+      "id": 568,
       "stage": "race/rund-um-koln/2026/result",
       "date": "2026-05-17",
       "position": 69,
@@ -6178,7 +6230,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 565,
+      "id": 569,
       "stage": "race/circuit-de-wallonie/2026/result",
       "date": "2026-05-14",
       "position": 21,
@@ -6191,7 +6243,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 566,
+      "id": 570,
       "stage": "race/famenne-ardenne-classic/2026/result",
       "date": "2026-05-03",
       "position": 52,
@@ -6204,7 +6256,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 567,
+      "id": 571,
       "stage": "race/amstel-gold-race/2026/result",
       "date": "2026-04-19",
       "position": 107,
@@ -6217,7 +6269,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 568,
+      "id": 572,
       "stage": "race/brabantse-pijl/2026/result",
       "date": "2026-04-17",
       "position": null,
@@ -6230,7 +6282,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 569,
+      "id": 573,
       "stage": "race/ronde-van-limburg/2026/result",
       "date": "2026-04-15",
       "position": 46,
@@ -6243,7 +6295,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 570,
+      "id": 574,
       "stage": "race/scheldeprijs/2026/result",
       "date": "2026-04-08",
       "position": 121,
@@ -6334,7 +6386,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 557,
+      "id": 561,
       "stage": "race/4-jours-de-dunkerque/2026/gc",
       "date": null,
       "position": 41,
@@ -6780,7 +6832,7 @@
   ],
   "tobias-muller1": [
     {
-      "id": 510,
+      "id": 514,
       "stage": "race/brussels-cycling-classic/2026/result",
       "date": "2026-06-07",
       "position": 6,
@@ -6793,7 +6845,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 511,
+      "id": 515,
       "stage": "race/heist-op-den-berg/2026/result",
       "date": "2026-06-06",
       "position": 20,
@@ -6806,7 +6858,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 515,
+      "id": 519,
       "stage": "race/4-jours-de-dunkerque/2026/stage-5",
       "date": "2026-05-24",
       "position": 5,
@@ -6819,7 +6871,7 @@
       "race_class": ""
     },
     {
-      "id": 516,
+      "id": 520,
       "stage": "race/4-jours-de-dunkerque/2026/stage-4",
       "date": "2026-05-23",
       "position": 47,
@@ -6832,7 +6884,7 @@
       "race_class": ""
     },
     {
-      "id": 517,
+      "id": 521,
       "stage": "race/4-jours-de-dunkerque/2026/stage-3",
       "date": "2026-05-22",
       "position": 63,
@@ -6845,7 +6897,7 @@
       "race_class": ""
     },
     {
-      "id": 518,
+      "id": 522,
       "stage": "race/4-jours-de-dunkerque/2026/stage-2",
       "date": "2026-05-21",
       "position": 9,
@@ -6858,7 +6910,7 @@
       "race_class": ""
     },
     {
-      "id": 519,
+      "id": 523,
       "stage": "race/4-jours-de-dunkerque/2026/stage-1",
       "date": "2026-05-20",
       "position": 70,
@@ -6871,7 +6923,7 @@
       "race_class": ""
     },
     {
-      "id": 520,
+      "id": 524,
       "stage": "race/classique-dunkerque/2026/result",
       "date": "2026-05-19",
       "position": 5,
@@ -6884,7 +6936,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 521,
+      "id": 525,
       "stage": "race/rund-um-koln/2026/result",
       "date": "2026-05-17",
       "position": 4,
@@ -6897,7 +6949,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 522,
+      "id": 526,
       "stage": "race/circuit-de-wallonie/2026/result",
       "date": "2026-05-14",
       "position": 9,
@@ -6910,7 +6962,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 523,
+      "id": 527,
       "stage": "race/famenne-ardenne-classic/2026/result",
       "date": "2026-05-03",
       "position": 28,
@@ -6923,7 +6975,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 524,
+      "id": 528,
       "stage": "race/eschborn-frankfurt/2026/result",
       "date": "2026-05-01",
       "position": null,
@@ -6936,7 +6988,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 525,
+      "id": 529,
       "stage": "race/route-adelie-de-vitre/2026/result",
       "date": "2026-04-03",
       "position": 88,
@@ -6949,7 +7001,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 526,
+      "id": 530,
       "stage": "race/la-roue-tourangelle/2026/result",
       "date": "2026-03-29",
       "position": 95,
@@ -7092,7 +7144,7 @@
       "race_class": ""
     },
     {
-      "id": 512,
+      "id": 516,
       "stage": "race/4-jours-de-dunkerque/2026/youth",
       "date": null,
       "position": 15,
@@ -7105,7 +7157,7 @@
       "race_class": ""
     },
     {
-      "id": 513,
+      "id": 517,
       "stage": "race/4-jours-de-dunkerque/2026/points",
       "date": null,
       "position": 20,
@@ -7118,7 +7170,7 @@
       "race_class": ""
     },
     {
-      "id": 514,
+      "id": 518,
       "stage": "race/4-jours-de-dunkerque/2026/gc",
       "date": null,
       "position": 34,
@@ -7590,7 +7642,7 @@
   ],
   "hartthijs-de-vries": [
     {
-      "id": 449,
+      "id": 451,
       "stage": "race/giro-d-italia/2026/stage-21",
       "date": "2026-05-31",
       "position": 119,
@@ -7603,7 +7655,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 450,
+      "id": 452,
       "stage": "race/giro-d-italia/2026/stage-20",
       "date": "2026-05-30",
       "position": 145,
@@ -7616,7 +7668,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 451,
+      "id": 453,
       "stage": "race/giro-d-italia/2026/stage-19",
       "date": "2026-05-29",
       "position": 147,
@@ -7629,7 +7681,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 452,
+      "id": 454,
       "stage": "race/giro-d-italia/2026/stage-18",
       "date": "2026-05-28",
       "position": 130,
@@ -7642,7 +7694,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 453,
+      "id": 455,
       "stage": "race/giro-d-italia/2026/stage-17",
       "date": "2026-05-27",
       "position": 145,
@@ -7655,7 +7707,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 454,
+      "id": 456,
       "stage": "race/giro-d-italia/2026/stage-16",
       "date": "2026-05-26",
       "position": 145,
@@ -7668,7 +7720,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 455,
+      "id": 457,
       "stage": "race/giro-d-italia/2026/stage-15",
       "date": "2026-05-24",
       "position": 137,
@@ -7681,7 +7733,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 456,
+      "id": 458,
       "stage": "race/giro-d-italia/2026/stage-14",
       "date": "2026-05-23",
       "position": 125,
@@ -7694,7 +7746,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 457,
+      "id": 459,
       "stage": "race/giro-d-italia/2026/stage-13",
       "date": "2026-05-22",
       "position": 156,
@@ -7707,7 +7759,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 458,
+      "id": 460,
       "stage": "race/giro-d-italia/2026/stage-12",
       "date": "2026-05-21",
       "position": 124,
@@ -7720,7 +7772,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 459,
+      "id": 461,
       "stage": "race/giro-d-italia/2026/stage-11",
       "date": "2026-05-20",
       "position": 147,
@@ -7733,7 +7785,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 460,
+      "id": 462,
       "stage": "race/giro-d-italia/2026/stage-10",
       "date": "2026-05-19",
       "position": 116,
@@ -7746,7 +7798,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 461,
+      "id": 463,
       "stage": "race/giro-d-italia/2026/stage-9",
       "date": "2026-05-17",
       "position": 129,
@@ -7759,7 +7811,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 462,
+      "id": 464,
       "stage": "race/giro-d-italia/2026/stage-8",
       "date": "2026-05-16",
       "position": 136,
@@ -7772,7 +7824,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 463,
+      "id": 465,
       "stage": "race/giro-d-italia/2026/stage-7",
       "date": "2026-05-15",
       "position": 163,
@@ -7785,7 +7837,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 464,
+      "id": 466,
       "stage": "race/giro-d-italia/2026/stage-6",
       "date": "2026-05-14",
       "position": 157,
@@ -7798,7 +7850,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 465,
+      "id": 467,
       "stage": "race/giro-d-italia/2026/stage-5",
       "date": "2026-05-13",
       "position": 157,
@@ -7811,7 +7863,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 466,
+      "id": 468,
       "stage": "race/giro-d-italia/2026/stage-4",
       "date": "2026-05-12",
       "position": 150,
@@ -7824,7 +7876,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 467,
+      "id": 469,
       "stage": "race/giro-d-italia/2026/stage-3",
       "date": "2026-05-10",
       "position": 162,
@@ -7837,7 +7889,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 468,
+      "id": 470,
       "stage": "race/giro-d-italia/2026/stage-2",
       "date": "2026-05-09",
       "position": 117,
@@ -7850,7 +7902,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 469,
+      "id": 471,
       "stage": "race/giro-d-italia/2026/stage-1",
       "date": "2026-05-08",
       "position": 143,
@@ -7863,7 +7915,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 470,
+      "id": 472,
       "stage": "race/ronde-van-vlaanderen/2026/result",
       "date": "2026-04-05",
       "position": 94,
@@ -7876,7 +7928,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 471,
+      "id": 473,
       "stage": "race/dwars-door-vlaanderen/2026/result",
       "date": "2026-04-01",
       "position": null,
@@ -7889,7 +7941,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 472,
+      "id": 474,
       "stage": "race/gent-wevelgem/2026/result",
       "date": "2026-03-29",
       "position": 25,
@@ -7902,7 +7954,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 473,
+      "id": 475,
       "stage": "race/e3-harelbeke/2026/result",
       "date": "2026-03-27",
       "position": 115,
@@ -8045,7 +8097,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 447,
+      "id": 449,
       "stage": "race/giro-d-italia/2026/kom",
       "date": null,
       "position": 61,
@@ -8058,7 +8110,7 @@
       "race_class": "Piani di Pezzè"
     },
     {
-      "id": 448,
+      "id": 450,
       "stage": "race/giro-d-italia/2026/gc",
       "date": null,
       "position": 145,
@@ -8073,7 +8125,7 @@
   ],
   "cedrik-bakke-christophersen": [
     {
-      "id": 505,
+      "id": 509,
       "stage": "race/tour-of-hellas/2026/stage-1",
       "date": "2026-05-06",
       "position": null,
@@ -8086,7 +8138,7 @@
       "race_class": ""
     },
     {
-      "id": 506,
+      "id": 510,
       "stage": "race/amstel-gold-race/2026/result",
       "date": "2026-04-19",
       "position": 116,
@@ -8099,7 +8151,7 @@
       "race_class": "1.UWT"
     },
     {
-      "id": 507,
+      "id": 511,
       "stage": "race/brabantse-pijl/2026/result",
       "date": "2026-04-17",
       "position": 74,
@@ -8112,7 +8164,7 @@
       "race_class": "1.Pro"
     },
     {
-      "id": 508,
+      "id": 512,
       "stage": "race/volta-nxt-classic/2026/result",
       "date": "2026-04-04",
       "position": 46,
@@ -8151,7 +8203,7 @@
       "race_class": "1.1"
     },
     {
-      "id": 509,
+      "id": 513,
       "stage": "race/region-on-dodecanese-gp/2026/result",
       "date": "2026-03-01",
       "position": 14,
