@@ -1665,19 +1665,10 @@
     "is_tracked": false
   },
   {
-    "team_name": "Team Vino - North Qazaqstan Region",
-    "team_slug": "team-vino-north-qazaqstan-region",
-    "team_class": "CT",
-    "current_rank": 186,
-    "prev_rank": 138,
-    "current_points": 13.0,
-    "is_tracked": false
-  },
-  {
     "team_name": "Go For Gold Philippines",
     "team_slug": "go-for-gold-philippines",
     "team_class": "CT",
-    "current_rank": 187,
+    "current_rank": 186,
     "prev_rank": 189,
     "current_points": 12.0,
     "is_tracked": false
@@ -1686,7 +1677,7 @@
     "team_name": "Lillehammer CK Continental Team",
     "team_slug": "lillehammer-ck-continental-team",
     "team_class": "CT",
-    "current_rank": 188,
+    "current_rank": 187,
     "prev_rank": 163,
     "current_points": 12.0,
     "is_tracked": false
@@ -1695,7 +1686,7 @@
     "team_name": "Beltrami TSA Tre Colli",
     "team_slug": "beltrami-tsa-tre-colli",
     "team_class": "CT",
-    "current_rank": 189,
+    "current_rank": 188,
     "prev_rank": null,
     "current_points": 11.0,
     "is_tracked": false
@@ -1704,7 +1695,7 @@
     "team_name": "UC Trevigiani - Energiapura Marchiol",
     "team_slug": "uc-trevigiani-energiapura-marchiol",
     "team_class": "CT",
-    "current_rank": 190,
+    "current_rank": 189,
     "prev_rank": null,
     "current_points": 11.0,
     "is_tracked": false
@@ -1713,7 +1704,7 @@
     "team_name": "Aisan Racing Team",
     "team_slug": "aisan-racing-team",
     "team_class": "CT",
-    "current_rank": 191,
+    "current_rank": 190,
     "prev_rank": 194,
     "current_points": 10.0,
     "is_tracked": false
@@ -1722,7 +1713,7 @@
     "team_name": "May Stars",
     "team_slug": "may-stars",
     "team_class": "CT",
-    "current_rank": 192,
+    "current_rank": 191,
     "prev_rank": 191,
     "current_points": 10.0,
     "is_tracked": false
@@ -1731,7 +1722,7 @@
     "team_name": "CLN - Kosova",
     "team_slug": "cln-kosova",
     "team_class": "CT",
-    "current_rank": 193,
+    "current_rank": 192,
     "prev_rank": null,
     "current_points": 10.0,
     "is_tracked": false
@@ -1740,7 +1731,7 @@
     "team_name": "MaxSolar - Raymon",
     "team_slug": "maxsolar-raymon",
     "team_class": "CT",
-    "current_rank": 194,
+    "current_rank": 193,
     "prev_rank": null,
     "current_points": 10.0,
     "is_tracked": false
@@ -1749,7 +1740,7 @@
     "team_name": "Benediction Banafrica Team",
     "team_slug": "benediction-banafrica-team",
     "team_class": "CT",
-    "current_rank": 195,
+    "current_rank": 194,
     "prev_rank": null,
     "current_points": 8.0,
     "is_tracked": false
@@ -1758,7 +1749,7 @@
     "team_name": "Whoosh - NZ Cycling Project",
     "team_slug": "whoosh-nz-cycling-project",
     "team_class": "CT",
-    "current_rank": 196,
+    "current_rank": 195,
     "prev_rank": 166,
     "current_points": 8.0,
     "is_tracked": false
@@ -1767,9 +1758,18 @@
     "team_name": "Vélo Club Villefranche Beaujolais",
     "team_slug": "velo-club-villefranche-beaujolais",
     "team_class": "CT",
-    "current_rank": 197,
+    "current_rank": 196,
     "prev_rank": 176,
     "current_points": 7.0,
+    "is_tracked": false
+  },
+  {
+    "team_name": "Team Vino - North Qazaqstan Region",
+    "team_slug": "team-vino-north-qazaqstan-region",
+    "team_class": "CT",
+    "current_rank": 197,
+    "prev_rank": 138,
+    "current_points": 6.0,
     "is_tracked": false
   },
   {
