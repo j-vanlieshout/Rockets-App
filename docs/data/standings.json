@@ -1,7 +1,7 @@
 {
   "team_name": "Unibet Rose Rockets",
   "season": 2026,
-  "total_uci_points": 4096.0,
+  "total_uci_points": 4146.0,
   "riders": [
     {
       "rider_id": 1,
@@ -29,9 +29,9 @@
       "full_name": "Lukáš Kubiš",
       "nationality": "SK",
       "age": 26,
-      "total_uci_points": 511.0,
-      "total_pcs_points": 375.0,
-      "results_count": 50
+      "total_uci_points": 561.0,
+      "total_pcs_points": 390.0,
+      "results_count": 51
     },
     {
       "rider_id": 12,
