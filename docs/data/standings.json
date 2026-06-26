@@ -1,7 +1,7 @@
 {
   "team_name": "Unibet Rose Rockets",
   "season": 2026,
-  "total_uci_points": 4146.0,
+  "total_uci_points": 4149.0,
   "riders": [
     {
       "rider_id": 1,
@@ -49,9 +49,9 @@
       "full_name": "Tobias Müller",
       "nationality": "DE",
       "age": 22,
-      "total_uci_points": 278.0,
+      "total_uci_points": 281.0,
       "total_pcs_points": 143.0,
-      "results_count": 27
+      "results_count": 28
     },
     {
       "rider_id": 2,
@@ -71,7 +71,7 @@
       "age": 29,
       "total_uci_points": 112.0,
       "total_pcs_points": 101.0,
-      "results_count": 44
+      "results_count": 45
     },
     {
       "rider_id": 4,
