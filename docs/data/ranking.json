@@ -239,7 +239,7 @@
     "team_class": "PRT",
     "current_rank": 27,
     "prev_rank": 29,
-    "current_points": 2011.0,
+    "current_points": 2003.0,
     "is_tracked": false
   },
   {
@@ -302,7 +302,7 @@
     "team_class": "CT",
     "current_rank": 34,
     "prev_rank": 34,
-    "current_points": 901.0,
+    "current_points": 903.0,
     "is_tracked": false
   },
   {
@@ -347,7 +347,7 @@
     "team_class": "CT",
     "current_rank": 39,
     "prev_rank": 39,
-    "current_points": 661.0,
+    "current_points": 657.0,
     "is_tracked": false
   },
   {
@@ -383,7 +383,7 @@
     "team_class": "CT",
     "current_rank": 43,
     "prev_rank": 44,
-    "current_points": 438.0,
+    "current_points": 431.0,
     "is_tracked": false
   },
   {
@@ -405,12 +405,12 @@
     "is_tracked": false
   },
   {
-    "team_name": "Soudal Quick-Step Devo Team",
-    "team_slug": "soudal-quick-step-devo-team",
+    "team_name": "XDS Astana Development Team",
+    "team_slug": "xds-astana-development-team",
     "team_class": "CT",
     "current_rank": 46,
-    "prev_rank": 74,
-    "current_points": 394.0,
+    "prev_rank": 60,
+    "current_points": 393.0,
     "is_tracked": false
   },
   {
@@ -423,12 +423,12 @@
     "is_tracked": false
   },
   {
-    "team_name": "XDS Astana Development Team",
-    "team_slug": "xds-astana-development-team",
+    "team_name": "Soudal Quick-Step Devo Team",
+    "team_slug": "soudal-quick-step-devo-team",
     "team_class": "CT",
     "current_rank": 48,
-    "prev_rank": 60,
-    "current_points": 389.0,
+    "prev_rank": 74,
+    "current_points": 387.0,
     "is_tracked": false
   },
   {
@@ -504,21 +504,21 @@
     "is_tracked": false
   },
   {
-    "team_name": "Kinan Racing Team",
-    "team_slug": "kinan-racing-team",
-    "team_class": "CT",
-    "current_rank": 57,
-    "prev_rank": 61,
-    "current_points": 294.0,
-    "is_tracked": false
-  },
-  {
     "team_name": "Nu Colombia",
     "team_slug": "nu-colombia",
     "team_class": "CT",
-    "current_rank": 58,
+    "current_rank": 57,
     "prev_rank": 71,
     "current_points": 290.0,
+    "is_tracked": false
+  },
+  {
+    "team_name": "Kinan Racing Team",
+    "team_slug": "kinan-racing-team",
+    "team_class": "CT",
+    "current_rank": 58,
+    "prev_rank": 61,
+    "current_points": 276.0,
     "is_tracked": false
   },
   {
@@ -576,19 +576,10 @@
     "is_tracked": false
   },
   {
-    "team_name": "Swatt Club",
-    "team_slug": "swatt-club",
-    "team_class": "CT",
-    "current_rank": 65,
-    "prev_rank": null,
-    "current_points": 225.0,
-    "is_tracked": false
-  },
-  {
     "team_name": "Wheeltop Rotor Chengdu Team",
     "team_slug": "wheeltop-rotor-chengdu-team",
     "team_class": "CT",
-    "current_rank": 66,
+    "current_rank": 65,
     "prev_rank": 55,
     "current_points": 222.0,
     "is_tracked": false
@@ -597,7 +588,7 @@
     "team_name": "Team ColoQuick",
     "team_slug": "team-coloquick",
     "team_class": "CT",
-    "current_rank": 67,
+    "current_rank": 66,
     "prev_rank": 79,
     "current_points": 220.0,
     "is_tracked": false
@@ -606,7 +597,7 @@
     "team_name": "Lidl - Trek Future Racing",
     "team_slug": "lidl-trek-future-racing",
     "team_class": "CT",
-    "current_rank": 68,
+    "current_rank": 67,
     "prev_rank": 73,
     "current_points": 220.0,
     "is_tracked": false
@@ -615,7 +606,7 @@
     "team_name": "REMBE | rad-net",
     "team_slug": "rembe-rad-net",
     "team_class": "CT",
-    "current_rank": 69,
+    "current_rank": 68,
     "prev_rank": 93,
     "current_points": 219.0,
     "is_tracked": false
@@ -624,7 +615,7 @@
     "team_name": "Bahrain Victorious Development Team",
     "team_slug": "bahrain-victorious-development-team",
     "team_class": "CT",
-    "current_rank": 70,
+    "current_rank": 69,
     "prev_rank": 67,
     "current_points": 216.0,
     "is_tracked": false
@@ -633,9 +624,18 @@
     "team_name": "VolkerWessels Cycling Team",
     "team_slug": "volkerwessels-cycling-team",
     "team_class": "CT",
-    "current_rank": 71,
+    "current_rank": 70,
     "prev_rank": 51,
     "current_points": 209.0,
+    "is_tracked": false
+  },
+  {
+    "team_name": "Swatt Club",
+    "team_slug": "swatt-club",
+    "team_class": "CT",
+    "current_rank": 71,
+    "prev_rank": null,
+    "current_points": 208.0,
     "is_tracked": false
   },
   {
@@ -729,21 +729,21 @@
     "is_tracked": false
   },
   {
-    "team_name": "Madar Pro Cycling Team",
-    "team_slug": "madar-pro-cycling-team",
-    "team_class": "CT",
-    "current_rank": 82,
-    "prev_rank": 57,
-    "current_points": 166.0,
-    "is_tracked": false
-  },
-  {
     "team_name": "Nice Métropole Côte d'Azur",
     "team_slug": "nice-metropole-cote-d-azur",
     "team_class": "CT",
-    "current_rank": 83,
+    "current_rank": 82,
     "prev_rank": 125,
     "current_points": 164.0,
+    "is_tracked": false
+  },
+  {
+    "team_name": "Lucky Sport Cycling Team",
+    "team_slug": "lucky-sport-cycling-team",
+    "team_class": "CT",
+    "current_rank": 83,
+    "prev_rank": 158,
+    "current_points": 158.0,
     "is_tracked": false
   },
   {
@@ -801,11 +801,11 @@
     "is_tracked": false
   },
   {
-    "team_name": "Lucky Sport Cycling Team",
-    "team_slug": "lucky-sport-cycling-team",
+    "team_name": "Madar Pro Cycling Team",
+    "team_slug": "madar-pro-cycling-team",
     "team_class": "CT",
     "current_rank": 90,
-    "prev_rank": 158,
+    "prev_rank": 57,
     "current_points": 143.0,
     "is_tracked": false
   },
@@ -1008,19 +1008,37 @@
     "is_tracked": false
   },
   {
+    "team_name": "The Joyrun & Hurricane Cycling Team",
+    "team_slug": "the-joyrun-hurricane-cycling-team",
+    "team_class": "CT",
+    "current_rank": 113,
+    "prev_rank": 132,
+    "current_points": 89.0,
+    "is_tracked": false
+  },
+  {
     "team_name": "Mg.K Vis Costruzioni e Ambiente",
     "team_slug": "mg.k-vis-costruzioni-e-ambiente",
     "team_class": "CT",
-    "current_rank": 113,
+    "current_rank": 114,
     "prev_rank": 69,
     "current_points": 85.0,
+    "is_tracked": false
+  },
+  {
+    "team_name": "Victoire Hiroshima",
+    "team_slug": "victoire-hiroshima",
+    "team_class": "CT",
+    "current_rank": 115,
+    "prev_rank": 122,
+    "current_points": 84.0,
     "is_tracked": false
   },
   {
     "team_name": "Tavfer-Ovos Matinados-Mortágua",
     "team_slug": "tavfer-ovos-matinados-mortagua",
     "team_class": "CT",
-    "current_rank": 114,
+    "current_rank": 116,
     "prev_rank": 151,
     "current_points": 83.0,
     "is_tracked": false
@@ -1029,27 +1047,9 @@
     "team_name": "S.C. Padovani Polo Cherry Bank",
     "team_slug": "sc-padovani-polo-cherry-bank",
     "team_class": "CT",
-    "current_rank": 115,
+    "current_rank": 117,
     "prev_rank": 152,
     "current_points": 83.0,
-    "is_tracked": false
-  },
-  {
-    "team_name": "The Joyrun & Hurricane Cycling Team",
-    "team_slug": "the-joyrun-hurricane-cycling-team",
-    "team_class": "CT",
-    "current_rank": 116,
-    "prev_rank": 132,
-    "current_points": 82.0,
-    "is_tracked": false
-  },
-  {
-    "team_name": "Victoire Hiroshima",
-    "team_slug": "victoire-hiroshima",
-    "team_class": "CT",
-    "current_rank": 117,
-    "prev_rank": 122,
-    "current_points": 81.0,
     "is_tracked": false
   },
   {
@@ -1251,10 +1251,19 @@
     "is_tracked": false
   },
   {
+    "team_name": "Astemo Utsunomiya Blitzen",
+    "team_slug": "astemo-utsunomiya-blitzen",
+    "team_class": "CT",
+    "current_rank": 140,
+    "prev_rank": 133,
+    "current_points": 49.0,
+    "is_tracked": false
+  },
+  {
     "team_name": "Qinghai Tianyoude Hotel Cycling Team",
     "team_slug": "qinghai-tianyoude-hotel-cycling-team",
     "team_class": "CT",
-    "current_rank": 140,
+    "current_rank": 141,
     "prev_rank": 130,
     "current_points": 49.0,
     "is_tracked": false
@@ -1263,7 +1272,7 @@
     "team_name": "Solme - Olmo - Arvedi",
     "team_slug": "solme-olmo-arvedi",
     "team_class": "CT",
-    "current_rank": 141,
+    "current_rank": 142,
     "prev_rank": null,
     "current_points": 48.0,
     "is_tracked": false
@@ -1272,7 +1281,7 @@
     "team_name": "Istanbul Team",
     "team_slug": "istanbul-team",
     "team_class": "CT",
-    "current_rank": 142,
+    "current_rank": 143,
     "prev_rank": 108,
     "current_points": 48.0,
     "is_tracked": false
@@ -1281,18 +1290,9 @@
     "team_name": "Team Skyline",
     "team_slug": "team-skyline",
     "team_class": "CT",
-    "current_rank": 143,
+    "current_rank": 144,
     "prev_rank": 113,
     "current_points": 47.0,
-    "is_tracked": false
-  },
-  {
-    "team_name": "Astemo Utsunomiya Blitzen",
-    "team_slug": "astemo-utsunomiya-blitzen",
-    "team_class": "CT",
-    "current_rank": 144,
-    "prev_rank": 133,
-    "current_points": 46.0,
     "is_tracked": false
   },
   {
@@ -1314,10 +1314,19 @@
     "is_tracked": false
   },
   {
+    "team_name": "7Eleven Cliqq Roadbike Philippines",
+    "team_slug": "7eleven-cliqq-roadbike-philippines",
+    "team_class": "CT",
+    "current_rank": 147,
+    "prev_rank": 147,
+    "current_points": 44.0,
+    "is_tracked": false
+  },
+  {
     "team_name": "SCO Dijon Team Matériel-Velo.com",
     "team_slug": "sco-dijon-team-materiel-velo-com",
     "team_class": "CT",
-    "current_rank": 147,
+    "current_rank": 148,
     "prev_rank": null,
     "current_points": 44.0,
     "is_tracked": false
@@ -1326,7 +1335,7 @@
     "team_name": "MENtoRISE Teem CCN",
     "team_slug": "mentorise-teem-ccn",
     "team_class": "CT",
-    "current_rank": 148,
+    "current_rank": 149,
     "prev_rank": 120,
     "current_points": 44.0,
     "is_tracked": false
@@ -1335,7 +1344,7 @@
     "team_name": "7 Saber Uzbekistan Cycling Team",
     "team_slug": "7-saber-uzbekistan-cycling-team",
     "team_class": "CT",
-    "current_rank": 149,
+    "current_rank": 150,
     "prev_rank": 142,
     "current_points": 44.0,
     "is_tracked": false
@@ -1344,7 +1353,7 @@
     "team_name": "Jakarta Pro Cycling Team",
     "team_slug": "jakarta-pro-cycling-team",
     "team_class": "CT",
-    "current_rank": 150,
+    "current_rank": 151,
     "prev_rank": 160,
     "current_points": 44.0,
     "is_tracked": false
@@ -1353,7 +1362,7 @@
     "team_name": "HKSI Pro Cycling Team",
     "team_slug": "hksi-pro-cycling-team",
     "team_class": "CT",
-    "current_rank": 151,
+    "current_rank": 152,
     "prev_rank": 129,
     "current_points": 43.0,
     "is_tracked": false
@@ -1362,7 +1371,7 @@
     "team_name": "Universe Cycling Team",
     "team_slug": "universe-cycling-team",
     "team_class": "CT",
-    "current_rank": 152,
+    "current_rank": 153,
     "prev_rank": 109,
     "current_points": 43.0,
     "is_tracked": false
@@ -1371,18 +1380,9 @@
     "team_name": "Team Give Steel",
     "team_slug": "team-give-steel",
     "team_class": "CT",
-    "current_rank": 153,
+    "current_rank": 154,
     "prev_rank": 146,
     "current_points": 43.0,
-    "is_tracked": false
-  },
-  {
-    "team_name": "7Eleven Cliqq Roadbike Philippines",
-    "team_slug": "7eleven-cliqq-roadbike-philippines",
-    "team_class": "CT",
-    "current_rank": 154,
-    "prev_rank": 147,
-    "current_points": 42.0,
     "is_tracked": false
   },
   {
@@ -1494,10 +1494,19 @@
     "is_tracked": false
   },
   {
+    "team_name": "Schwingshandl Intralogistics",
+    "team_slug": "schwingshandl-intralogistics",
+    "team_class": "CT",
+    "current_rank": 167,
+    "prev_rank": null,
+    "current_points": 29.0,
+    "is_tracked": false
+  },
+  {
     "team_name": "China Chermin Cycling Team",
     "team_slug": "china-chermin-cycling-team",
     "team_class": "CT",
-    "current_rank": 167,
+    "current_rank": 168,
     "prev_rank": null,
     "current_points": 28.0,
     "is_tracked": false
@@ -1506,7 +1515,7 @@
     "team_name": "LX Cycling Team",
     "team_slug": "lx-cycling-team",
     "team_class": "CT",
-    "current_rank": 168,
+    "current_rank": 169,
     "prev_rank": 150,
     "current_points": 27.0,
     "is_tracked": false
@@ -1515,17 +1524,8 @@
     "team_name": "Vega - Vitalcare - Dynatek",
     "team_slug": "vega-vitalcare-dynatek",
     "team_class": "CT",
-    "current_rank": 169,
-    "prev_rank": 182,
-    "current_points": 27.0,
-    "is_tracked": false
-  },
-  {
-    "team_name": "Schwingshandl Intralogistics",
-    "team_slug": "schwingshandl-intralogistics",
-    "team_class": "CT",
     "current_rank": 170,
-    "prev_rank": null,
+    "prev_rank": 182,
     "current_points": 27.0,
     "is_tracked": false
   },
@@ -1539,10 +1539,19 @@
     "is_tracked": false
   },
   {
+    "team_name": "Aisan Racing Team",
+    "team_slug": "aisan-racing-team",
+    "team_class": "CT",
+    "current_rank": 172,
+    "prev_rank": 194,
+    "current_points": 25.0,
+    "is_tracked": false
+  },
+  {
     "team_name": "Canel's - Java",
     "team_slug": "canel-s-java",
     "team_class": "CT",
-    "current_rank": 172,
+    "current_rank": 173,
     "prev_rank": 172,
     "current_points": 25.0,
     "is_tracked": false
@@ -1551,7 +1560,7 @@
     "team_name": "GI Group Holding - Simoldes - UDO",
     "team_slug": "gi-group-holding-simoldes-udo",
     "team_class": "CT",
-    "current_rank": 173,
+    "current_rank": 174,
     "prev_rank": 162,
     "current_points": 24.0,
     "is_tracked": false
@@ -1560,7 +1569,7 @@
     "team_name": "Malaysia Pro Cycling",
     "team_slug": "malaysia-pro-cycling",
     "team_class": "CT",
-    "current_rank": 174,
+    "current_rank": 175,
     "prev_rank": 174,
     "current_points": 24.0,
     "is_tracked": false
@@ -1569,7 +1578,7 @@
     "team_name": "Thailand Continental Cycling Team",
     "team_slug": "thailand-continental-cycling-team",
     "team_class": "CT",
-    "current_rank": 175,
+    "current_rank": 176,
     "prev_rank": 135,
     "current_points": 23.0,
     "is_tracked": false
@@ -1578,7 +1587,7 @@
     "team_name": "WSA KTM Graz",
     "team_slug": "wsa-ktm-graz",
     "team_class": "CT",
-    "current_rank": 176,
+    "current_rank": 177,
     "prev_rank": 161,
     "current_points": 22.0,
     "is_tracked": false
@@ -1587,7 +1596,7 @@
     "team_name": "Sparkle Oita Racing Team",
     "team_slug": "sparkle-oita-racing-team",
     "team_class": "CT",
-    "current_rank": 177,
+    "current_rank": 178,
     "prev_rank": 169,
     "current_points": 22.0,
     "is_tracked": false
@@ -1596,7 +1605,7 @@
     "team_name": "Atom 6 Bikes - Cycleur de Luxe - Auto Stroo Continental Team",
     "team_slug": "atom-6-bikes-cycleur-de-luxe-auto-stroo-continental-team",
     "team_class": "CT",
-    "current_rank": 178,
+    "current_rank": 179,
     "prev_rank": 153,
     "current_points": 22.0,
     "is_tracked": false
@@ -1605,7 +1614,7 @@
     "team_name": "Color Code - Alu Center",
     "team_slug": "color-code-alu-center",
     "team_class": "CT",
-    "current_rank": 179,
+    "current_rank": 180,
     "prev_rank": null,
     "current_points": 22.0,
     "is_tracked": false
@@ -1614,7 +1623,7 @@
     "team_name": "APS Pro Cycling by Team Cadence Cyclery",
     "team_slug": "aps-pro-cycling-by-team-cadence-cyclery",
     "team_class": "CT",
-    "current_rank": 180,
+    "current_rank": 181,
     "prev_rank": null,
     "current_points": 20.0,
     "is_tracked": false
@@ -1623,7 +1632,7 @@
     "team_name": "ARBÖ Kärnten Sport Feld am See",
     "team_slug": "arbö-kärnten-sport-feld-am-see",
     "team_class": "CT",
-    "current_rank": 181,
+    "current_rank": 182,
     "prev_rank": 177,
     "current_points": 18.0,
     "is_tracked": false
@@ -1632,7 +1641,7 @@
     "team_name": "Team Ringerike",
     "team_slug": "team-ringerike",
     "team_class": "CT",
-    "current_rank": 182,
+    "current_rank": 183,
     "prev_rank": null,
     "current_points": 18.0,
     "is_tracked": false
@@ -1641,7 +1650,7 @@
     "team_name": "Camp Cycling Team",
     "team_slug": "camp-cycling-team",
     "team_class": "CT",
-    "current_rank": 183,
+    "current_rank": 184,
     "prev_rank": 179,
     "current_points": 17.0,
     "is_tracked": false
@@ -1650,7 +1659,7 @@
     "team_name": "Kolesarski Klub Novo Mesto",
     "team_slug": "kolesarski-klub-novo-mesto",
     "team_class": "CT",
-    "current_rank": 184,
+    "current_rank": 185,
     "prev_rank": 127,
     "current_points": 15.0,
     "is_tracked": false
@@ -1659,7 +1668,7 @@
     "team_name": "Giant Cycling Team",
     "team_slug": "giant-cycling-team",
     "team_class": "CT",
-    "current_rank": 185,
+    "current_rank": 186,
     "prev_rank": 185,
     "current_points": 14.0,
     "is_tracked": false
@@ -1668,7 +1677,7 @@
     "team_name": "Go For Gold Philippines",
     "team_slug": "go-for-gold-philippines",
     "team_class": "CT",
-    "current_rank": 186,
+    "current_rank": 187,
     "prev_rank": 189,
     "current_points": 12.0,
     "is_tracked": false
@@ -1677,7 +1686,7 @@
     "team_name": "Lillehammer CK Continental Team",
     "team_slug": "lillehammer-ck-continental-team",
     "team_class": "CT",
-    "current_rank": 187,
+    "current_rank": 188,
     "prev_rank": 163,
     "current_points": 12.0,
     "is_tracked": false
@@ -1686,7 +1695,7 @@
     "team_name": "Beltrami TSA Tre Colli",
     "team_slug": "beltrami-tsa-tre-colli",
     "team_class": "CT",
-    "current_rank": 188,
+    "current_rank": 189,
     "prev_rank": null,
     "current_points": 11.0,
     "is_tracked": false
@@ -1695,18 +1704,9 @@
     "team_name": "UC Trevigiani - Energiapura Marchiol",
     "team_slug": "uc-trevigiani-energiapura-marchiol",
     "team_class": "CT",
-    "current_rank": 189,
+    "current_rank": 190,
     "prev_rank": null,
     "current_points": 11.0,
-    "is_tracked": false
-  },
-  {
-    "team_name": "Aisan Racing Team",
-    "team_slug": "aisan-racing-team",
-    "team_class": "CT",
-    "current_rank": 190,
-    "prev_rank": 194,
-    "current_points": 10.0,
     "is_tracked": false
   },
   {
@@ -1755,21 +1755,21 @@
     "is_tracked": false
   },
   {
-    "team_name": "Vélo Club Villefranche Beaujolais",
-    "team_slug": "velo-club-villefranche-beaujolais",
+    "team_name": "Team Vino - North Qazaqstan Region",
+    "team_slug": "team-vino-north-qazaqstan-region",
     "team_class": "CT",
     "current_rank": 196,
-    "prev_rank": 176,
+    "prev_rank": 138,
     "current_points": 7.0,
     "is_tracked": false
   },
   {
-    "team_name": "Team Vino - North Qazaqstan Region",
-    "team_slug": "team-vino-north-qazaqstan-region",
+    "team_name": "Vélo Club Villefranche Beaujolais",
+    "team_slug": "velo-club-villefranche-beaujolais",
     "team_class": "CT",
     "current_rank": 197,
-    "prev_rank": 138,
-    "current_points": 6.0,
+    "prev_rank": 176,
+    "current_points": 7.0,
     "is_tracked": false
   },
   {

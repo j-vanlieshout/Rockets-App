@@ -1,7 +1,7 @@
 {
   "team_name": "Unibet Rose Rockets",
   "season": 2026,
-  "total_uci_points": 4149.0,
+  "total_uci_points": 4325.0,
   "riders": [
     {
       "rider_id": 1,
@@ -29,9 +29,9 @@
       "full_name": "Lukáš Kubiš",
       "nationality": "SK",
       "age": 26,
-      "total_uci_points": 561.0,
-      "total_pcs_points": 390.0,
-      "results_count": 51
+      "total_uci_points": 661.0,
+      "total_pcs_points": 405.0,
+      "results_count": 52
     },
     {
       "rider_id": 12,
@@ -61,7 +61,7 @@
       "age": 38,
       "total_uci_points": 230.0,
       "total_pcs_points": 142.0,
-      "results_count": 35
+      "results_count": 36
     },
     {
       "rider_id": 8,
@@ -69,9 +69,9 @@
       "full_name": "Niklas Larsen",
       "nationality": "DK",
       "age": 29,
-      "total_uci_points": 112.0,
+      "total_uci_points": 113.0,
       "total_pcs_points": 101.0,
-      "results_count": 45
+      "results_count": 46
     },
     {
       "rider_id": 4,
@@ -92,6 +92,16 @@
       "total_uci_points": 104.0,
       "total_pcs_points": 91.0,
       "results_count": 42
+    },
+    {
+      "rider_id": 7,
+      "pcs_slug": "rory-townsend",
+      "full_name": "Rory Townsend",
+      "nationality": "IE",
+      "age": 30,
+      "total_uci_points": 80.0,
+      "total_pcs_points": 16.0,
+      "results_count": 18
     },
     {
       "rider_id": 29,
@@ -121,7 +131,7 @@
       "age": 29,
       "total_uci_points": 28.0,
       "total_pcs_points": 52.0,
-      "results_count": 37
+      "results_count": 38
     },
     {
       "rider_id": 16,
@@ -161,7 +171,7 @@
       "age": 30,
       "total_uci_points": 10.0,
       "total_pcs_points": 5.0,
-      "results_count": 26
+      "results_count": 27
     },
     {
       "rider_id": 21,
@@ -171,17 +181,7 @@
       "age": 24,
       "total_uci_points": 6.0,
       "total_pcs_points": 17.0,
-      "results_count": 18
-    },
-    {
-      "rider_id": 7,
-      "pcs_slug": "rory-townsend",
-      "full_name": "Rory Townsend",
-      "nationality": "IE",
-      "age": 30,
-      "total_uci_points": 5.0,
-      "total_pcs_points": 6.0,
-      "results_count": 17
+      "results_count": 19
     },
     {
       "rider_id": 20,
@@ -201,7 +201,7 @@
       "age": 22,
       "total_uci_points": 0.0,
       "total_pcs_points": 0.0,
-      "results_count": 33
+      "results_count": 34
     },
     {
       "rider_id": 5,
